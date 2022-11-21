@@ -6,13 +6,16 @@ public class Branch : MonoBehaviour
 {
     [Header("Properties")]
     public bool isActive;
+    public bool isDone;
     public double tipLength;
     public double startLength;
+    public Tree tree;
     [Header("Movement Components")]
     public SplineComputer pathComputer;
     public SplineComputer rendererComputer;
     public List<SplineFollower> followingNodes;
     [Header("Speed")]
+    [SerializeField] float minSpeed;
     [SerializeField] float branchSpeedMultiplier;
     [SerializeField] float currentMovement;
     public float CurrentMovement
@@ -34,48 +37,85 @@ public class Branch : MonoBehaviour
     public Vector2 scaleSetUpLimits;
     [Header("Sub Components")]
     public List<Branch> subBranches;
+    public int activeLeaves;
     public List<Leaf> leaves;
+    public List<Fruit> fruits;
     [Header("Sub Data")]
     public bool isSubBranch;
     public SplineFollower mainBranch;
     public float percentToStart;
+
     private void Start()
     {
+        SetUp();
+    }
+    
+
+    private void Update()
+    {
+        Grow();
+    }
+
+    void Grow()
+    {
+        if (isActive)
+        {
+            if (isDone)
+            {
+                if (tree.canGrowFruit)
+                {
+                    GrowFruit();
+                }
+            }
+            else
+            {
+                CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed), Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
+                if (followingNodes[0].GetPercent() >= 1)
+                {
+                    isDone = true;
+                }
+            }
+        }
+        //else
+        //{
+        //    if (isSubBranch)
+        //    {
+        //        if (mainBranch.GetPercent() >= percentToStart)
+        //        {
+        //            SetActive(true);
+        //        }
+        //    }
+        //}
+    }
+
+    void SetUp()
+    {
         CurrentMovement = 0;
-        if(mainBranch != null)
+        if (mainBranch != null)
         {
             isSubBranch = true;
-            isActive = false;
-            rendererComputer.gameObject.SetActive(false);
+            SetActive(false);
         }
         else
         {
             isActive = true;
         }
     }
-    
 
-    private void Update()
+    public void SetActive(bool _active)
     {
-        if(isActive)
+        isActive = _active;
+        rendererComputer.gameObject.SetActive(_active);
+    }
+
+    void GrowFruit()
+    {
+        for(int i=0; i<fruits.Count; i++)
         {
-            if(!isSubBranch)
+            if(!fruits[i].fullyGrown)
             {
-                Debug.LogError(followingNodes[0].GetPercent());
-            }
-            CurrentMovement = Mathf.MoveTowards(currentMovement, GameManager.instance.targetMovement, Time.deltaTime * GameManager.instance.movementSpeedMultiplier)*branchSpeedMultiplier;
-        }
-        else
-        {
-            if (isSubBranch)
-            {
-                if (mainBranch.GetPercent() >= percentToStart)
-                {
-                    isActive = true;
-                    rendererComputer.gameObject.SetActive(true);
-                }
+                fruits[i].timer+=Time.deltaTime;
             }
         }
-        
     }
 }

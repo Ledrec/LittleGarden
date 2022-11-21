@@ -29,7 +29,19 @@ public class Leaf : MonoBehaviour
 
     private void Update()
     {
-        if(isSim)
+        
+    }
+
+    void Grow()
+    {
+        SetLeafStage(1);
+    }
+
+
+    #region Automated Growth
+    void AutomateGrow()
+    {
+        if (isSim)
         {
             SimulateControlStage();
         }
@@ -72,4 +84,5 @@ public class Leaf : MonoBehaviour
             isDone = true;
         }
     }
+    #endregion
 }

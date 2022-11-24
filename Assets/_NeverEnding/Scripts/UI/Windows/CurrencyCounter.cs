@@ -1,3 +1,4 @@
+using System.Numerics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,58 +10,68 @@ public class CurrencyCounter : Window
     public float stepsDuration = 1;
     [SerializeField]
     public TextMeshProUGUI txtCurrency;
-
+    IEnumerator ieChange;
 
     private void Start()
     {
-        //ChangeTotalCurrency(SaveManager.LoadCurrency(myCurrrency));
+        ChangeTotalCurrency(SaveManager.LoadCurrency(myCurrrency));
     }
 
     #region RegularCurrency
-    public void ChangeCurrency(int _currency, float _delay)
+    public void ChangeCurrency(BigInteger _currency, float _delay)
     {
-        StartCoroutine(IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), SaveManager.LoadCurrency(myCurrrency) + _currency,_delay));
+        if (ieChange != null)
+        {
+            StopCoroutine(ieChange);
+        }
+        ieChange = IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), SaveManager.LoadCurrency(myCurrrency) + _currency, _delay);
         SaveManager.SaveCurrency(myCurrrency, _currency);
+        StartCoroutine(ieChange);
     }
-    public void ChangeTotalCurrency(int _totalCurrency, float _delay)
+    public void ChangeTotalCurrency(BigInteger _totalCurrency, float _delay)
     {
-        StartCoroutine(IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), _totalCurrency, _delay));
+        if (ieChange != null)
+        {
+            StopCoroutine(ieChange);
+        }
+        ieChange = IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), _totalCurrency, _delay);
         SaveManager.SaveTotalCurrency(myCurrrency, _totalCurrency);
+        StartCoroutine(ieChange);
     }
-    public void ChangeCurrency(int _currency)
+    public void ChangeCurrency(BigInteger _currency)
     {
-        StartCoroutine(IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency),SaveManager.LoadCurrency(myCurrrency)+_currency));
-        SaveManager.SaveCurrency(myCurrrency,_currency);
+        if (ieChange != null)
+        {
+            StopCoroutine(ieChange);
+        }
+        ieChange = IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), SaveManager.LoadCurrency(myCurrrency) + _currency);
+        SaveManager.SaveCurrency(myCurrrency, _currency);
+        StartCoroutine(ieChange);
     }
 
-    public void ChangeTotalCurrency(int _totalCurrency)
+    public void ChangeTotalCurrency(BigInteger _totalCurrency)
     {
-        StartCoroutine(IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), _totalCurrency));
-        SaveManager.SaveTotalCurrency(myCurrrency,_totalCurrency);
+        if (ieChange != null)
+        {
+            StopCoroutine(ieChange);
+        }
+        ieChange = IETextSteps(txtCurrency, SaveManager.LoadCurrency(myCurrrency), _totalCurrency);
+        SaveManager.SaveTotalCurrency(myCurrrency, _totalCurrency);
+        StartCoroutine(ieChange);
     }
     #endregion
 
 
-    IEnumerator IETextSteps(TextMeshProUGUI _text, int _from, int _to)
+    IEnumerator IETextSteps(TextMeshProUGUI _text, BigInteger _from, BigInteger _to, float _delay = 0.0f)
     {
         float timer = 0;
-        while(timer < stepsDuration)
+        BigInteger _diff = _to - _from;
+        yield return new WaitForSecondsRealtime(_delay);
+        while (timer < stepsDuration)
         {
-            _text.text = ((int)Mathf.Lerp(_from, _to, timer / stepsDuration)).ToString();
-            timer += Time.deltaTime;
-            yield return null;
-        }
-        _text.text = _to.ToString();
-    }
-
-    IEnumerator IETextSteps(TextMeshProUGUI _text, int _from, int _to, float _delay)
-    {
-        float timer = 0;
-        while(timer < stepsDuration)
-        {
-            _text.text = ((int)Mathf.Lerp(_from, _to, timer / stepsDuration)).ToString();
-            timer += Time.deltaTime;
-            yield return null;
+            _text.text = (_from + (_diff * (int)(timer / stepsDuration * 100) / 100)).ToString();
+            timer += Time.unscaledDeltaTime;
+            yield return new WaitForSecondsRealtime(Time.unscaledDeltaTime);
         }
         _text.text = _to.ToString();
     }

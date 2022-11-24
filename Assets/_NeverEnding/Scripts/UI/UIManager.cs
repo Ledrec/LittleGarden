@@ -23,5 +23,6 @@ public class UIManager : MonoBehaviour
     {
         gameplayWindow.Show();
         scoreWindow.Hide();
+        normalCurrencyCounter.Show();
     }
 }

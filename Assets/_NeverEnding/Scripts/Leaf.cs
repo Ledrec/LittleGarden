@@ -27,13 +27,10 @@ public class Leaf : MonoBehaviour
         SetLeafStage(0);
     }
 
-    private void Update()
-    {
-        
-    }
 
-    void Grow()
+    public void Grow()
     {
+        isDone = true;
         SetLeafStage(1);
     }
 

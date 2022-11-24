@@ -11,9 +11,11 @@ public class Branch : MonoBehaviour
     public double startLength;
     public Tree tree;
     [Header("Movement Components")]
-    public SplineComputer pathComputer;
     public SplineComputer rendererComputer;
+    public List<Node> renderingNodes;
     public List<SplineFollower> followingNodes;
+    public SplineComputer pathComputer;
+    public List<Node> pathNodes;
     [Header("Speed")]
     [SerializeField] float minSpeed;
     [SerializeField] float branchSpeedMultiplier;
@@ -36,14 +38,22 @@ public class Branch : MonoBehaviour
     [Header("Scaling")]
     public Vector2 scaleSetUpLimits;
     [Header("Sub Components")]
+    public Branch parentBranch;
     public List<Branch> subBranches;
-    public int activeLeaves;
     public List<Leaf> leaves;
     public List<Fruit> fruits;
     [Header("Sub Data")]
     public bool isSubBranch;
     public SplineFollower mainBranch;
     public float percentToStart;
+    [Header("Idle Profit")]
+    public int baseIdleProfit;
+    public int leafIdleProfitBonus;
+    public float percentToIdle;
+    public float timeToIdleReward;
+    public float rewardTimer;
+    [Header("Sell Price")]
+    public int baseSellPrice;
 
     private void Start()
     {
@@ -54,6 +64,19 @@ public class Branch : MonoBehaviour
     private void Update()
     {
         Grow();
+        IdleProfit();
+    }
+
+    public double GetGrowthPercent()
+    {
+        if(followingNodes.Count>0)
+        {
+            return followingNodes[0].GetPercent();
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     void Grow()
@@ -69,23 +92,14 @@ public class Branch : MonoBehaviour
             }
             else
             {
-                CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed), Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
-                if (followingNodes[0].GetPercent() >= 1)
+                CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed) * GameManager.instance.movementSpeedBonus, Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
+                if (GetGrowthPercent() >= 1)
                 {
                     isDone = true;
                 }
             }
         }
-        //else
-        //{
-        //    if (isSubBranch)
-        //    {
-        //        if (mainBranch.GetPercent() >= percentToStart)
-        //        {
-        //            SetActive(true);
-        //        }
-        //    }
-        //}
+       
     }
 
     void SetUp()
@@ -117,5 +131,42 @@ public class Branch : MonoBehaviour
                 fruits[i].timer+=Time.deltaTime;
             }
         }
+    }
+    void IdleProfit()
+    {
+        if(GetGrowthPercent()>=percentToIdle)
+        {
+            rewardTimer += Time.deltaTime;
+            if(rewardTimer >= timeToIdleReward)
+            {
+                rewardTimer-=timeToIdleReward;
+                IdleReward();
+            }
+        }
+    }
+    void IdleReward()
+    {
+        int leafReward=0;
+        for(int i=0; i<leaves.Count; i++)
+        {
+            if(leaves[i].isDone)
+            {
+                leafReward += leafIdleProfitBonus;
+            }
+        }
+        UIManager.instance.normalCurrencyCounter.ChangeCurrency(baseIdleProfit+leafIdleProfitBonus);
+    }
+
+    public int GetActiveLeaves()
+    {
+        int temp = 0;
+        for(int i=0; i<leaves.Count; i++)
+        {
+            if(leaves[i].isDone)
+            {
+                temp++;
+            }
+        }
+        return temp;
     }
 }

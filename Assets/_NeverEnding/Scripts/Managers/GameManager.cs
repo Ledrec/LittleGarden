@@ -6,7 +6,7 @@ using Lean.Touch;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public UpgradesManager upgradesManager;
+    public LevelManager levelManager;
     public float tapSpeedIncrease;
     public float tapSpeedDecrease;
     public Vector2 tapSpeedLimits;
@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
+
     }
 
     private void OnEnable()

@@ -9,6 +9,7 @@ public class SellButton : MonoBehaviour
 
     private void Update()
     {
-        txtSellPrice.text = GameManager.instance.upgradesManager.currentTree.GetSellPrice().ToString();
+       
+        txtSellPrice.text = GameManager.instance.levelManager.activeTree.GetSellPrice().ToCompactString();
     }
 }

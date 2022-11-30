@@ -69,11 +69,11 @@ public class CurrencyCounter : Window
         yield return new WaitForSecondsRealtime(_delay);
         while (timer < stepsDuration)
         {
-            _text.text = (_from + (_diff * (int)(timer / stepsDuration * 100) / 100)).ToString();
+            _text.text = (_from + (_diff * (int)(timer / stepsDuration * 100) / 100)).ToCompactString();
             timer += Time.unscaledDeltaTime;
             yield return new WaitForSecondsRealtime(Time.unscaledDeltaTime);
         }
-        _text.text = _to.ToString();
+        _text.text = _to.ToCompactString();
     }
 
 

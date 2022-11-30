@@ -10,7 +10,8 @@ public class Fruit : MonoBehaviour
     public float timeToFullyGrow;
     public float timer;
     public float startGrowDelay;
-    public bool fullyGrown;
+    public bool isDone;
+    public bool canGrow;
 
     private void Update()
     {
@@ -19,12 +20,16 @@ public class Fruit : MonoBehaviour
 
     void Grow()
     {
-        if(!fullyGrown)
+        if(!isDone)
         {
+            if(canGrow)
+            {
+                timer+=Time.deltaTime;
+            }
             scaleParent.localScale = Vector3.one * Mathf.Lerp(scaleLimits.x, scaleLimits.y, Mathf.Clamp01((timer-startGrowDelay) / timeToFullyGrow));
             if (Mathf.Clamp01((timer - startGrowDelay) / timeToFullyGrow) >= 1)
             {
-                fullyGrown = true;
+                isDone = true;
             }
         }
     }

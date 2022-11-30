@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using Dreamteck.Splines;
 
@@ -11,7 +12,9 @@ public class Tree : MonoBehaviour
     public Branch[] mainSubBranches;
     public Branch[] allBranches;
     public Branch[] allSubBranches;
+    public UpgradesManager upgradesManager;
     public bool canGrowFruit;
+    public float percentToSell;
     int grownBranches;
     // Update is called once per frame
     void Update()
@@ -38,7 +41,7 @@ public class Tree : MonoBehaviour
         }
     }
    
-    public int GetSellPrice()
+    public BigInteger GetSellPrice()
     {
         int price = (int)(mainBranch.baseSellPrice*mainBranch.GetGrowthPercent());
         for (int i = 0; i < allSubBranches.Length; i++)

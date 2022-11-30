@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4691575997469015426}
   - component: {fileID: 4691575997469015429}
-  - component: {fileID: 3041356120581932658}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,81 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9463e5138434fb42a50d425c299c3ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradesManager: {fileID: 3041356120581932658}
+  upgradesManager: {fileID: 0}
   tapSpeedIncrease: 0.1
   tapSpeedDecrease: 0.3
   tapSpeedLimits: {x: 0, y: 0.5}
-  movementSpeedMultiplier: 5
+  movementSpeedMultiplier: 10
   targetMovement: 0
   movementSpeedBonus: 1
---- !u!114 &3041356120581932658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4691575997469015427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50a901a619f360c46908e539b56a1e2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgrades:
-  - upgradeType: 0
-    currentLevel: 0
-    price: 5
-    maxLevel: 15
-    levelUpEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3041356120581932658}
-          m_TargetAssemblyTypeName: UpgradesManager, Assembly-CSharp
-          m_MethodName: AddBranch
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - upgradeType: 1
-    currentLevel: 0
-    price: 5
-    maxLevel: 62
-    levelUpEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3041356120581932658}
-          m_TargetAssemblyTypeName: UpgradesManager, Assembly-CSharp
-          m_MethodName: AddLeaf
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - upgradeType: 2
-    currentLevel: 0
-    price: 5
-    maxLevel: 20
-    levelUpEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3041356120581932658}
-          m_TargetAssemblyTypeName: UpgradesManager, Assembly-CSharp
-          m_MethodName: IncreaseSpeed
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  currentTree: {fileID: 0}

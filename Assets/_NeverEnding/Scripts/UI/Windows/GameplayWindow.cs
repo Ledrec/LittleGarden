@@ -16,6 +16,7 @@ public class GameplayWindow : Window
     private void Update()
     {
         SetUpUpgradeButtonsState();
+        AutoToggleSellButton();
     }
 
     public void SetUpgradeButtonData()
@@ -24,36 +25,51 @@ public class GameplayWindow : Window
         {
             int x = i;
             UIManager.instance.gameplayWindow.GetUpgradeButton(upgradeButtons[i].upgradeType).button.onClick.RemoveAllListeners();
-            UIManager.instance.gameplayWindow.GetUpgradeButton(upgradeButtons[i].upgradeType).button.onClick.AddListener(() => GameManager.instance.upgradesManager.Upgrade(upgradeButtons[x].upgradeType));
+            UIManager.instance.gameplayWindow.GetUpgradeButton(upgradeButtons[i].upgradeType).button.onClick.AddListener(() => GameManager.instance.levelManager.activeTree.upgradesManager.Upgrade(upgradeButtons[x].upgradeType));
             //UIManager.instance.gameplayWindow.GetUpgradeButton(upgradeButtons[i].upgradeType).button.onClick.AddListener(() => UIManager.instance.gameplayWindow.GetUpgradeButton(upgradeButtons[x].upgradeType).anmtr.SetTrigger("Show"));
 
         }
     }
-
+    public void AutoToggleSellButton()
+    {
+        if (GameManager.instance.levelManager.activeTree != null)
+        {
+            sellButton.gameObject.SetActive(GameManager.instance.levelManager.activeTree.mainBranch.GetGrowthPercent() >= GameManager.instance.levelManager.activeTree.percentToSell);
+        }
+        else
+        {
+            sellButton.gameObject.SetActive(false);
+        }
+    }
     public void SetUpUpgradeButtonsState()
     {
-        Upgrade temp = GameManager.instance.upgradesManager.GetUpgradeType(UpgradeType.AddBranch);
+        Upgrade temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddBranch);
         GetUpgradeButton(UpgradeType.AddBranch)?.SetState(
            temp.price,
-           GameManager.instance.upgradesManager.CanBuy(UpgradeType.AddBranch),
-           GameManager.instance.upgradesManager.CanAddBranch(),
-           temp.CurrentLevel > temp.maxLevel);
+           GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddBranch),
+           GameManager.instance.levelManager.activeTree.upgradesManager.CanAddBranch(),
+           temp.CurrentLevel >= temp.maxLevel);
 
-        temp = GameManager.instance.upgradesManager.GetUpgradeType(UpgradeType.AddLeaf);
+        temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddLeaf);
         GetUpgradeButton(UpgradeType.AddLeaf)?.SetState(
           temp.price,
-          GameManager.instance.upgradesManager.CanBuy(UpgradeType.AddLeaf),
-          GameManager.instance.upgradesManager.CanAddLeaf(),
-          temp.CurrentLevel > temp.maxLevel);
+          GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddLeaf),
+          GameManager.instance.levelManager.activeTree.upgradesManager.CanAddLeaf(),
+          temp.CurrentLevel >= temp.maxLevel);
 
-        temp = GameManager.instance.upgradesManager.GetUpgradeType(UpgradeType.IncreaseSpeed);
+        temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.IncreaseSpeed);
         GetUpgradeButton(UpgradeType.IncreaseSpeed)?.SetState(
          temp.price,
-         GameManager.instance.upgradesManager.CanBuy(UpgradeType.IncreaseSpeed),
+         GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.IncreaseSpeed),
          true,
-         temp.CurrentLevel > temp.maxLevel);
+         temp.CurrentLevel >= temp.maxLevel);
 
-       
+        temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddFruit);
+        GetUpgradeButton(UpgradeType.AddFruit)?.SetState(
+         temp.price,
+         GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddFruit),
+         GameManager.instance.levelManager.activeTree.upgradesManager.CanAddFruit(),
+         temp.CurrentLevel >= temp.maxLevel);
     }
 
     public UpgradeButton GetUpgradeButton(UpgradeType _upgradeType)

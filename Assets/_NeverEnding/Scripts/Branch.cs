@@ -52,10 +52,11 @@ public class Branch : MonoBehaviour
     public float percentToIdle;
     public float timeToIdleReward;
     public float rewardTimer;
+    public Vector3 profitMessageOffset;
     [Header("Sell Price")]
     public int baseSellPrice;
 
-    private void Start()
+    private void Awake()
     {
         SetUp();
     }
@@ -83,14 +84,7 @@ public class Branch : MonoBehaviour
     {
         if (isActive)
         {
-            if (isDone)
-            {
-                if (tree.canGrowFruit)
-                {
-                    GrowFruit();
-                }
-            }
-            else
+            if (!isDone)
             {
                 CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed) * GameManager.instance.movementSpeedBonus, Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
                 if (GetGrowthPercent() >= 1)
@@ -122,16 +116,7 @@ public class Branch : MonoBehaviour
         rendererComputer.gameObject.SetActive(_active);
     }
 
-    void GrowFruit()
-    {
-        for(int i=0; i<fruits.Count; i++)
-        {
-            if(!fruits[i].fullyGrown)
-            {
-                fruits[i].timer+=Time.deltaTime;
-            }
-        }
-    }
+    
     void IdleProfit()
     {
         if(GetGrowthPercent()>=percentToIdle)
@@ -155,6 +140,7 @@ public class Branch : MonoBehaviour
             }
         }
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(baseIdleProfit+leafIdleProfitBonus);
+        IncomeMessages.AddMessage(transform.position + profitMessageOffset, baseIdleProfit + leafIdleProfitBonus);
     }
 
     public int GetActiveLeaves()

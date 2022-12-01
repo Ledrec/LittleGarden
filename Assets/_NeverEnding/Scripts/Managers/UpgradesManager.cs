@@ -114,9 +114,9 @@ public class UpgradesManager : MonoBehaviour
         {
             for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].leaves.Count; j++)
             {
-                if (GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].splineFollower.GetPercent() >= GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].percentToAppear && !GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].isDone)
+                if (GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].splineFollower.GetPercent() >= GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].percentToAppear && !GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].isActive)
                 {
-                    GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].Grow();
+                    GameManager.instance.levelManager.activeTree.allBranches[i].leaves[j].isActive=true;
                     done= true;
                     break;
                 }

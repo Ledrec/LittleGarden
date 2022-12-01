@@ -44,12 +44,11 @@ public class GameplayWindow : Window
     public void SetUpUpgradeButtonsState()
     {
         Upgrade temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddBranch);
-        GetUpgradeButton(UpgradeType.AddBranch)?.SetState(
-           temp.price,
-           GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddBranch),
-           GameManager.instance.levelManager.activeTree.upgradesManager.CanAddBranch(),
-           temp.CurrentLevel >= temp.maxLevel);
-
+        //GetUpgradeButton(UpgradeType.AddBranch)?.SetState(
+        //   temp.price,
+        //   GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddBranch),
+        //   GameManager.instance.levelManager.activeTree.upgradesManager.CanAddBranch(),
+        //   temp.CurrentLevel >= temp.maxLevel);
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddLeaf);
         GetUpgradeButton(UpgradeType.AddLeaf)?.SetState(
           temp.price,

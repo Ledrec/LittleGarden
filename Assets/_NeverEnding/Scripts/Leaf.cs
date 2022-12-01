@@ -5,81 +5,50 @@ using Dreamteck.Splines;
 
 public class Leaf : MonoBehaviour
 {
-    [Header("Components")]
-    public Animator anmtr;
     public SplineFollower splineFollower;
+    public Transform modelParent;
     [Header("Growth")]
     public bool isDone;
-    public float percentToAppear;
-    public float percentToFullyGrow;
-    [Header("Simulation")]
-    public bool isSim;
-    public float simTimer;
-    public float simTimerSpeed;
-
-    public void SetLeafStage(int _stage)
+    public bool isActive;
+    public float speedMultiplier = 1;
+    
+    public float currentMovement;
+    public float CurrentMovement
     {
-        anmtr.SetInteger("Stage", _stage);
+        get { return currentMovement; }
+        set 
+        { 
+            currentMovement = value; 
+            //modelParent.localScale += Vector3.one* 
+        }
     }
+    public float percentToAppear;
+    public float minSpeed;
+    public Vector2 growthRange;
+    public float timer;
 
     private void Start()
     {
-        SetLeafStage(0);
+        modelParent.localScale = Vector3.Lerp(Vector3.one * growthRange.x, Vector3.one * growthRange.y, timer);
     }
 
+    private void Update()
+    {
+        Grow();
+    }
 
     public void Grow()
     {
-        isDone = true;
-        SetLeafStage(1);
-    }
+        if (isActive)
+        {
+            if (!isDone)
+            {
+                CurrentMovement = Mathf.MoveTowards(currentMovement,Mathf.Max(minSpeed, GameManager.instance.targetMovement) * GameManager.instance.movementSpeedBonus, Time.deltaTime * GameManager.instance.movementSpeedMultiplier*speedMultiplier);
+                timer += CurrentMovement;
+                timer = Mathf.Clamp01(timer);
+                modelParent.localScale = Vector3.Lerp(Vector3.one*growthRange.x, Vector3.one * growthRange.y,timer);
+            }
+        }
 
-
-    #region Automated Growth
-    void AutomateGrow()
-    {
-        if (isSim)
-        {
-            SimulateControlStage();
-        }
-        else
-        {
-            ControlStage();
-        }
     }
-
-    void ControlStage()
-    {
-        if(isDone)
-        {
-            return;
-        }
-        if (splineFollower.GetPercent() >= percentToAppear && anmtr.GetInteger("Stage")==0)
-        {
-            SetLeafStage(1);
-        }
-        else if (splineFollower.GetPercent() >= percentToFullyGrow && anmtr.GetInteger("Stage") == 1)
-        {
-            SetLeafStage(2);
-            isDone = true;
-        }
-    }
-    void SimulateControlStage()
-    {
-        if (isDone)
-        {
-            return;
-        }
-        simTimer += Time.deltaTime*simTimerSpeed;
-        if (simTimer >= percentToAppear && anmtr.GetInteger("Stage") == 0)
-        {
-            SetLeafStage(1);
-        }
-        else if (simTimer >= percentToFullyGrow && anmtr.GetInteger("Stage") == 1)
-        {
-            SetLeafStage(2);
-            isDone = true;
-        }
-    }
-    #endregion
 }

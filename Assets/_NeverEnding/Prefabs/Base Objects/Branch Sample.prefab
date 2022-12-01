@@ -112,7 +112,7 @@ MonoBehaviour:
   editorDrawPivot: 1
   editorPathColor: {r: 1, g: 1, b: 1, a: 1}
   editorAlwaysDraw: 0
-  editorDrawThickness: 0
+  editorDrawThickness: 1
   editorBillboardThickness: 1
   isNewlyCreated: 0
   editorUpdateMode: 0
@@ -230,18 +230,18 @@ MonoBehaviour:
     useClippedPercent: 0
     keys: []
   _clipFromSample:
-    position: {x: -0.61911494, y: 1.5950165, z: 0}
-    up: {x: 0.34286892, y: -0.840467, z: 0.41959047}
-    forward: {x: 0.21783856, y: -0.9759848, z: 0}
+    position: {x: 0, y: 2.353305, z: 0}
+    up: {x: 0, y: 0, z: 0}
+    forward: {x: 0, y: 0, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     size: 0.01
     percent: 0
   _clipToSample:
-    position: {x: 0, y: 0, z: 0}
-    up: {x: 0.34286883, y: -0.84046686, z: 0.4195907}
-    forward: {x: 0.45794776, y: -0.8889791, z: 0}
+    position: {x: 0, y: 2.353305, z: 0}
+    up: {x: 0, y: 0, z: 0}
+    forward: {x: 0, y: 0, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
-    size: 1.4503332
+    size: 0.755
     percent: 1
   _loopSamples: 0
   _clipFrom: 0
@@ -330,11 +330,11 @@ MonoBehaviour:
   tipLength: 0
   startLength: 0.1
   tree: {fileID: 0}
-  pathComputer: {fileID: 6178596233369852283}
-  pathNodes: []
   rendererComputer: {fileID: 6178596232991940296}
   renderingNodes: []
   followingNodes: []
+  pathComputer: {fileID: 6178596233369852283}
+  pathNodes: []
   minSpeed: 0.1
   branchSpeedMultiplier: 1
   currentMovement: 0
@@ -351,6 +351,7 @@ MonoBehaviour:
   percentToIdle: 0.5
   timeToIdleReward: 4
   rewardTimer: 0
+  profitMessageOffset: {x: 0, y: 0, z: 0}
   baseSellPrice: 10
 --- !u!1 &6178596233369852281
 GameObject:

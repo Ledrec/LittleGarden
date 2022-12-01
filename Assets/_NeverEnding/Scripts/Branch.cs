@@ -98,6 +98,14 @@ public class Branch : MonoBehaviour
 
     void SetUp()
     {
+        if (!isSubBranch)
+        {
+            Debug.Log(Camera.main.WorldToViewportPoint(new Vector3(0, .38f, 0)).y);
+            Shader.SetGlobalFloat("MinScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, .38f, 0)).y);
+            Shader.SetGlobalFloat("MaxScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, 2.37f, 0)).y);
+
+        }
+
         CurrentMovement = 0;
         if (mainBranch != null)
         {

@@ -5,8 +5,9 @@ using UnityEngine;
 public class UpgradesManager : MonoBehaviour
 {
     public List<Upgrade> upgrades = new List<Upgrade>();
-   public void Upgrade(UpgradeType _type)
-   {
+    public IEnumerator upgradeFeedback;
+    public void Upgrade(UpgradeType _type)
+    {
         for(int i =0; i<upgrades.Count; i++)
         {
             if(upgrades[i].upgradeType == _type)
@@ -19,7 +20,7 @@ public class UpgradesManager : MonoBehaviour
                 }
             }
         }
-   }
+    }
 
     public Upgrade GetUpgradeType(UpgradeType _type)
     {
@@ -162,11 +163,31 @@ public class Upgrade
     public int CurrentLevel
     {
         get { return currentLevel; }
-        set { currentLevel = value; }
+        set
+        {
+            currentLevel = value;
+            if (GameManager.instance.levelManager.activeTree.upgradesManager.upgradeFeedback != null)
+            {
+                GameManager.instance.levelManager.activeTree.upgradesManager.StopCoroutine(GameManager.instance.levelManager.activeTree.upgradesManager.upgradeFeedback);
+            }
+            GameManager.instance.levelManager.activeTree.upgradesManager.upgradeFeedback = UpgradeFeedback();
+            GameManager.instance.levelManager.activeTree.upgradesManager.StartCoroutine(GameManager.instance.levelManager.activeTree.upgradesManager.upgradeFeedback);
+        }
     }
     public int price;
     public int maxLevel;
     public UnityEngine.Events.UnityEvent levelUpEvent;
+
+    IEnumerator UpgradeFeedback()
+    {
+        float eTime = 0;
+        while (eTime < 1.0f)
+        {
+            eTime += Time.deltaTime;
+            Shader.SetGlobalFloat("Offset", Mathf.Lerp(0.0f, 1.0f, eTime / 1.0f));
+            yield return new WaitForEndOfFrame();
+        }
+    }
 
 }
 public enum UpgradeType

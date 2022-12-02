@@ -78,15 +78,27 @@ public class UpgradesManager : MonoBehaviour
     {
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
         {
-            if(GameManager.instance.levelManager.activeTree.allBranches[i].GetGrowthPercent()>=1)
+            for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].fruits.Count; j++)
             {
-                for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].fruits.Count; j++)
+                if (!GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].canGrow && GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].leafParent.isDone && !GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].isDone)
                 {
-                    if (!GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].canGrow && !GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].isDone)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
+            }
+        }
+        return false;
+    }
+    public bool CanAddLights()
+    {
+        for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
+        {
+            for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].lights.Count; j++)
+            {
+                if (!GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].canGrow && GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].leafParent.isDone && !GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].isDone)
+                {
+                    return true;
+                }
+
             }
         }
         return false;
@@ -147,6 +159,30 @@ public class UpgradesManager : MonoBehaviour
             }
         }
     }
+
+    public void AddLights()
+    {
+        bool done = false;
+
+        for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
+        {
+            for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].lights.Count; j++)
+            {
+                if (!GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].canGrow && GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].leafParent.isDone && !GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].isDone)
+                {
+                    GameManager.instance.levelManager.activeTree.allBranches[i].lights[j].canGrow = true;
+                    done = true;
+                    break;
+                }
+
+            }
+            if (done)
+            {
+                break;
+            }
+        }
+    }
+
     public void IncreaseSpeed()
     {
         GameManager.instance.movementSpeedBonus = 1f + (GetUpgradeType(UpgradeType.IncreaseSpeed).CurrentLevel*0.1f);
@@ -174,5 +210,6 @@ public enum UpgradeType
     AddBranch,
     AddLeaf,
     IncreaseSpeed,
-    AddFruit
+    AddFruit,
+    AddLights
 }

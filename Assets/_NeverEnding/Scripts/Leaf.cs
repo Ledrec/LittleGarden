@@ -47,6 +47,10 @@ public class Leaf : MonoBehaviour
                 timer += CurrentMovement;
                 timer = Mathf.Clamp01(timer);
                 modelParent.localScale = Vector3.Lerp(Vector3.one*growthRange.x, Vector3.one * growthRange.y,timer);
+                if(modelParent.localScale.x>=1)
+                {
+                    isDone = true;
+                }
             }
         }
 

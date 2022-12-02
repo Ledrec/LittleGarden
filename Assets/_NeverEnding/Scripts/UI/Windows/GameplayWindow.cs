@@ -69,6 +69,13 @@ public class GameplayWindow : Window
          GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddFruit),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanAddFruit(),
          temp.CurrentLevel >= temp.maxLevel);
+
+        temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddLights);
+        GetUpgradeButton(UpgradeType.AddLights)?.SetState(
+         temp.price,
+         GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddLights),
+         GameManager.instance.levelManager.activeTree.upgradesManager.CanAddLights(),
+         temp.CurrentLevel >= temp.maxLevel);
     }
 
     public UpgradeButton GetUpgradeButton(UpgradeType _upgradeType)

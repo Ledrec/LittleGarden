@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fruit : MonoBehaviour
 {
     [Header("Scaling")]
+    public Leaf leafParent;
     public Vector2 scaleLimits;
     public Transform scaleParent;
     public float timeToFullyGrow;

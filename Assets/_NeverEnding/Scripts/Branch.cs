@@ -42,6 +42,7 @@ public class Branch : MonoBehaviour
     public List<Branch> subBranches;
     public List<Leaf> leaves;
     public List<Fruit> fruits;
+    public List<TreeLight> lights;
     [Header("Sub Data")]
     public bool isSubBranch;
     public SplineFollower mainBranch;

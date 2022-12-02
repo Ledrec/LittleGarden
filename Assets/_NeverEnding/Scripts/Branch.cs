@@ -60,7 +60,7 @@ public class Branch : MonoBehaviour
     {
         SetUp();
     }
-    
+
 
     private void Update()
     {
@@ -89,6 +89,7 @@ public class Branch : MonoBehaviour
                 CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed) * GameManager.instance.movementSpeedBonus, Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
                 if (GetGrowthPercent() >= 1)
                 {
+                    //GetComponent<Animator>().enabled = true;
                     isDone = true;
                 }
             }
@@ -105,7 +106,10 @@ public class Branch : MonoBehaviour
             Shader.SetGlobalFloat("MaxScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, 2.37f, 0)).y);
 
         }
+        else
+        {
 
+        }
         CurrentMovement = 0;
         if (mainBranch != null)
         {

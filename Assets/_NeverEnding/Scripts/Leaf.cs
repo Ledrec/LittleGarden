@@ -22,6 +22,11 @@ public class Leaf : MonoBehaviour
         anmtr.SetInteger("Stage", _stage);
     }
 
+    private void OnEnable()
+    {
+        anmtr.Play("ANM_Leaf_WindBlow", 1, Random.Range(0, 1.0f));
+    }
+
     private void Start()
     {
         SetLeafStage(0);

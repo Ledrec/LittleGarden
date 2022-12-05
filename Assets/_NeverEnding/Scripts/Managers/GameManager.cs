@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public LevelManager levelManager;
+    public CameraTransition gameplayCameraTransition;
+    [Header("Taps")]
     public float tapSpeedIncrease;
     public float tapSpeedDecrease;
     public Vector2 tapSpeedLimits;

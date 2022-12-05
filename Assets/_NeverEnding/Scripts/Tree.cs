@@ -16,10 +16,10 @@ public class Tree : MonoBehaviour
     public bool canGrowFruit;
     public float percentToSell;
     int grownBranches;
-    // Update is called once per frame
+
     void Update()
     {
-        CheckIfCanGrowFruit();
+        GameManager.instance.gameplayCameraTransition.SetPosition((float)mainBranch.GetGrowthPercent());
     }
 
     public void CheckIfCanGrowFruit()

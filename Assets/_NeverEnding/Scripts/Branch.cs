@@ -20,7 +20,6 @@ public class Branch : MonoBehaviour
     [SerializeField] float minSpeed;
     [SerializeField] float branchSpeedMultiplier;
     [SerializeField] float currentMovement;
-
     public float rotationSubBranch = 0;
 
     public float CurrentMovement
@@ -90,6 +89,14 @@ public class Branch : MonoBehaviour
         {
             if (!isDone)
             {
+                for (int i = 0; i < rendererComputer.pointCount; i++)
+                {
+                    SplinePoint point = rendererComputer.GetPoint(i);
+                    point.size = Mathf.Lerp(0, scaleSetUpLimits.y * (float)GetGrowthPercent(), (float)i / rendererComputer.pointCount);
+                    rendererComputer.SetPoint(i, point);
+                    rendererComputer.Rebuild();
+                }
+
                 CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed) * GameManager.instance.movementSpeedBonus, Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
                 if (GetGrowthPercent() >= 1)
                 {

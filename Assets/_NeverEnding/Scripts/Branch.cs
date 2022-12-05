@@ -20,6 +20,9 @@ public class Branch : MonoBehaviour
     [SerializeField] float minSpeed;
     [SerializeField] float branchSpeedMultiplier;
     [SerializeField] float currentMovement;
+
+    public float rotationSubBranch = 0;
+
     public float CurrentMovement
     {
         get 
@@ -35,6 +38,7 @@ public class Branch : MonoBehaviour
             }
         }
     }
+
     [Header("Scaling")]
     public Vector2 scaleSetUpLimits;
     [Header("Sub Components")]
@@ -89,22 +93,22 @@ public class Branch : MonoBehaviour
                 CurrentMovement = Mathf.MoveTowards(currentMovement, Mathf.Max(GameManager.instance.targetMovement, isSubBranch ? 0 : minSpeed) * GameManager.instance.movementSpeedBonus, Time.deltaTime * GameManager.instance.movementSpeedMultiplier) * branchSpeedMultiplier;
                 if (GetGrowthPercent() >= 1)
                 {
-                    //GetComponent<Animator>().enabled = true;
+                    //if (isSubBranch)
+                    //{
+                    //    GetComponent<Animator>().enabled = true;
+                    //}
                     isDone = true;
                 }
             }
         }
-       
     }
 
     void SetUp()
     {
         if (!isSubBranch)
         {
-            Debug.Log(Camera.main.WorldToViewportPoint(new Vector3(0, .38f, 0)).y);
             Shader.SetGlobalFloat("MinScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, .38f, 0)).y);
-            Shader.SetGlobalFloat("MaxScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, 2.37f, 0)).y);
-
+            //Shader.SetGlobalFloat("MaxScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, 2.37f, 0)).y);
         }
         else
         {

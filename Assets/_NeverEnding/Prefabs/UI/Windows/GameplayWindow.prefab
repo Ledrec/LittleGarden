@@ -666,7 +666,7 @@ PrefabInstance:
     - target: {fileID: 163371720229696135, guid: 3f55e760a6dfdd746a0135f416ea31be, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bdd674135ead0c54ab81d6cb47fb8f4c, type: 3}
+      objectReference: {fileID: 21300000, guid: 6a7123525c482ae4cb612a2405ad848b, type: 3}
     - target: {fileID: 366399266798912724, guid: 3f55e760a6dfdd746a0135f416ea31be, type: 3}
       propertyPath: m_Name
       value: BTN_AddFruit
@@ -682,7 +682,7 @@ PrefabInstance:
     - target: {fileID: 5148243491654477347, guid: 3f55e760a6dfdd746a0135f416ea31be, type: 3}
       propertyPath: sprMaxLevel
       value: 
-      objectReference: {fileID: 21300000, guid: bdd674135ead0c54ab81d6cb47fb8f4c, type: 3}
+      objectReference: {fileID: 21300000, guid: 6a7123525c482ae4cb612a2405ad848b, type: 3}
     - target: {fileID: 5148243491654477347, guid: 3f55e760a6dfdd746a0135f416ea31be, type: 3}
       propertyPath: upgradeType
       value: 3
@@ -690,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 5148243491654477347, guid: 3f55e760a6dfdd746a0135f416ea31be, type: 3}
       propertyPath: sprNotMaxLevel
       value: 
-      objectReference: {fileID: 21300000, guid: bdd674135ead0c54ab81d6cb47fb8f4c, type: 3}
+      objectReference: {fileID: 21300000, guid: 6a7123525c482ae4cb612a2405ad848b, type: 3}
     - target: {fileID: 5853637741743113120, guid: 3f55e760a6dfdd746a0135f416ea31be, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

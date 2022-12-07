@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class Window : MonoBehaviour
 {
     [Header("Window General")]
-    [SerializeField] 
-    Animator anmtrWindow;
+    //[SerializeField] 
+    public Animator anmtrWindow;
     public IEnumerator ieShow;
     public IEnumerator ieHide;
 

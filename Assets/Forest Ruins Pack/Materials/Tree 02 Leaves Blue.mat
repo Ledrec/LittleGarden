@@ -115,7 +115,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _alphaClip: 0.97
+    - _alphaClip: 0.6
     - _threshold: 0
     m_Colors:
     - _Color: {r: 0, g: 0.566844, b: 0.6509434, a: 1}

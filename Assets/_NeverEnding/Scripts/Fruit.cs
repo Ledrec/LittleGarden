@@ -19,6 +19,8 @@ public class Fruit : MonoBehaviour
 
     private void OnEnable()
     {
+        //flower.transform.localEulerAngles = new Vector3(0, 0, Random.Range(0.0f, 360.0f));
+        //flower.transform.LookAt(Camera.main.transform, Vector3.up);
         StartCoroutine(WaitForFlowerDeath());
     }
 

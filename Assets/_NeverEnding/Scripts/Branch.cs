@@ -59,11 +59,10 @@ public class Branch : MonoBehaviour
     [Header("Sell Price")]
     public int baseSellPrice;
 
-    private void Awake()
+    private void OnEnable()
     {
         SetUp();
     }
-
 
     private void Update()
     {
@@ -92,7 +91,7 @@ public class Branch : MonoBehaviour
                 for (int i = 0; i < rendererComputer.pointCount; i++)
                 {
                     SplinePoint point = rendererComputer.GetPoint(i);
-                    point.size = Mathf.Lerp(0, scaleSetUpLimits.y * (float)GetGrowthPercent(), (float)i / rendererComputer.pointCount);
+                    point.size = scaleSetUpLimits.x + (scaleSetUpLimits.y - scaleSetUpLimits.x) * (float)GetGrowthPercent() * ((float)i / rendererComputer.pointCount);
                     rendererComputer.SetPoint(i, point);
                     rendererComputer.Rebuild();
                 }
@@ -112,14 +111,22 @@ public class Branch : MonoBehaviour
 
     void SetUp()
     {
-        if (!isSubBranch)
-        {
-            Shader.SetGlobalFloat("MinScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, .38f, 0)).y);
-            //Shader.SetGlobalFloat("MaxScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, 2.37f, 0)).y);
-        }
-        else
-        {
+        //if (!isSubBranch)
+        //{
+        //    Shader.SetGlobalFloat("MinScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, .38f, 0)).y);
+        //    //Shader.SetGlobalFloat("MaxScreenPos", Camera.main.WorldToViewportPoint(new Vector3(0, 2.37f, 0)).y);
+        //}
+        //else
+        //{
 
+        //}
+
+        for (int i = 0; i < rendererComputer.pointCount; i++)
+        {
+            SplinePoint point = rendererComputer.GetPoint(i);
+            point.size = scaleSetUpLimits.x;
+            rendererComputer.SetPoint(i, point);
+            rendererComputer.Rebuild();
         }
         CurrentMovement = 0;
         if (mainBranch != null)

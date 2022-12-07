@@ -16,7 +16,7 @@ public class Tree : MonoBehaviour
     public bool canGrowFruit;
     public float percentToSell;
     int grownBranches;
-
+    public bool isChristmasPine;
     void Update()
     {
         GameManager.instance.gameplayCameraTransition.SetPosition((float)mainBranch.GetGrowthPercent());

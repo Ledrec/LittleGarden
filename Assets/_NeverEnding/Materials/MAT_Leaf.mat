@@ -10,8 +10,7 @@ Material:
   m_Name: MAT_Leaf
   m_Shader: {fileID: 4800000, guid: 95258c94df59c44809a8b3d3e194b1db, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _HASLINE_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -83,7 +82,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 1
     - _AlphaClip: 0
+    - _AlphaClipThreshold: 1
     - _AlphaCutoff: 0.5
     - _Blend: 0
     - _BumpScale: 1
@@ -100,9 +101,9 @@ Material:
     - _GlossyReflections: 0
     - _LineMaxOld: -0.02
     - _LineMinOld: -0.021
-    - _MaxOld: 1.67
+    - _MaxOld: -580
     - _Metallic: 0
-    - _MinOld: 0.1
+    - _MinOld: -290.4
     - _OcclusionStrength: 1
     - _Offset: 1
     - _Parallax: 0.005
@@ -120,13 +121,13 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _hasLine: 1
+    - _hasLine: 0
     m_Colors:
     - _BaseColor: {r: 0.25882354, g: 0.5686275, b: 0.0627451, a: 1}
     - _Color: {r: 0.4509804, g: 0.84313726, b: 0.21568628, a: 1}
     - _ColorGradient: {r: 0.101960786, g: 0.65882355, b: 0.015686275, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GradientVector: {r: 1, g: 0, b: 2, a: 0}
+    - _GradientVector: {r: 0, g: 0, b: 1, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &759723333129185770

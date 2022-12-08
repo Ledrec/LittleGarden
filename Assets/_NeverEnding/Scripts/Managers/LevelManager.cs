@@ -5,9 +5,13 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject[] trees;
     public Material[] terrainsMaterial;
+    public Material[] skyboxMaterial;
+    public Color[] treeColor;
     public Transform treeParent;
     public Terrain terrain;
     public Tree activeTree;
+    public Material leavesBlue;
+    public Material leavesOrange;
     public ParticleSystem moneyPrt;
     public int numberParticles;
     public float endPosZ;
@@ -44,7 +48,10 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeScenario()
     {
+        RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
+        leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
+        leavesOrange.color = treeColor[(SaveManager.LoadCurrentLevel() * 2) + 1];
     }
 
     IEnumerator SellTreeAnimation()

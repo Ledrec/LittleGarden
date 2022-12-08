@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        //SaveManager.SaveCurrentLevel(3);
         instance = this;
         levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
     }

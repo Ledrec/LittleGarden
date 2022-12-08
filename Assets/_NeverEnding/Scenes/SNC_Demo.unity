@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5175765, g: 0.8742365, b: 0.99114925, a: 1}
+  m_IndirectSpecularColor: {r: 0.5414992, g: 0.9009351, b: 0.9962403, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -365,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2000008
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1871,7 +1871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.900002
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2469,7 +2469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.099991
+      value: 12.66
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2954,7 +2954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.400002
+      value: 13.94
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3823,6 +3823,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
   m_PrefabInstance: {fileID: 1015742881}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1031512339 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6239908767641560047, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+  m_PrefabInstance: {fileID: 469523378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1039688029
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,7 +4309,7 @@ Terrain:
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: db9ee0bdee3c7488a873409b0e4d7635, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
   m_BakeLightProbesForTrees: 0
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -4420,7 +4425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.300003
+      value: -8.89
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5091,10 +5096,26 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ac47f498555694763aedacb2bc47b95a, type: 2}
   - {fileID: 2100000, guid: 7283ec21157ee4d6c97c23a898d03ba9, type: 2}
   - {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
+  skyboxMaterial:
+  - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
+  - {fileID: 2100000, guid: 7e1667e44c58c4d1c83e13df9fb657a0, type: 2}
+  - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
+  - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
+  treeColor:
+  - {r: 0, g: 0.566844, b: 0.6509434, a: 1}
+  - {r: 1, g: 0.5696164, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.92064375, b: 0.8160377, a: 1}
+  - {r: 0, g: 0.7372549, b: 0.6509434, a: 1}
+  - {r: 0.72156864, g: 0.7176471, b: 0, a: 1}
+  - {r: 1, g: 0.53333336, b: 0, a: 1}
+  - {r: 1, g: 0.4392157, b: 0, a: 1}
   treeParent: {fileID: 171210082}
   terrain: {fileID: 1208975168}
   activeTree: {fileID: 0}
-  moneyPrt: {fileID: 0}
+  leavesBlue: {fileID: 2100000, guid: e282eb5eebe3de341a086a6867afa417, type: 2}
+  leavesOrange: {fileID: 2100000, guid: 4737c1a6c522cf143ab1bc6eca516382, type: 2}
+  moneyPrt: {fileID: 1031512339}
   numberParticles: 0
   endPosZ: 0
   curveAnimation:
@@ -5223,15 +5244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4948303356021124632, guid: 6219f518d7334d84e959c0950759ece7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 250.40002
+      value: 253.09
       objectReference: {fileID: 0}
     - target: {fileID: 4948303356021124632, guid: 6219f518d7334d84e959c0950759ece7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.400002
+      value: 28.74
       objectReference: {fileID: 0}
     - target: {fileID: 4948303356021124632, guid: 6219f518d7334d84e959c0950759ece7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 15.74
       objectReference: {fileID: 0}
     - target: {fileID: 4948303356021124632, guid: 6219f518d7334d84e959c0950759ece7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5775,7 +5796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.09999466
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: 02bf56d888bacdf44a441008b76dac89, type: 3}
       propertyPath: m_LocalPosition.z

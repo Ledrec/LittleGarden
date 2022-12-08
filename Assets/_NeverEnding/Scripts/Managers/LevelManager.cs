@@ -4,7 +4,9 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public GameObject[] trees;
+    public Material[] terrainsMaterial;
     public Transform treeParent;
+    public Terrain terrain;
     public Tree activeTree;
     public ParticleSystem moneyPrt;
     public int numberParticles;
@@ -22,6 +24,7 @@ public class LevelManager : MonoBehaviour
     {
         GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
         activeTree = go.GetComponent<Tree>();
+        ChangeScenario();
     }
 
     public void SellTree()
@@ -37,6 +40,11 @@ public class LevelManager : MonoBehaviour
         {
             StartCoroutine(SellTreeAnimation());
         }
+    }
+
+    public void ChangeScenario()
+    {
+        terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
     }
 
     IEnumerator SellTreeAnimation()

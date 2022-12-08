@@ -8909,7 +8909,8 @@ MonoBehaviour:
   upgrades:
   - upgradeType: 0
     currentLevel: 0
-    price: 5
+    basePrice: 2
+    scaleDivider: 0.9
     maxLevel: 23
     levelUpEvent:
       m_PersistentCalls:
@@ -8928,7 +8929,8 @@ MonoBehaviour:
           m_CallState: 2
   - upgradeType: 1
     currentLevel: 0
-    price: 5
+    basePrice: 5
+    scaleDivider: 6
     maxLevel: 54
     levelUpEvent:
       m_PersistentCalls:
@@ -8947,7 +8949,8 @@ MonoBehaviour:
           m_CallState: 2
   - upgradeType: 2
     currentLevel: 0
-    price: 5
+    basePrice: 5
+    scaleDivider: 1.5
     maxLevel: 20
     levelUpEvent:
       m_PersistentCalls:
@@ -8966,7 +8969,8 @@ MonoBehaviour:
           m_CallState: 2
   - upgradeType: 3
     currentLevel: 0
-    price: 5
+    basePrice: 5
+    scaleDivider: 1.5
     maxLevel: 54
     levelUpEvent:
       m_PersistentCalls:

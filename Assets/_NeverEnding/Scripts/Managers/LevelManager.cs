@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class LevelManager : MonoBehaviour
 {
     public GameObject[] trees;
-    public Transform treeParent;    
+    public Transform treeParent;
     public Tree activeTree;
     public ParticleSystem moneyPrt;
     public int numberParticles;
     public float endPosZ;
 
     public AnimationCurve curveAnimation;
+    public System.Numerics.BigInteger sellPrice;
+
+    private void Awake()
+    {
+        sellPrice = 1;
+    }
 
     public void InstantiateTree(int _id)
     {
@@ -106,4 +111,19 @@ public class LevelManager : MonoBehaviour
         return Quaternion.Euler(angles) * (point - pivot) + pivot;
     }
 
+    public void GoToNextLevel()
+    {
+        if(SaveManager.LoadCurrency(Currency.Regular)>=sellPrice)
+        {
+            UIManager.instance.fadeWindow.midAction = () => ChangeLevel();
+            UIManager.instance.fadeWindow.Show();
+        }
+    }
+
+    void ChangeLevel()
+    {
+        UIManager.instance.normalCurrencyCounter.ChangeCurrency(-sellPrice);
+        SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
+        SellTree();
+    }
 }

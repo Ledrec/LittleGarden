@@ -14,7 +14,7 @@ public class UpgradesManager : MonoBehaviour
             {
                 if(CanBuy(_type))
                 {
-                    UIManager.instance.normalCurrencyCounter.ChangeCurrency(-upgrades[i].price);
+                    UIManager.instance.normalCurrencyCounter.ChangeCurrency(-upgrades[i].basePrice);
                     upgrades[i].CurrentLevel++;
                     upgrades[i].levelUpEvent.Invoke();
                 }
@@ -40,7 +40,7 @@ public class UpgradesManager : MonoBehaviour
         {
             if (upgrades[i].upgradeType == _type)
             {
-                if (SaveManager.LoadCurrency(Currency.Regular) >= upgrades[i].price)
+                if (SaveManager.LoadCurrency(Currency.Regular) >= upgrades[i].basePrice)
                 {
                     return true;
                 }
@@ -174,7 +174,8 @@ public class Upgrade
             GameManager.instance.levelManager.activeTree.upgradesManager.StartCoroutine(GameManager.instance.levelManager.activeTree.upgradesManager.upgradeFeedback);
         }
     }
-    public int price;
+    public int basePrice;
+    public float scaleDivider;
     public int maxLevel;
     public UnityEngine.Events.UnityEvent levelUpEvent;
 
@@ -188,7 +189,14 @@ public class Upgrade
             yield return new WaitForEndOfFrame();
         }
     }
-
+    public float DivideLoop(int _totalIterations, int _currentIteration, float _currentValue)
+    {
+        if (_currentIteration < _totalIterations)
+        {
+            return DivideLoop(_totalIterations, _currentIteration + 1, _currentValue + (  _currentValue/scaleDivider));
+        }
+        return _currentValue;
+    }
 }
 public enum UpgradeType
 {

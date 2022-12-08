@@ -8,7 +8,7 @@ public class CPUMemTest : MonoBehaviour
     ProfilerRecorder systemMemoryRecorder;
     ProfilerRecorder gcMemoryRecorder;
     ProfilerRecorder mainThreadTimeRecorder;
-    ProfilerRecorder drawCallsRecorder;
+    ProfilerRecorder drawCallsCountRecorder;
 
     public TMPro.TextMeshProUGUI m_statsText;
     public TMPro.TextMeshProUGUI m_statsText2;
@@ -35,7 +35,7 @@ public class CPUMemTest : MonoBehaviour
         systemMemoryRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Memory, "System Used Memory");
         gcMemoryRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Memory, "GC Reserved Memory");
         mainThreadTimeRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Internal, "Main Thread", 15);
-        drawCallsRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Draw Calls Count");
+        drawCallsCountRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Draw Calls Count");
     }
 
     void OnDisable()
@@ -43,7 +43,7 @@ public class CPUMemTest : MonoBehaviour
         systemMemoryRecorder.Dispose();
         gcMemoryRecorder.Dispose();
         mainThreadTimeRecorder.Dispose();
-        drawCallsRecorder.Dispose();
+        drawCallsCountRecorder.Dispose();
     }
 
     void Update()
@@ -52,7 +52,7 @@ public class CPUMemTest : MonoBehaviour
         sb.AppendLine($"Frame Time: {GetRecorderFrameAverage(mainThreadTimeRecorder) * (1e-6f):F1} ms");
         sb.AppendLine($"GC Memory: {gcMemoryRecorder.LastValue / (1024 * 1024)} MB");
         sb.AppendLine($"System Memory: {systemMemoryRecorder.LastValue / (1024 * 1024)} MB");
-        sb.AppendLine($"Draw Calls: {drawCallsRecorder.LastValue}");
+        sb.AppendLine($"Draw Calls: {drawCallsCountRecorder.LastValue}");
         m_statsText.text = sb.ToString();
         m_statsText2.text = "MS: " + Application.targetFrameRate.ToString();
     }

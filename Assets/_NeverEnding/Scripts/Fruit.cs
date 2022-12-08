@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum fruitType { apple, orange, peach };
+
 public class Fruit : MonoBehaviour
 {
     [Header("Scaling")]
@@ -16,10 +18,16 @@ public class Fruit : MonoBehaviour
     public Animator flower;
     public float gravity = 9.8f;
 
+    [Header("FruitType")]
+    public fruitType typeFruit;
+    public GameObject appleObject;
+    public GameObject orangeObject;
+    public GameObject peachObject;
 
     private void OnEnable()
     {
         StartCoroutine(WaitForFlowerDeath());
+        ChooseFruit();
     }
 
 
@@ -78,6 +86,24 @@ public class Fruit : MonoBehaviour
 
             }
             yield return new WaitForEndOfFrame();
+        }
+    }
+
+    public void ChooseFruit()
+    {
+        switch (typeFruit)
+        {
+            case fruitType.apple:
+                appleObject.SetActive(true);
+                break;
+
+            case fruitType.orange:
+                orangeObject.SetActive(true);
+                break;
+
+            case fruitType.peach:
+                peachObject.SetActive(true);
+                break;
         }
     }
 

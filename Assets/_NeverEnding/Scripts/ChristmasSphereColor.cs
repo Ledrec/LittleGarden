@@ -17,6 +17,7 @@ public class ChristmasSphereColor : MonoBehaviour
         mpb.SetFloat("_hue", sphereColor);
         rend.SetPropertyBlock(mpb);
     }
+#if UNITY_EDITOR
 
     private void OnValidate()
     {
@@ -26,6 +27,7 @@ public class ChristmasSphereColor : MonoBehaviour
         mpb.SetFloat("_hue", sphereColor);
         rend.SetPropertyBlock(mpb);
     }
+#endif
 
     public void RandomColor()
     {

@@ -531,10 +531,13 @@ namespace Dreamteck.Splines
             spawned = new ObjectControl[0];
         }
 
+#if UNITY_EDITOR
+
         private void OnValidate()
         {
             if (_spawnCount < 0) _spawnCount = 0;
         }
+#endif
 
         private void Remove()
         {

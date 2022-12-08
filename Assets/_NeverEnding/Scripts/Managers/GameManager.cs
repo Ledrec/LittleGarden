@@ -42,6 +42,5 @@ public class GameManager : MonoBehaviour
     {
         targetMovement -= tapSpeedDecrease * Time.deltaTime;
         targetMovement = Mathf.Clamp(targetMovement, tapSpeedLimits.x, tapSpeedLimits.y);
-
     }
 }

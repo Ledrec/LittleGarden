@@ -17,6 +17,7 @@ public class Tree : MonoBehaviour
     public float percentToSell;
     int grownBranches;
     public bool isChristmasPine;
+    
     void Update()
     {
         GameManager.instance.gameplayCameraTransition.SetPosition((float)mainBranch.GetGrowthPercent());
@@ -41,17 +42,17 @@ public class Tree : MonoBehaviour
         }
     }
    
-    public BigInteger GetSellPrice()
+    public virtual BigInteger GetSellPrice()
     {
-        int price = (int)(mainBranch.baseSellPrice*mainBranch.GetGrowthPercent());
-        for (int i = 0; i < allSubBranches.Length; i++)
-        {
-            price += (int)(allSubBranches[i].baseSellPrice * allSubBranches[i].GetGrowthPercent()*mainBranch.GetGrowthPercent())+allBranches[i].GetActiveLeaves();
-        }
+        BigInteger price = (BigInteger)(mainBranch.baseSellPrice*mainBranch.GetGrowthPercent());
+        
+        price += (BigInteger)(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
+
+        price *= (BigInteger)(1+(SaveManager.LoadCurrentLevel()*0.1));
         return price;
     }
 
-    public int GetNumberOfBranches()
+    public virtual int GetNumberOfBranches()
     {
         int temp = 0;
         for (int i = 0; i < allBranches.Length; i++)
@@ -63,7 +64,7 @@ public class Tree : MonoBehaviour
         }
         return temp;
     }
-    public int GetNumberOfLeaves()
+    public virtual int GetNumberOfLeaves()
     {
         int temp = 0;
         for (int i = 0; i < allBranches.Length; i++)

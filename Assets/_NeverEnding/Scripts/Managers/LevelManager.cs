@@ -11,17 +11,18 @@ public class LevelManager : MonoBehaviour
     public float endPosZ;
 
     public AnimationCurve curveAnimation;
-    public System.Numerics.BigInteger sellPrice;
+    public System.Numerics.BigInteger changeTreePrice;
 
     private void Awake()
     {
-        sellPrice = 1;
     }
 
     public void InstantiateTree(int _id)
     {
         GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
         activeTree = go.GetComponent<Tree>();
+        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel()));
+        UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
     }
 
     public void SellTree()
@@ -113,7 +114,7 @@ public class LevelManager : MonoBehaviour
 
     public void GoToNextLevel()
     {
-        if(SaveManager.LoadCurrency(Currency.Regular)>=sellPrice)
+        if(SaveManager.LoadCurrency(Currency.Regular)>=changeTreePrice)
         {
             UIManager.instance.fadeWindow.midAction = () => ChangeLevel();
             UIManager.instance.fadeWindow.Show();
@@ -122,7 +123,7 @@ public class LevelManager : MonoBehaviour
 
     void ChangeLevel()
     {
-        UIManager.instance.normalCurrencyCounter.ChangeCurrency(-sellPrice);
+        UIManager.instance.normalCurrencyCounter.ChangeCurrency(-changeTreePrice);
         SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
         SellTree();
     }

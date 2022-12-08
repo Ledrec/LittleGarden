@@ -149,13 +149,16 @@ public class Branch : MonoBehaviour
     
     void IdleProfit()
     {
-        if(GetGrowthPercent()>=percentToIdle)
+        if(!isSubBranch)
         {
-            rewardTimer += Time.deltaTime;
-            if(rewardTimer >= timeToIdleReward)
+            if (GetGrowthPercent() >= percentToIdle)
             {
-                rewardTimer-=timeToIdleReward;
-                IdleReward();
+                rewardTimer += Time.deltaTime;
+                if (rewardTimer >= timeToIdleReward)
+                {
+                    rewardTimer -= timeToIdleReward;
+                    IdleReward();
+                }
             }
         }
     }
@@ -185,4 +188,5 @@ public class Branch : MonoBehaviour
         }
         return temp;
     }
+
 }

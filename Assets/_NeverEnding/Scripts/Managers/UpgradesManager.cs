@@ -14,7 +14,7 @@ public class UpgradesManager : MonoBehaviour
             {
                 if(CanBuy(_type))
                 {
-                    UIManager.instance.normalCurrencyCounter.ChangeCurrency(-upgrades[i].basePrice);
+                    UIManager.instance.normalCurrencyCounter.ChangeCurrency(-Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].CurrentLevel, 0, upgrades[i].basePrice)));
                     upgrades[i].CurrentLevel++;
                     upgrades[i].levelUpEvent.Invoke();
                 }
@@ -40,7 +40,7 @@ public class UpgradesManager : MonoBehaviour
         {
             if (upgrades[i].upgradeType == _type)
             {
-                if (SaveManager.LoadCurrency(Currency.Regular) >= upgrades[i].basePrice)
+                if (SaveManager.LoadCurrency(Currency.Regular) >= Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].CurrentLevel, 0, upgrades[i].basePrice)))
                 {
                     return true;
                 }
@@ -49,7 +49,7 @@ public class UpgradesManager : MonoBehaviour
         }
         return false;
     }
-    public bool CanAddBranch()
+    public virtual bool CanAddBranch()
     {
         for(int i=0; i<GameManager.instance.levelManager.activeTree.allSubBranches.Length; i++)
         {
@@ -60,7 +60,7 @@ public class UpgradesManager : MonoBehaviour
         }
         return false;
     }
-    public bool CanAddLeaf()
+    public virtual bool CanAddLeaf()
     {
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
         {
@@ -75,7 +75,7 @@ public class UpgradesManager : MonoBehaviour
         }
         return false;
     }
-    public bool CanAddFruit()
+    public virtual bool CanAddFruit()
     {
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
         {
@@ -93,7 +93,7 @@ public class UpgradesManager : MonoBehaviour
         return false;
     }
 
-    public void AddBranch()
+    public virtual void AddBranch()
     {
         if(CanAddBranch())
         {
@@ -108,7 +108,7 @@ public class UpgradesManager : MonoBehaviour
         }
     }
 
-    public void AddLeaf()
+    public virtual void AddLeaf()
     {
         bool done = false;
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
@@ -128,7 +128,7 @@ public class UpgradesManager : MonoBehaviour
             }
         }
     }
-    public void AddFruit()
+    public virtual void AddFruit()
     {
         bool done = false;
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
@@ -176,6 +176,7 @@ public class Upgrade
     }
     public int basePrice;
     public float scaleDivider;
+    public float scaleMultiplier;
     public int maxLevel;
     public UnityEngine.Events.UnityEvent levelUpEvent;
 
@@ -194,6 +195,14 @@ public class Upgrade
         if (_currentIteration < _totalIterations)
         {
             return DivideLoop(_totalIterations, _currentIteration + 1, _currentValue + (  _currentValue/scaleDivider));
+        }
+        return _currentValue;
+    }
+    public float MultiplyLoop(int _totalIterations, int _currentIteration, float _currentValue)
+    {
+        if (_currentIteration < _totalIterations)
+        {
+            return MultiplyLoop(_totalIterations, _currentIteration + 1, _currentValue*scaleMultiplier);
         }
         return _currentValue;
     }

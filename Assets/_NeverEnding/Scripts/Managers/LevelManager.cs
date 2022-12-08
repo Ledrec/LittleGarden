@@ -45,6 +45,10 @@ public class LevelManager : MonoBehaviour
         {
             StartCoroutine(SellTreeAnimation());
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            UIManager.instance.normalCurrencyCounter.ChangeCurrency(new System.Numerics.BigInteger(10000), 0);
+        }
     }
 
     public void ChangeScenario()

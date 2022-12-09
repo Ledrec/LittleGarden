@@ -55,7 +55,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ChangeSkyHeight: -0.2
+    - _ChangeSkyHeight: 0
     - _EnableFog: 0
     - _EnableRotation: 1
     - _Exposure: 1

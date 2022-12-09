@@ -12,7 +12,6 @@ Shader "SimpleColorFresnel"
 		_Color2("Color2", Color) = (0,0,0,0)
 		_MinNew("MinNew", Float) = 0
 		_MaxNew("MaxNew", Float) = 0
-		_ShadowIntensity("ShadowIntensity", Float) = 0
 		_WindRepetitions("WindRepetitions", Float) = 0
 		[ASEEnd]_shineIntensity("shineIntensity", Range( 0 , 1)) = 0
 
@@ -247,7 +246,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -260,7 +258,8 @@ Shader "SimpleColorFresnel"
 			#endif
 			CBUFFER_END
 
-			
+			float ShadowIntensity;
+
 
 			float3 ASEIndirectDiffuse( float2 uvStaticLightmap, float3 normalWS )
 			{
@@ -471,7 +470,7 @@ Shader "SimpleColorFresnel"
 				MixRealtimeAndBakedGI(ase_mainLight, ase_worldNormal, bakedGI93, half4(0,0,0,0));
 				float ase_lightAtten = 0;
 				ase_lightAtten = ase_mainLight.distanceAttenuation * ase_mainLight.shadowAttenuation;
-				float3 clampResult102 = clamp( ( bakedGI93 + ase_lightAtten + ( 1.0 - _ShadowIntensity ) ) , float3( 0,0,0 ) , float3( 1,1,1 ) );
+				float3 clampResult102 = clamp( ( bakedGI93 + ase_lightAtten + ( 1.0 - ShadowIntensity ) ) , float3( 0,0,0 ) , float3( 1,1,1 ) );
 				float4 temp_output_98_0 = ( _MainLightColor * float4( clampResult102 , 0.0 ) );
 				float2 texCoord103 = IN.ase_texcoord5.xy * float2( 1,1 ) + float2( 0,0 );
 				float2 appendResult140 = (float2(texCoord103.x , ( texCoord103.y * 5 )));
@@ -575,7 +574,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -829,7 +827,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -1057,7 +1054,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -1270,7 +1266,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -1488,7 +1483,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -1711,7 +1705,6 @@ Shader "SimpleColorFresnel"
 			float _MaxNew;
 			float _Scale;
 			float _Power;
-			float _ShadowIntensity;
 			float _WindRepetitions;
 			float _shineIntensity;
 			#ifdef ASE_TESSELLATION
@@ -1914,7 +1907,6 @@ Node;AmplifyShaderEditor.SimpleMultiplyOpNode;98;-106.6517,308.0167;Inherit;Fals
 Node;AmplifyShaderEditor.LightAttenuation;81;-702.7229,541.9309;Inherit;True;0;1;FLOAT;0
 Node;AmplifyShaderEditor.IndirectDiffuseLighting;93;-703.1871,432.6251;Inherit;False;Tangent;1;0;FLOAT3;0,0,1;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;96;-430.1968,432.6252;Inherit;False;3;3;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.RangedFloatNode;100;-646.9828,751.7983;Inherit;False;Property;_ShadowIntensity;ShadowIntensity;8;0;Create;True;0;0;0;False;0;False;0;0.9;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;101;-457.8839,712.4479;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ClampOpNode;102;-265.5056,395.4611;Inherit;False;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;1,1,1;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;118;334.1265,-11.6041;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
@@ -1932,15 +1924,16 @@ Node;AmplifyShaderEditor.PiNode;126;117.7912,-948.5434;Inherit;False;1;0;FLOAT;1
 Node;AmplifyShaderEditor.ClampOpNode;128;619.7278,-1037.871;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TFHCRemapNode;129;679.2797,-937.9089;Inherit;True;5;0;FLOAT;0;False;1;FLOAT;0.7;False;2;FLOAT;1;False;3;FLOAT;0;False;4;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ClampOpNode;130;790.0701,-642.277;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;107;-218.927,-510.7419;Inherit;False;Property;_WindRepetitions;WindRepetitions;9;0;Create;True;0;0;0;False;0;False;0;50;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;107;-218.927,-510.7419;Inherit;False;Property;_WindRepetitions;WindRepetitions;8;0;Create;True;0;0;0;False;0;False;0;50;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.NoiseGeneratorNode;114;-33.60366,-998.315;Inherit;True;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;100;False;1;FLOAT;0
 Node;AmplifyShaderEditor.DynamicAppendNode;140;-155.29,-1040.245;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.ScaleNode;139;-208.555,-944.7696;Inherit;False;5;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;121;273.4156,-200.2644;Inherit;False;Property;_shineIntensity;shineIntensity;10;0;Create;True;0;0;0;False;0;False;0;0.054;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;121;273.4156,-200.2644;Inherit;False;Property;_shineIntensity;shineIntensity;9;0;Create;True;0;0;0;False;0;False;0;0.054;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.NegateNode;113;-108.1198,-619.475;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;120;669.6953,-220.748;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ClampOpNode;116;539.6887,-686.2464;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;112;-277.291,-623.066;Inherit;False;1;0;FLOAT;0.0125;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;100;-646.9828,751.7983;Inherit;False;Global;ShadowIntensity;ShadowIntensity;8;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 WireConnection;14;0;15;0
 WireConnection;14;1;11;0
 WireConnection;15;0;10;0
@@ -1997,4 +1990,4 @@ WireConnection;120;1;121;0
 WireConnection;120;2;130;0
 WireConnection;116;0;117;0
 ASEEND*/
-//CHKSM=0DD22A64485B4C6A039AF6B786B4B325DB516F9C
+//CHKSM=CEF61F538604D873BEA4D84F99E350ED6A3104BD

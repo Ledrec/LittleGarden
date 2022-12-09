@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     public ParticleSystem moneyPrt;
     public int numberParticles;
     public float endPosZ;
+    public float shadowTest;
 
     public AnimationCurve curveAnimation;
     public System.Numerics.BigInteger changeTreePrice;
@@ -28,7 +29,7 @@ public class LevelManager : MonoBehaviour
         GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
         activeTree = go.GetComponent<Tree>();
         changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel()));
-        UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
+        //UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
         ChangeScenario();
     }
 
@@ -53,6 +54,7 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeScenario()
     {
+        Shader.SetGlobalFloat("ShadowIntensity", SaveManager.LoadCurrentLevel() == 1 ? .33f: .8f);
         RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
@@ -78,25 +80,6 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         ParticleSystem.Particle[] particles = new ParticleSystem.Particle[moneyPrt.particleCount];
         moneyPrt.GetParticles(particles);
-        //float eTime = 0;
-        //while (eTime < 2.0f)
-        //{
-        //    eTime += Time.deltaTime;
-        //    for (int i = 0; i < particles.Length; i++)
-        //    {
-        //        Vector3 startPos = particles[i].position;
-
-        //        particles[i].position = RotatePointAroundPivot(startPos, moneyPrt.transform.position, new Vector3(0, 0, Mathf.Lerp(0, -360.0f , curveAnimation.Evaluate(eTime / 2.0f)) * (Mathf.PI / 180.0f)));
-        //    }
-        //    moneyPrt.SetParticles(particles);
-        //    yield return new WaitForEndOfFrame();
-        //}
-        //eTime = 0;
-        //List<Vector3> startPositions = new();
-        //for (int i = 0; i < particles.Length; i++)
-        //{
-        //    startPositions.Add(particles[i].position);
-        //}
         Vector3 endPos = Camera.main.ScreenToWorldPoint(UIManager.instance.normalCurrencyCounter.transform.position);
         endPos.z = endPosZ;
         float timeForParticleToArrive = .5f;
@@ -145,5 +128,11 @@ public class LevelManager : MonoBehaviour
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(-changeTreePrice);
         SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
         SellTree();
+    }
+
+    private void OnValidate()
+    {
+        Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
+
     }
 }

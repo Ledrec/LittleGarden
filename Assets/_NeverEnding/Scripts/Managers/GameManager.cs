@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     {
         levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
 
-        if (SaveManager.LoadOnlyTutorial() == 0)  //  Viste el banner del tutorial
+        if(SaveManager.LoadOnlyTutorial() == 0)  //  Viste el banner del tutorial
         {
             Invoke("CallTutorial", 1);
             SaveManager.ChangeOnlyTutorial(1);

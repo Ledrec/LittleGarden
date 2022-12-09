@@ -6,6 +6,9 @@ using Lean.Touch;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    [HideInInspector]public bool appearButtonTutorial;
+
     public LevelManager levelManager;
     public CameraTransition gameplayCameraTransition;
     [Header("Taps")]
@@ -24,11 +27,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
-    }
-
-    private void Start()
-    {
+        appearButtonTutorial = false;
         levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
 
         if(SaveManager.LoadOnlyTutorial() == 0)  //  Viste el banner del tutorial

@@ -72,8 +72,22 @@ public class Branch : MonoBehaviour
 
     public double GetGrowthPercent()
     {
-        if(followingNodes.Count>0)
+        if(followingNodes.Count > 0)
         {
+            if(!isSubBranch)
+            {
+                //Debug.Log("Valor: " + followingNodes[0].GetPercent());
+
+                if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
+                {
+                    if(followingNodes[0].GetPercent() >= 0.15f)
+                    {
+                        GameManager.instance.appearButtonTutorial = true;
+                        UIManager.instance.CallThirdtTutorial();
+                    }
+                }
+            }
+
             return followingNodes[0].GetPercent();
         }
         else

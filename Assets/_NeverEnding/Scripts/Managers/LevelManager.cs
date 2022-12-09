@@ -36,9 +36,13 @@ public class LevelManager : MonoBehaviour
 
     public void SellTree()
     {
+        if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
+        {
+            SaveManager.ChangeOnlyTutorial(3);
+            UIManager.instance.CloseThirdTutorial();
+        }
 
         StartCoroutine(SellTreeAnimation());
-
     }
 
     private void Update()

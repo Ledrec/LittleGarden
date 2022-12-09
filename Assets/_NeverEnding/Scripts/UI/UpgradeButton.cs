@@ -46,6 +46,14 @@ public class UpgradeButton : MonoBehaviour
             buttonGroup.alpha = 1f;
             buttonGroup.interactable = true;
             button.interactable = true;
+
+            if(upgradeType == UpgradeType.AddBranch)
+            {
+                if(SaveManager.LoadOnlyTutorial() == 1)  //  Te alcanza para tu primera ramita
+                {
+                    UIManager.instance.CallSecondtTutorial();
+                }
+            }
         }
         else
         {

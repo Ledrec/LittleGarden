@@ -90,7 +90,7 @@ public class Tree : MonoBehaviour
             for (int k = 0; k < allBranches[i].rendererComputer.pointCount; k++)
             {
                 SplinePoint point = allBranches[i].rendererComputer.GetPoint(k);
-                point.size = .3f;
+                point.size = 0.3f * editorGrow;
                 allBranches[i].rendererComputer.SetPoint(k, point);
             }
             for (int j = 0; j < allBranches[i].followingNodes.Count; j++)

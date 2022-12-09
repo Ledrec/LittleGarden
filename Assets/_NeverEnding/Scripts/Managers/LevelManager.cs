@@ -55,7 +55,7 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeScenario()
     {
-        Shader.SetGlobalFloat("ShadowIntensity", SaveManager.LoadCurrentLevel() == 1 ? .33f: .8f);
+        Shader.SetGlobalFloat("ShadowIntensity", /*SaveManager.LoadCurrentLevel() == 1 ? .33f:*/ .8f);
         RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
@@ -131,9 +131,9 @@ public class LevelManager : MonoBehaviour
         SellTree();
     }
 
-    private void OnValidate()
-    {
-        Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
+    //private void OnValidate()
+    //{
+    //    Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
 
-    }
+    //}
 }

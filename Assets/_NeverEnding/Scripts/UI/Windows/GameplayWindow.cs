@@ -7,6 +7,7 @@ public class GameplayWindow : Window
 {
     [Header("Components")]
     public UpgradeButton[] upgradeButtons;
+    public UpgradeButton[] christmasUpgradeButtons;
     public SellButton sellButton;
     public TextMeshProUGUI txtNextLevelPrice;
     private void Start()
@@ -85,5 +86,12 @@ public class GameplayWindow : Window
         return null;
     }
 
+    public void SetChristmasButtons(bool _isChristmas)
+    {
+        GetUpgradeButton(UpgradeType.AddBranch).txtUpgradeName.text = _isChristmas ? "ADD LIGHT" : "ADD BRANCH";
+        GetUpgradeButton(UpgradeType.AddBranch).background.sprite = _isChristmas ? GetUpgradeButton(UpgradeType.AddBranch).christmasSprite : GetUpgradeButton(UpgradeType.AddBranch).normalSprite;
+        GetUpgradeButton(UpgradeType.AddFruit).txtUpgradeName.text = _isChristmas ? "ADD SPHERE" : "ADD FRUIT";
+        GetUpgradeButton(UpgradeType.AddFruit).background.sprite = _isChristmas ? GetUpgradeButton(UpgradeType.AddFruit).christmasSprite : GetUpgradeButton(UpgradeType.AddFruit).normalSprite;
 
+    }
 }

@@ -108,7 +108,6 @@ public class SaveManager
     #region LevelStates
     public static void SaveCurrentLevel(int _level)
     {
-
         PlayerPrefs.SetInt("CurrentLevel", _level);
     }
     public static int LoadCurrentLevel()
@@ -118,6 +117,22 @@ public class SaveManager
             SaveCurrentLevel(0);
         }
         return PlayerPrefs.GetInt("CurrentLevel");
+    }
+    #endregion
+
+    #region Upgrades
+    public static void SaveUpgradeLevel(UpgradeType _type, int _level)
+    {
+        PlayerPrefs.SetInt("Upgrade"+_type+"Level", _level);
+
+    }
+    public static int LoadUpgradeLevel(UpgradeType _type)
+    {
+        if (!PlayerPrefs.HasKey("Upgrade" + _type + "Level"))
+        {
+            SaveUpgradeLevel(_type,0);
+        }
+        return PlayerPrefs.GetInt("Upgrade" + _type + "Level");
     }
     #endregion
 

@@ -6,6 +6,19 @@ public class UpgradesManager : MonoBehaviour
 {
     public List<Upgrade> upgrades = new List<Upgrade>();
     public IEnumerator upgradeFeedback;
+
+    private void Start()
+    {
+        LoadUpgradeLevels();
+    }
+
+    public void LoadUpgradeLevels()
+    {
+        for(int i = 0; i < upgrades.Count; i++)
+        {
+            upgrades[i].LoadUpgradeLevel();
+        }
+    }
     public void Upgrade(UpgradeType _type)
     {
         for(int i =0; i<upgrades.Count; i++)
@@ -16,6 +29,7 @@ public class UpgradesManager : MonoBehaviour
                 {
                     UIManager.instance.normalCurrencyCounter.ChangeCurrency(-Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].CurrentLevel, 0, upgrades[i].basePrice)));
                     upgrades[i].CurrentLevel++;
+                    SaveManager.SaveUpgradeLevel(upgrades[i].upgradeType, upgrades[i].CurrentLevel);
                     upgrades[i].levelUpEvent.Invoke();
                 }
             }
@@ -190,6 +204,12 @@ public class Upgrade
             yield return new WaitForEndOfFrame();
         }
     }
+
+    public void LoadUpgradeLevel()
+    {
+        currentLevel = SaveManager.LoadUpgradeLevel(upgradeType);
+    }
+
     public float DivideLoop(int _totalIterations, int _currentIteration, float _currentValue)
     {
         if (_currentIteration < _totalIterations)

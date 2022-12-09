@@ -29,6 +29,7 @@ public class LevelManager : MonoBehaviour
         activeTree = go.GetComponent<Tree>();
         changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel()));
         UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
+        UIManager.instance.gameplayWindow.SetChristmasButtons(activeTree.isChristmasPine);
         ChangeScenario();
     }
 

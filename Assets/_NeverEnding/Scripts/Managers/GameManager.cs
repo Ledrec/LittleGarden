@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     {
         //SaveManager.SaveCurrentLevel(3);
         instance = this;
+    }
+
+    private void Start()
+    {
         levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
     }
 

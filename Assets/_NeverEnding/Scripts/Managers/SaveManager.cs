@@ -21,12 +21,30 @@ public class SaveManager
     {
         if(_isDone)
         {
-            PlayerPrefs.SetInt(_tutorial, 1);
+            PlayerPrefs.SetInt(_tutorial, 3);
         }
         else
         {
             PlayerPrefs.SetInt(_tutorial, 0);
         }
+    }
+
+    public static void StartOnlyTutorial()
+    {
+        if(!PlayerPrefs.HasKey("OnlyTutorial"))
+        {
+            PlayerPrefs.SetInt("OnlyTutorial", 0);
+        }
+    }
+
+    public static void ChangeOnlyTutorial(int _value)
+    {
+        PlayerPrefs.SetInt("OnlyTutorial", _value);
+    }
+
+    public static int LoadOnlyTutorial()
+    {
+        return PlayerPrefs.GetInt("OnlyTutorial");
     }
 
     /// <summary>
@@ -36,7 +54,7 @@ public class SaveManager
     /// <returns></returns>
     public static bool IsTutorialDone(string _tutorial)
     {
-        return PlayerPrefs.GetInt(_tutorial, 0) == 1 ? true : false;
+        return PlayerPrefs.GetInt(_tutorial, 0) == 3 ? true : false;
     }
     #endregion
 

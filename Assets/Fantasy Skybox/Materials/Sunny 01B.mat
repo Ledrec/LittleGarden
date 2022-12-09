@@ -55,14 +55,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ChangeSkyHeight: -0.2
+    - _ChangeSkyHeight: 0
     - _EnableFog: 0
     - _EnableRotation: 1
     - _Exposure: 1
     - _FogFill: 0.5
     - _FogHeight: 1
     - _FogSmoothness: 0.01
-    - _Rotation: 115
+    - _Rotation: 143
     - _RotationSpeed: 0.5
     - __dirty: 0
     m_Colors:

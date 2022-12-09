@@ -3,11 +3,14 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    readonly int showAnimation = Animator.StringToHash("isShown");
+
     public static UIManager instance;
     [Header("Windows")]
     public GameplayWindow gameplayWindow;
     public FadeWindow fadeWindow;
     public ScoreWindow scoreWindow;
+    public Animator touchScreen;
     [Header("Currency")]
     public CurrencyCounter normalCurrencyCounter;
     public ParticleMod normalCurrencyParticles;
@@ -24,5 +27,15 @@ public class UIManager : MonoBehaviour
         gameplayWindow.Show();
         scoreWindow.Hide();
         normalCurrencyCounter.Show();
+    }
+
+    public void CallFirstTutorial()
+    {
+        touchScreen.SetBool(showAnimation, true);
+    }
+
+    public void CloseFirstTutorial()
+    {
+        touchScreen.SetBool(showAnimation, false);
     }
 }

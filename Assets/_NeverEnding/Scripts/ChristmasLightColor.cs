@@ -15,8 +15,11 @@ public class ChristmasLightColor : MonoBehaviour
         rend.GetPropertyBlock(mpb);
         mpb.SetColor("_hue", sphereColor);
         rend.SetPropertyBlock(mpb);
+        GetComponent<Animator>().Play("GlowIdle", 0, Random.Range(0.0f, 1.0f));
     }
 
+
+#if UNITY_EDITOR
     private void OnValidate()
     {
         rend = GetComponent<Renderer>();
@@ -25,6 +28,7 @@ public class ChristmasLightColor : MonoBehaviour
         mpb.SetColor("_hue", sphereColor);
         rend.SetPropertyBlock(mpb);
     }
+#endif
 
     public void RandomColor()
     {

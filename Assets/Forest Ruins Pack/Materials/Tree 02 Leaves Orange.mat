@@ -118,7 +118,7 @@ Material:
     - _alphaClip: 0.6
     - _threshold: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.92064375, b: 0.8160377, a: 1}
+    - _Color: {r: 0.72156864, g: 0.7176471, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}

@@ -17,7 +17,9 @@ public class Tree : MonoBehaviour
     public float percentToSell;
     int grownBranches;
     public bool isChristmasPine;
-    
+
+    public float editorGrow;
+
     void Update()
     {
         GameManager.instance.gameplayCameraTransition.SetPosition((float)mainBranch.GetGrowthPercent());
@@ -79,4 +81,24 @@ public class Tree : MonoBehaviour
         }
         return temp;
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        for (int i = 0; i < allBranches.Length; i++)
+        {
+            for (int k = 0; k < allBranches[i].rendererComputer.pointCount; k++)
+            {
+                SplinePoint point = allBranches[i].rendererComputer.GetPoint(k);
+                point.size = .3f;
+                allBranches[i].rendererComputer.SetPoint(k, point);
+            }
+            for (int j = 0; j < allBranches[i].followingNodes.Count; j++)
+            {
+                allBranches[i].followingNodes[j].Restart(editorGrow);
+            }
+        }
+    }
+#endif
+
 }

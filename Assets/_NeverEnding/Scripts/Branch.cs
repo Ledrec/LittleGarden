@@ -164,16 +164,9 @@ public class Branch : MonoBehaviour
     }
     void IdleReward()
     {
-        int leafReward=0;
-        for(int i=0; i<leaves.Count; i++)
-        {
-            if(leaves[i].isDone)
-            {
-                leafReward += leafIdleProfitBonus;
-            }
-        }
+        
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(baseIdleProfit+leafIdleProfitBonus);
-        IncomeMessages.AddMessage(transform.position + profitMessageOffset, baseIdleProfit + leafIdleProfitBonus);
+        IncomeMessages.AddMessage(transform.position + profitMessageOffset, (System.Numerics.BigInteger)(baseIdleProfit * GetGrowthPercent()));
     }
 
     public int GetActiveLeaves()

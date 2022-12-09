@@ -62,9 +62,10 @@ MonoBehaviour:
   button: {fileID: 627943312375516044}
   anmtr: {fileID: 0}
   txtCost: {fileID: 5321351433707034799}
+  txtUpgradeName: {fileID: 2233964812596236771}
   background: {fileID: 163371720229696135}
-  sprMaxLevel: {fileID: 21300000, guid: 5d6e794014e88ce4d9b60bfa7773beac, type: 3}
-  sprNotMaxLevel: {fileID: 21300000, guid: 5d6e794014e88ce4d9b60bfa7773beac, type: 3}
+  normalSprite: {fileID: 21300000, guid: 5d6e794014e88ce4d9b60bfa7773beac, type: 3}
+  christmasSprite: {fileID: 21300000, guid: 5a6e180322384a846ae42ef8f518c02d, type: 3}
   buttonGroup: {fileID: 3738833319875537910}
 --- !u!222 &1533708802535209284
 CanvasRenderer:

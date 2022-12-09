@@ -125,7 +125,7 @@ Material:
     - _Scale: 1
     - _ShadowIntensity: 0.8
     - _ShineIntensity: 0.3
-    - _ShineWidth: 2
+    - _ShineWidth: 5
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

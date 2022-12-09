@@ -43,11 +43,11 @@ public class Tree : MonoBehaviour
             }
         }
     }
-   
+
     public virtual BigInteger GetSellPrice()
     {
         BigInteger price = (BigInteger)(mainBranch.baseSellPrice*mainBranch.GetGrowthPercent());
-        
+
         price += (BigInteger)(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
 
         price *= (BigInteger)(1+(SaveManager.LoadCurrentLevel()*0.1));

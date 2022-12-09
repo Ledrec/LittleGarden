@@ -20,7 +20,7 @@ public class LevelManager : MonoBehaviour
     public AnimationCurve curveAnimation;
     public System.Numerics.BigInteger changeTreePrice;
 
-   
+
 
  private void Update()
     {
@@ -54,10 +54,10 @@ public class LevelManager : MonoBehaviour
 
         StartCoroutine(SellTreeAnimation());
     }
-  
+
     public void ChangeScenario()
     {
-        Shader.SetGlobalFloat("ShadowIntensity", SaveManager.LoadCurrentLevel() == 1 ? .33f: .8f);
+        Shader.SetGlobalFloat("ShadowIntensity", /*SaveManager.LoadCurrentLevel() == 1 ? .33f:*/ .8f);
         RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
@@ -145,5 +145,5 @@ public class LevelManager : MonoBehaviour
     {
         Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
 
-    }
+    //}
 }

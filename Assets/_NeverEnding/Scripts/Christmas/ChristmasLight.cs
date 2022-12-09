@@ -7,6 +7,7 @@ public class ChristmasLight : MonoBehaviour
     public Leaf leaf;
     public bool isActive;
     public bool isDone;
+
     public bool CanGrow
     {
         get
@@ -24,5 +25,11 @@ public class ChristmasLight : MonoBehaviour
         isDone = _isActive;
         GetComponent<MeshRenderer>().enabled= _isActive;
         transform.GetChild(0).GetComponent<MeshRenderer>().enabled= _isActive;
+        MaterialPropertyBlock mpb = new MaterialPropertyBlock();
+        GetComponent<Renderer>().GetPropertyBlock(mpb);
+        //mpb.SetColor("_ColorGradient", transform.GetChild(0).GetComponent<ChristmasLightColor>().sphereColor.ToHSV());
+        GetComponent<Renderer>().SetPropertyBlock(mpb);
+
+
     }
 }

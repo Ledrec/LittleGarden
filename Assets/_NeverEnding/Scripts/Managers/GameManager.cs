@@ -23,6 +23,17 @@ public class GameManager : MonoBehaviour
         levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
     }
 
+    private void Start()
+    {
+        levelManager.InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(), levelManager.trees.Length));
+
+        if (SaveManager.LoadOnlyTutorial() == 0)  //  Viste el banner del tutorial
+        {
+            Invoke("CallTutorial", 1);
+            SaveManager.ChangeOnlyTutorial(1);
+        }
+    }
+
     private void OnEnable()
     {
         LeanTouch.OnFingerDown += OnFingerDown;
@@ -33,10 +44,20 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void CallTutorial()
+    {
+        UIManager.instance.CallFirstTutorial();
+    }
+
     private void OnFingerDown(LeanFinger _finger)
     {
         targetMovement += tapSpeedIncrease;
         targetMovement = Mathf.Clamp(targetMovement, tapSpeedLimits.x, tapSpeedLimits.y);
+
+        if (SaveManager.LoadOnlyTutorial() == 1)  //  Viste el banner del tutorial
+        {
+            UIManager.instance.CloseFirstTutorial();
+        }
     }
     private void Update()
     {

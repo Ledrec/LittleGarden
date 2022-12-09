@@ -1675,6 +1675,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2023839091}
     m_Modifications:
+    - target: {fileID: 921238790879702896, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1126446609760736485, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1706,6 +1710,32 @@ PrefabInstance:
     - target: {fileID: 2427998652317580828, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468496803245813140, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219445494259627156, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_text
+      value: 'TAP TO
+
+        SPEED UP'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219445494259627156, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219445494259627156, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219445494259627156, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219445494259627156, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3985341509680881933, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_Pivot.x

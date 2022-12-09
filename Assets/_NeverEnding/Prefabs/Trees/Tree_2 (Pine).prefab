@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1954754913961121490}
   - component: {fileID: 8998855636642358543}
   - component: {fileID: 1824507184065567456}
-  - component: {fileID: 2361202513386520124}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -98,26 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.9407873, g: 0, b: 1, a: 1}
---- !u!95 &2361202513386520124
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91864081205442140}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &236694659454092790
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +679,6 @@ GameObject:
   - component: {fileID: 1411294680657852194}
   - component: {fileID: 3986224264205937307}
   - component: {fileID: 1389641819930898931}
-  - component: {fileID: 2386705790500091967}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -786,26 +764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.23557949, a: 1}
---- !u!95 &2386705790500091967
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571084786552262310}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &629276215477466673
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +776,6 @@ GameObject:
   - component: {fileID: 8198107223898485858}
   - component: {fileID: 6534939136873393537}
   - component: {fileID: 2810862990470277913}
-  - component: {fileID: 2337990468330793014}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -904,26 +861,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.7096844, a: 1}
---- !u!95 &2337990468330793014
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629276215477466673}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &726790157571508456
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +873,6 @@ GameObject:
   - component: {fileID: 8715201892406202764}
   - component: {fileID: 8036086542641664273}
   - component: {fileID: 4793241916390002317}
-  - component: {fileID: 7433603157753315328}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -1022,26 +958,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.36417532, a: 1}
---- !u!95 &7433603157753315328
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726790157571508456}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &765388712370215539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1540,6 @@ GameObject:
   - component: {fileID: 477777204624094533}
   - component: {fileID: 164517660170279159}
   - component: {fileID: 4046491143663977436}
-  - component: {fileID: 2940310063411866930}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -1710,26 +1625,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.07450819, a: 1}
---- !u!95 &2940310063411866930
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256564452938572548}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1351338741363402431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1637,6 @@ GameObject:
   - component: {fileID: 4343558272359593877}
   - component: {fileID: 7898391035217212787}
   - component: {fileID: 601777198021751021}
-  - component: {fileID: 2747935058795253335}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -1828,26 +1722,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.42170095, a: 1}
---- !u!95 &2747935058795253335
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351338741363402431}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1666058121424888274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,7 +1962,6 @@ GameObject:
   - component: {fileID: 9075096051485680593}
   - component: {fileID: 6571822617502424472}
   - component: {fileID: 8585924923297707044}
-  - component: {fileID: 6798663231280380163}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -2174,26 +2047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.006664276, g: 0, b: 1, a: 1}
---- !u!95 &6798663231280380163
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712955239969162903}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1753671571618747079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,7 +2059,6 @@ GameObject:
   - component: {fileID: 535770921659368848}
   - component: {fileID: 8473662820077407057}
   - component: {fileID: 9057585842276813174}
-  - component: {fileID: 4302907326362958597}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -2292,26 +2144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.841825, g: 1, b: 0, a: 1}
---- !u!95 &4302907326362958597
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753671571618747079}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1862583708972092414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,7 +2156,6 @@ GameObject:
   - component: {fileID: 3943251925229714025}
   - component: {fileID: 8381019463105106234}
   - component: {fileID: 7867921758291813530}
-  - component: {fileID: 4397567635067377689}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -2410,26 +2241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.16041064, b: 1, a: 1}
---- !u!95 &4397567635067377689
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862583708972092414}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1870405550776093221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,7 +2253,6 @@ GameObject:
   - component: {fileID: 1769287116742383828}
   - component: {fileID: 1313482354634264595}
   - component: {fileID: 8676575367878723826}
-  - component: {fileID: 8836202627823363663}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -2528,26 +2338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.08693075, a: 1}
---- !u!95 &8836202627823363663
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870405550776093221}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2029677927689704739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,7 +2350,6 @@ GameObject:
   - component: {fileID: 3632147953177685107}
   - component: {fileID: 5199930682903462592}
   - component: {fileID: 6918629389119558626}
-  - component: {fileID: 1240288518652352446}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -2646,26 +2435,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.039754868, g: 0, b: 1, a: 1}
---- !u!95 &1240288518652352446
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029677927689704739}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2048682464290817515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3020,7 +2789,6 @@ GameObject:
   - component: {fileID: 8889592674891714219}
   - component: {fileID: 2216945086903803686}
   - component: {fileID: 994546844511199377}
-  - component: {fileID: 9089739290780728071}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -3106,26 +2874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.30505097, g: 1, b: 0, a: 1}
---- !u!95 &9089739290780728071
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2216623044070714620}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2216799921190939138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,7 +2886,6 @@ GameObject:
   - component: {fileID: 3708525925177854968}
   - component: {fileID: 2209769160187919194}
   - component: {fileID: 7910239881942680904}
-  - component: {fileID: 6914325190571233338}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -3224,26 +2971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.40123034, b: 1, a: 1}
---- !u!95 &6914325190571233338
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2216799921190939138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2233132911992278271
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,7 +2983,6 @@ GameObject:
   - component: {fileID: 5455302246153433728}
   - component: {fileID: 8604870704571556882}
   - component: {fileID: 6229406426936851935}
-  - component: {fileID: 7710277790704433666}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -3342,26 +3068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.9175854, g: 0, b: 1, a: 1}
---- !u!95 &7710277790704433666
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2233132911992278271}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2323801528988516859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +3194,6 @@ GameObject:
   - component: {fileID: 1404745665875822952}
   - component: {fileID: 1208013156255103594}
   - component: {fileID: 5784899309642388269}
-  - component: {fileID: 6765855129227842007}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -3574,26 +3279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.5906644, g: 0, b: 1, a: 1}
---- !u!95 &6765855129227842007
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2331769024612465910}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2427953903805742290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,7 +3405,6 @@ GameObject:
   - component: {fileID: 7783449870653849241}
   - component: {fileID: 3578604490562591416}
   - component: {fileID: 2675198267691729325}
-  - component: {fileID: 1172072953562586013}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -3806,26 +3490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.3745073, g: 1, b: 0, a: 1}
---- !u!95 &1172072953562586013
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2454811047426389997}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2500995890854241233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,7 +3616,6 @@ GameObject:
   - component: {fileID: 5700864463718347640}
   - component: {fileID: 2950836718590169470}
   - component: {fileID: 2473029206716796532}
-  - component: {fileID: 5914886306516139669}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4038,26 +3701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0.5625651, b: 0, a: 1}
---- !u!95 &5914886306516139669
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2517712613950412499}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2568932712287873067
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,7 +3713,6 @@ GameObject:
   - component: {fileID: 6439331029748711300}
   - component: {fileID: 2634631221856458397}
   - component: {fileID: 2112043973746462399}
-  - component: {fileID: 8075108196888140863}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4156,26 +3798,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.53877544, b: 1, a: 1}
---- !u!95 &8075108196888140863
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2568932712287873067}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2661134237641654488
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,7 +3810,6 @@ GameObject:
   - component: {fileID: 1788371798382200174}
   - component: {fileID: 4551053520458196392}
   - component: {fileID: 7846146727075343015}
-  - component: {fileID: 7745449891683861090}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4274,26 +3895,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.5520301, a: 1}
---- !u!95 &7745449891683861090
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2661134237641654488}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2673998772438126404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,7 +3907,6 @@ GameObject:
   - component: {fileID: 224082277254831596}
   - component: {fileID: 7937609463965175946}
   - component: {fileID: 8277240334630853360}
-  - component: {fileID: 7329182430458304714}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4392,26 +3992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0.58474874, b: 0, a: 1}
---- !u!95 &7329182430458304714
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2673998772438126404}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2805878973132426536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,7 +4004,6 @@ GameObject:
   - component: {fileID: 3069208538932887057}
   - component: {fileID: 6296387789347038569}
   - component: {fileID: 6554620607702752719}
-  - component: {fileID: 1702667431595410376}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4510,26 +4089,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.13449967, g: 1, b: 0, a: 1}
---- !u!95 &1702667431595410376
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2805878973132426536}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2815117438132113436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,7 +4101,6 @@ GameObject:
   - component: {fileID: 6519142860175528199}
   - component: {fileID: 2625452828451837908}
   - component: {fileID: 8152175550314409522}
-  - component: {fileID: 9058307764530532180}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4628,26 +4186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.17989159, g: 0, b: 1, a: 1}
---- !u!95 &9058307764530532180
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2815117438132113436}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2893450479198636999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4888,7 +4426,6 @@ GameObject:
   - component: {fileID: 3458530234939034019}
   - component: {fileID: 1413773047739522097}
   - component: {fileID: 8752723226840241594}
-  - component: {fileID: 598789445301358673}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -4974,26 +4511,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.93628025, a: 1}
---- !u!95 &598789445301358673
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2921387833796403545}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2950982790058953899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5184,7 +4701,6 @@ GameObject:
   - component: {fileID: 2745274296367780082}
   - component: {fileID: 4307969152248345319}
   - component: {fileID: 6957882397542929742}
-  - component: {fileID: 4751239841706461440}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -5270,26 +4786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.9606862, g: 0, b: 1, a: 1}
---- !u!95 &4751239841706461440
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3054210434581387830}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3301638294023711969
 GameObject:
   m_ObjectHideFlags: 0
@@ -5872,7 +5368,6 @@ GameObject:
   - component: {fileID: 5844130651105766144}
   - component: {fileID: 123267946952238514}
   - component: {fileID: 7743642461311479311}
-  - component: {fileID: 6460804573502377182}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -5958,26 +5453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.8691349, a: 1}
---- !u!95 &6460804573502377182
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3433207271495239224}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3442692726266943139
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,7 +5465,6 @@ GameObject:
   - component: {fileID: 2268215099079544735}
   - component: {fileID: 9192387715036664283}
   - component: {fileID: 2726810770503339104}
-  - component: {fileID: 6220089757647850678}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -6076,26 +5550,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.5727167, g: 0, b: 1, a: 1}
---- !u!95 &6220089757647850678
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442692726266943139}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3488741570135746168
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,7 +5562,6 @@ GameObject:
   - component: {fileID: 2190329279348219597}
   - component: {fileID: 4278398142638278800}
   - component: {fileID: 7571857601533483462}
-  - component: {fileID: 6747343821580227627}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -6194,26 +5647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.997259, g: 1, b: 0, a: 1}
---- !u!95 &6747343821580227627
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3488741570135746168}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3575389880784320950
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,7 +5659,6 @@ GameObject:
   - component: {fileID: 1368273018991292335}
   - component: {fileID: 1631249503247549065}
   - component: {fileID: 3978195010273666390}
-  - component: {fileID: 361976431157498703}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -6312,26 +5744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.18875837, b: 1, a: 1}
---- !u!95 &361976431157498703
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575389880784320950}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3576194626311833700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6458,7 +5870,6 @@ GameObject:
   - component: {fileID: 2354435581728136330}
   - component: {fileID: 8350824078686974662}
   - component: {fileID: 186364261633610714}
-  - component: {fileID: 5815801710245657440}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -6544,26 +5955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.8768661, g: 1, b: 0, a: 1}
---- !u!95 &5815801710245657440
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3826710062882710283}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3904428767489331665
 GameObject:
   m_ObjectHideFlags: 0
@@ -6804,7 +6195,6 @@ GameObject:
   - component: {fileID: 5120292407759007580}
   - component: {fileID: 8217637531709107008}
   - component: {fileID: 7113549618309334196}
-  - component: {fileID: 3062992308129197741}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -6890,26 +6280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0.9968655, b: 0, a: 1}
---- !u!95 &3062992308129197741
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014036377330744537}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4108064118676212322
 GameObject:
   m_ObjectHideFlags: 0
@@ -6922,7 +6292,6 @@ GameObject:
   - component: {fileID: 8314072352995261077}
   - component: {fileID: 6988717908656609708}
   - component: {fileID: 277971373162919553}
-  - component: {fileID: 7513485221883475787}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -7008,26 +6377,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.21410275, a: 1}
---- !u!95 &7513485221883475787
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4108064118676212322}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4108844401924625409
 GameObject:
   m_ObjectHideFlags: 0
@@ -7154,7 +6503,6 @@ GameObject:
   - component: {fileID: 6305074198276495359}
   - component: {fileID: 3440060710112624269}
   - component: {fileID: 1090309371835080492}
-  - component: {fileID: 3288383248346484338}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -7240,26 +6588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.0053792, a: 1}
---- !u!95 &3288383248346484338
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4110260161561572119}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4290957041528206334
 GameObject:
   m_ObjectHideFlags: 0
@@ -7272,7 +6600,6 @@ GameObject:
   - component: {fileID: 4538685368219570793}
   - component: {fileID: 6768405306128499312}
   - component: {fileID: 3764357487585660164}
-  - component: {fileID: 788401588687419053}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -7358,26 +6685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.49852514, b: 1, a: 1}
---- !u!95 &788401588687419053
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4290957041528206334}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4309853811467529736
 GameObject:
   m_ObjectHideFlags: 0
@@ -7390,7 +6697,6 @@ GameObject:
   - component: {fileID: 6322165876103659087}
   - component: {fileID: 7236351101153895740}
   - component: {fileID: 2812394078854266986}
-  - component: {fileID: 8293954686801711352}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -7476,26 +6782,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.06058228, g: 1, b: 0, a: 1}
---- !u!95 &8293954686801711352
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4309853811467529736}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4321944768391902069
 GameObject:
   m_ObjectHideFlags: 0
@@ -7736,7 +7022,6 @@ GameObject:
   - component: {fileID: 1894485552980655937}
   - component: {fileID: 3266769318638431627}
   - component: {fileID: 7968669889574695663}
-  - component: {fileID: 8658683498361086106}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -7822,26 +7107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.8490329, a: 1}
---- !u!95 &8658683498361086106
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4391558920785627266}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4443776418151525269
 GameObject:
   m_ObjectHideFlags: 0
@@ -8082,7 +7347,6 @@ GameObject:
   - component: {fileID: 7020785329494122712}
   - component: {fileID: 4216717794453842440}
   - component: {fileID: 2827158476120941112}
-  - component: {fileID: 736310858257842565}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -8168,26 +7432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.132321, g: 1, b: 0, a: 1}
---- !u!95 &736310858257842565
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4529039259956134179}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4703659565614817284
 GameObject:
   m_ObjectHideFlags: 0
@@ -8428,7 +7672,6 @@ GameObject:
   - component: {fileID: 8176722397151365939}
   - component: {fileID: 7016360305705938451}
   - component: {fileID: 2912110442051865257}
-  - component: {fileID: 5958031845824240795}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -8514,26 +7757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.084926605, a: 1}
---- !u!95 &5958031845824240795
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5012025674376961451}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5059866870647822015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8546,7 +7769,6 @@ GameObject:
   - component: {fileID: 8477231220189090308}
   - component: {fileID: 7894854397055084458}
   - component: {fileID: 1006795669164294170}
-  - component: {fileID: 7618608054127741017}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -8632,26 +7854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0.6227779, b: 0, a: 1}
---- !u!95 &7618608054127741017
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5059866870647822015}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5085908483143251257
 GameObject:
   m_ObjectHideFlags: 0
@@ -8664,7 +7866,6 @@ GameObject:
   - component: {fileID: 928246003858831754}
   - component: {fileID: 9153053223996533923}
   - component: {fileID: 593156262844599006}
-  - component: {fileID: 2025092670621659110}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -8750,26 +7951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0.8585758, b: 0, a: 1}
---- !u!95 &2025092670621659110
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5085908483143251257}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5093717113615972223
 GameObject:
   m_ObjectHideFlags: 0
@@ -8782,7 +7963,6 @@ GameObject:
   - component: {fileID: 8609589537352198670}
   - component: {fileID: 6481148273086662687}
   - component: {fileID: 2729272431109640248}
-  - component: {fileID: 7646956270544359729}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -8868,26 +8048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.5384846, g: 0, b: 1, a: 1}
---- !u!95 &7646956270544359729
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5093717113615972223}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5122844938015957251
 GameObject:
   m_ObjectHideFlags: 0
@@ -9334,7 +8494,6 @@ GameObject:
   - component: {fileID: 4053955313811357961}
   - component: {fileID: 1943468894342168828}
   - component: {fileID: 4283140360256560088}
-  - component: {fileID: 1070894041780792070}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -9420,26 +8579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.6004572, g: 0, b: 1, a: 1}
---- !u!95 &1070894041780792070
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353674907906603409}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5402172054997362022
 GameObject:
   m_ObjectHideFlags: 0
@@ -9452,7 +8591,6 @@ GameObject:
   - component: {fileID: 723692265511208373}
   - component: {fileID: 5634964751806300086}
   - component: {fileID: 8325265596796434650}
-  - component: {fileID: 1564608143988576207}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -9538,26 +8676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.082772255, a: 1}
---- !u!95 &1564608143988576207
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5402172054997362022}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5527807350295812640
 GameObject:
   m_ObjectHideFlags: 0
@@ -9684,7 +8802,6 @@ GameObject:
   - component: {fileID: 1151507626120984313}
   - component: {fileID: 7714211187196978163}
   - component: {fileID: 2867108867931066797}
-  - component: {fileID: 2913312990594080328}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -9770,26 +8887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.34512806, a: 1}
---- !u!95 &2913312990594080328
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5641991778500436976}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5645035555200064368
 GameObject:
   m_ObjectHideFlags: 0
@@ -9802,7 +8899,6 @@ GameObject:
   - component: {fileID: 7954998199673876432}
   - component: {fileID: 8364258603105985356}
   - component: {fileID: 9197344825234221096}
-  - component: {fileID: 5026853352099264188}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -9888,26 +8984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0.696501, b: 0, a: 1}
---- !u!95 &5026853352099264188
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645035555200064368}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5769778685233358298
 GameObject:
   m_ObjectHideFlags: 0
@@ -10637,6 +9713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgrades:
   - upgradeType: 0
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 2
     scaleDivider: 0.9
@@ -10658,10 +9735,11 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - upgradeType: 1
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 5
     scaleDivider: 6
-    scaleMultiplier: 1.2
+    scaleMultiplier: 1.1
     maxLevel: 54
     levelUpEvent:
       m_PersistentCalls:
@@ -10679,6 +9757,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - upgradeType: 3
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 5
     scaleDivider: 1.5
@@ -10700,6 +9779,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - upgradeType: 2
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 5
     scaleDivider: 1.5
@@ -10732,7 +9812,6 @@ GameObject:
   - component: {fileID: 1331182828307238271}
   - component: {fileID: 5182692359990347910}
   - component: {fileID: 5838796555785084002}
-  - component: {fileID: 1355219962990210334}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -10818,26 +9897,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.9504018, a: 1}
---- !u!95 &1355219962990210334
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807935866670261655}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5834071083167789376
 GameObject:
   m_ObjectHideFlags: 0
@@ -11370,7 +10429,6 @@ GameObject:
   - component: {fileID: 3653214525770824651}
   - component: {fileID: 5155814343289756519}
   - component: {fileID: 4587667778017037332}
-  - component: {fileID: 5200195762258450914}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -11456,26 +10514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.2617278, a: 1}
---- !u!95 &5200195762258450914
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5858858026952813391}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5932717846990628016
 GameObject:
   m_ObjectHideFlags: 0
@@ -11488,7 +10526,6 @@ GameObject:
   - component: {fileID: 3561212315684970370}
   - component: {fileID: 2611664199600097809}
   - component: {fileID: 8645821384551889871}
-  - component: {fileID: 8414013950842600819}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -11574,26 +10611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.899106, g: 0, b: 1, a: 1}
---- !u!95 &8414013950842600819
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5932717846990628016}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5969162561934959997
 GameObject:
   m_ObjectHideFlags: 0
@@ -11720,7 +10737,6 @@ GameObject:
   - component: {fileID: 8650176454625877729}
   - component: {fileID: 4058969776951098906}
   - component: {fileID: 1825381419703779367}
-  - component: {fileID: 3093851665263583023}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -11806,26 +10822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.7140527, a: 1}
---- !u!95 &3093851665263583023
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6039784578623000998}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6117140413747174879
 GameObject:
   m_ObjectHideFlags: 0
@@ -12180,7 +11176,6 @@ GameObject:
   - component: {fileID: 1646944907172482296}
   - component: {fileID: 7990813886776841195}
   - component: {fileID: 6773387984630677367}
-  - component: {fileID: 2065152625198830594}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -12266,26 +11261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.08950138, a: 1}
---- !u!95 &2065152625198830594
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6499722613372213038}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6529492194990917887
 GameObject:
   m_ObjectHideFlags: 0
@@ -12298,7 +11273,6 @@ GameObject:
   - component: {fileID: 3535070705544345533}
   - component: {fileID: 3833958273424382592}
   - component: {fileID: 4802812439321944641}
-  - component: {fileID: 6703560843906748989}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -12384,26 +11358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.7394655, g: 1, b: 0, a: 1}
---- !u!95 &6703560843906748989
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6529492194990917887}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6531630458325317622
 GameObject:
   m_ObjectHideFlags: 0
@@ -12758,7 +11712,6 @@ GameObject:
   - component: {fileID: 1451505223093068201}
   - component: {fileID: 7137236482814247305}
   - component: {fileID: 490560261426033644}
-  - component: {fileID: 5298513043014436285}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -12844,26 +11797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.95087934, g: 1, b: 0, a: 1}
---- !u!95 &5298513043014436285
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6805231684220426595}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6978773338975057354
 GameObject:
   m_ObjectHideFlags: 0
@@ -12990,7 +11923,6 @@ GameObject:
   - component: {fileID: 1153953617849135833}
   - component: {fileID: 4700274898346848224}
   - component: {fileID: 7168981519668976249}
-  - component: {fileID: 9147312006658622844}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -13076,26 +12008,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.38715267, a: 1}
---- !u!95 &9147312006658622844
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7031206314331759176}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7041340274938319616
 GameObject:
   m_ObjectHideFlags: 0
@@ -13108,7 +12020,6 @@ GameObject:
   - component: {fileID: 9142446906579558986}
   - component: {fileID: 4165512545874444506}
   - component: {fileID: 5269995519105968924}
-  - component: {fileID: 1119913624358879353}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -13194,26 +12105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.5588126, b: 1, a: 1}
---- !u!95 &1119913624358879353
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041340274938319616}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7232016270135573626
 GameObject:
   m_ObjectHideFlags: 0
@@ -13340,7 +12231,6 @@ GameObject:
   - component: {fileID: 5936696220263438495}
   - component: {fileID: 4077655363334743571}
   - component: {fileID: 1237541710806803259}
-  - component: {fileID: 2283483964784357643}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -13426,26 +12316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.60886145, a: 1}
---- !u!95 &2283483964784357643
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7340877871704279683}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7484478109503531578
 GameObject:
   m_ObjectHideFlags: 0
@@ -13572,7 +12442,6 @@ GameObject:
   - component: {fileID: 8750087330692277346}
   - component: {fileID: 526793083049371901}
   - component: {fileID: 1502341641321052430}
-  - component: {fileID: 2358340002007731049}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -13658,26 +12527,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.47114754, a: 1}
---- !u!95 &2358340002007731049
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546297050297915080}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7642974242081900155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13804,7 +12653,6 @@ GameObject:
   - component: {fileID: 7442185798105268208}
   - component: {fileID: 2723466032050094392}
   - component: {fileID: 7929494169503572001}
-  - component: {fileID: 8948367507794131129}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -13890,26 +12738,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.22710812, g: 1, b: 0, a: 1}
---- !u!95 &8948367507794131129
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7676470886314056375}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7687661612160692549
 GameObject:
   m_ObjectHideFlags: 0
@@ -14150,7 +12978,6 @@ GameObject:
   - component: {fileID: 8117152604147389828}
   - component: {fileID: 2644605252275773802}
   - component: {fileID: 5055289070156326997}
-  - component: {fileID: 1702981086347663535}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -14236,26 +13063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0.5601311, g: 0, b: 1, a: 1}
---- !u!95 &1702981086347663535
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7820644964690159438}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7837788241246234809
 GameObject:
   m_ObjectHideFlags: 0
@@ -14382,7 +13189,6 @@ GameObject:
   - component: {fileID: 757317448881415449}
   - component: {fileID: 7512380432877553327}
   - component: {fileID: 1269720781247343509}
-  - component: {fileID: 6877291158501144999}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -14468,26 +13274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 1, b: 0.8933959, a: 1}
---- !u!95 &6877291158501144999
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7917544921297776258}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7930971573453534281
 GameObject:
   m_ObjectHideFlags: 0
@@ -14842,7 +13628,6 @@ GameObject:
   - component: {fileID: 1364822772160952671}
   - component: {fileID: 567820193961263334}
   - component: {fileID: 3001328274884232896}
-  - component: {fileID: 6427938578160954582}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -14928,26 +13713,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.5248709, b: 1, a: 1}
---- !u!95 &6427938578160954582
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8028493285434864351}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8188865967994330657
 GameObject:
   m_ObjectHideFlags: 0
@@ -15074,7 +13839,6 @@ GameObject:
   - component: {fileID: 8859805211132962273}
   - component: {fileID: 7551505947918170791}
   - component: {fileID: 3461646534142891491}
-  - component: {fileID: 6774700077954958088}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -15160,26 +13924,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 1, g: 0, b: 0.549181, a: 1}
---- !u!95 &6774700077954958088
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8359864007618317807}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8365418641898637182
 GameObject:
   m_ObjectHideFlags: 0
@@ -15192,7 +13936,6 @@ GameObject:
   - component: {fileID: 8338111325481099885}
   - component: {fileID: 2940729314991793863}
   - component: {fileID: 8987860754508659532}
-  - component: {fileID: 2112637968500583295}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -15278,26 +14021,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.8241463, b: 1, a: 1}
---- !u!95 &2112637968500583295
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8365418641898637182}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8804804794864303067
 GameObject:
   m_ObjectHideFlags: 0
@@ -15310,7 +14033,6 @@ GameObject:
   - component: {fileID: 5174029905564579784}
   - component: {fileID: 817645561650686965}
   - component: {fileID: 5764533201183342759}
-  - component: {fileID: 3987243394003945025}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -15396,26 +14118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: {r: 0, g: 0.3411889, b: 1, a: 1}
---- !u!95 &3987243394003945025
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8804804794864303067}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c49b68c244d447288f42b2fc14c70a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8836816808439536458
 GameObject:
   m_ObjectHideFlags: 0
@@ -22991,12 +21693,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
+      propertyPath: baseSellPrice
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: percentToIdle
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: baseIdleProfit
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: timeToIdleReward
@@ -23856,7 +22562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: profitMessageOffset.z
-      value: -3.5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: lights.Array.data[100]
@@ -23956,7 +22662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[0].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[0].up.x
@@ -23972,7 +22678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[1].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[1].up.x
@@ -23988,7 +22694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[2].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[2].up.x
@@ -24004,7 +22710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[3].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[3].up.x
@@ -24020,7 +22726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[4].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[4].up.x
@@ -24036,7 +22742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[5].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[5].up.x
@@ -24052,7 +22758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[6].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[6].up.x
@@ -24068,7 +22774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[7].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[7].up.x
@@ -24084,7 +22790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[8].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[8].up.x
@@ -24100,7 +22806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[9].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _rawSamples.Array.data[9].up.x
@@ -24744,11 +23450,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _spline.points.Array.data[0].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _spline.points.Array.data[1].size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940296, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _spline.points.Array.data[2].size
@@ -26160,7 +24866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _clipToSample.size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _clipToSample.up.x
@@ -26176,7 +24882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _clipFromSample.size
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _clipFromSample.up.x

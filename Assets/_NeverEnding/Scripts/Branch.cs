@@ -72,8 +72,22 @@ public class Branch : MonoBehaviour
 
     public double GetGrowthPercent()
     {
-        if(followingNodes.Count>0)
+        if(followingNodes.Count > 0)
         {
+            if(!isSubBranch)
+            {
+                //Debug.Log("Valor: " + followingNodes[0].GetPercent());
+
+                if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
+                {
+                    if(followingNodes[0].GetPercent() >= 0.15f)
+                    {
+                        GameManager.instance.appearButtonTutorial = true;
+                        UIManager.instance.CallThirdtTutorial();
+                    }
+                }
+            }
+
             return followingNodes[0].GetPercent();
         }
         else
@@ -165,7 +179,7 @@ public class Branch : MonoBehaviour
     void IdleReward()
     {
         
-        UIManager.instance.normalCurrencyCounter.ChangeCurrency(baseIdleProfit+leafIdleProfitBonus);
+        UIManager.instance.normalCurrencyCounter.ChangeCurrency((System.Numerics.BigInteger)(baseIdleProfit * GetGrowthPercent()));
         IncomeMessages.AddMessage(transform.position + profitMessageOffset, (System.Numerics.BigInteger)(baseIdleProfit * GetGrowthPercent()));
     }
 

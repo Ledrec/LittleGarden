@@ -34,41 +34,52 @@ public class GameplayWindow : Window
     }
     public void AutoToggleSellButton()
     {
-        if (GameManager.instance.levelManager.activeTree != null)
+        if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
         {
-            sellButton.gameObject.SetActive(GameManager.instance.levelManager.activeTree.mainBranch.GetGrowthPercent() >= GameManager.instance.levelManager.activeTree.percentToSell);
+            if(GameManager.instance.appearButtonTutorial)
+            {
+                sellButton.gameObject.SetActive(true);
+            }
         }
         else
         {
-            sellButton.gameObject.SetActive(false);
+            if (GameManager.instance.levelManager.activeTree != null)
+            {
+                sellButton.gameObject.SetActive(GameManager.instance.levelManager.activeTree.mainBranch.GetGrowthPercent() >= GameManager.instance.levelManager.activeTree.percentToSell);
+            }
+            else
+            {
+                sellButton.gameObject.SetActive(false);
+            }
         }
+        
     }
     public void SetUpUpgradeButtonsState()
     {
         Upgrade temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddBranch);
         GetUpgradeButton(UpgradeType.AddBranch)?.SetState(
-           Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+           Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
            GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddBranch),
            GameManager.instance.levelManager.activeTree.upgradesManager.CanAddBranch(),
            temp.CurrentLevel >= temp.maxLevel);
 
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddLeaf);
         GetUpgradeButton(UpgradeType.AddLeaf)?.SetState(
-          Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+          Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
           GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddLeaf),
           GameManager.instance.levelManager.activeTree.upgradesManager.CanAddLeaf(),
           temp.CurrentLevel >= temp.maxLevel);
 
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.IncreaseSpeed);
         GetUpgradeButton(UpgradeType.IncreaseSpeed)?.SetState(
-         Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+         Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.IncreaseSpeed),
          true,
          temp.CurrentLevel >= temp.maxLevel);
 
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddFruit);
         GetUpgradeButton(UpgradeType.AddFruit)?.SetState(
-         Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+         Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddFruit),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanAddFruit(),
          temp.CurrentLevel >= temp.maxLevel);

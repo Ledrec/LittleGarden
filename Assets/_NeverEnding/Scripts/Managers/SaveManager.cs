@@ -136,19 +136,32 @@ public class SaveManager
         }
         return PlayerPrefs.GetInt("CurrentLevel");
     }
+    public static void SaveSoldTrees(int _total)
+    {
+        PlayerPrefs.SetInt("SoldTrees", _total);
+    }
+
+    public static int LoadSoldTrees()
+    {
+        if(!PlayerPrefs.HasKey("SoldTrees"))
+        {
+            SaveSoldTrees(0);
+        }
+        return PlayerPrefs.GetInt("SoldTrees");
+    }
     #endregion
 
     #region Upgrades
-    public static void SaveUpgradeLevel(UpgradeType _type, int _level)
+    public static void SaveTotalUpgradeLevel(UpgradeType _type, int _level)
     {
         PlayerPrefs.SetInt("Upgrade"+_type+"Level", _level);
 
     }
-    public static int LoadUpgradeLevel(UpgradeType _type)
+    public static int LoadTotalUpgradeLevel(UpgradeType _type)
     {
         if (!PlayerPrefs.HasKey("Upgrade" + _type + "Level"))
         {
-            SaveUpgradeLevel(_type,0);
+            SaveTotalUpgradeLevel(_type,0);
         }
         return PlayerPrefs.GetInt("Upgrade" + _type + "Level");
     }

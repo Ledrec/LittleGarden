@@ -20,8 +20,18 @@ public class LevelManager : MonoBehaviour
     public AnimationCurve curveAnimation;
     public System.Numerics.BigInteger changeTreePrice;
 
-    private void Awake()
+
+
+ private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            StartCoroutine(SellTreeAnimation());
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            UIManager.instance.normalCurrencyCounter.ChangeCurrency(new System.Numerics.BigInteger(10000), 0);
+        }
     }
 
     public void InstantiateTree(int _id)
@@ -36,21 +46,13 @@ public class LevelManager : MonoBehaviour
 
     public void SellTree()
     {
+        if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
+        {
+            SaveManager.ChangeOnlyTutorial(3);
+            UIManager.instance.CloseThirdTutorial();
+        }
 
         StartCoroutine(SellTreeAnimation());
-
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            StartCoroutine(SellTreeAnimation());
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            UIManager.instance.normalCurrencyCounter.ChangeCurrency(new System.Numerics.BigInteger(10000), 0);
-        }
     }
 
     public void ChangeScenario()
@@ -73,7 +75,6 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(.2f);
         UIManager.instance.fadeWindow.Hide();
         StartCoroutine(MoveParticles());
-
     }
 
     IEnumerator MoveParticles()
@@ -127,13 +128,22 @@ public class LevelManager : MonoBehaviour
     void ChangeLevel()
     {
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(-changeTreePrice);
+        ResetUpgrades();
         SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
         SellTree();
     }
 
-    //private void OnValidate()
-    //{
-    //    Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
+    public void ResetUpgrades()
+    {
+        for(int i=0; i<activeTree.upgradesManager.upgrades.Count; i++)
+        {
+            SaveManager.SaveTotalUpgradeLevel(activeTree.upgradesManager.upgrades[i].upgradeType, 0);
+        }
+    }
+
+    private void OnValidate()
+    {
+        Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
 
     //}
 }

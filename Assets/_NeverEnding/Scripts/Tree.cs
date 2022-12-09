@@ -43,11 +43,11 @@ public class Tree : MonoBehaviour
             }
         }
     }
-   
+
     public virtual BigInteger GetSellPrice()
     {
         BigInteger price = (BigInteger)(mainBranch.baseSellPrice*mainBranch.GetGrowthPercent());
-        
+
         price += (BigInteger)(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
 
         price *= (BigInteger)(1+(SaveManager.LoadCurrentLevel()*0.1));
@@ -90,7 +90,7 @@ public class Tree : MonoBehaviour
             for (int k = 0; k < allBranches[i].rendererComputer.pointCount; k++)
             {
                 SplinePoint point = allBranches[i].rendererComputer.GetPoint(k);
-                point.size = .3f * editorGrow;
+                point.size = 0.3f * editorGrow;
                 allBranches[i].rendererComputer.SetPoint(k, point);
             }
             for (int j = 0; j < allBranches[i].followingNodes.Count; j++)

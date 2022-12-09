@@ -16,7 +16,7 @@ public class UpgradesManager : MonoBehaviour
     {
         for(int i = 0; i < upgrades.Count; i++)
         {
-            upgrades[i].LoadUpgradeLevel();
+            upgrades[i].LoadTotalUpgradeLevel();
         }
     }
     public void Upgrade(UpgradeType _type)
@@ -27,9 +27,19 @@ public class UpgradesManager : MonoBehaviour
             {
                 if(CanBuy(_type))
                 {
-                    UIManager.instance.normalCurrencyCounter.ChangeCurrency(-Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].CurrentLevel, 0, upgrades[i].basePrice)));
+                    if(upgrades[i].upgradeType == UpgradeType.AddBranch)  //  Vas a comprar tu primer ramita
+                    {
+                        if(SaveManager.LoadOnlyTutorial() == 1)  //  Compras tu primera ramita
+                        {
+                            SaveManager.ChangeOnlyTutorial(2);
+                            UIManager.instance.CloseSecondTutorial();
+                        }
+                    }
+
+                    UIManager.instance.normalCurrencyCounter.ChangeCurrency(-Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].totalUpgradeLevel, 0, upgrades[i].basePrice)));
                     upgrades[i].CurrentLevel++;
-                    SaveManager.SaveUpgradeLevel(upgrades[i].upgradeType, upgrades[i].CurrentLevel);
+                    upgrades[i].totalUpgradeLevel++;
+                    SaveManager.SaveTotalUpgradeLevel(upgrades[i].upgradeType, upgrades[i].totalUpgradeLevel);
                     upgrades[i].levelUpEvent.Invoke();
                 }
             }
@@ -54,7 +64,7 @@ public class UpgradesManager : MonoBehaviour
         {
             if (upgrades[i].upgradeType == _type)
             {
-                if (SaveManager.LoadCurrency(Currency.Regular) >= Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].CurrentLevel, 0, upgrades[i].basePrice)))
+                if (SaveManager.LoadCurrency(Currency.Regular) >= Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].totalUpgradeLevel, 0, upgrades[i].basePrice)))
                 {
                     return true;
                 }
@@ -173,6 +183,7 @@ public class UpgradesManager : MonoBehaviour
 public class Upgrade
 {
     public UpgradeType upgradeType;
+    public int totalUpgradeLevel;
     [SerializeField] int currentLevel;
     public int CurrentLevel
     {
@@ -205,9 +216,9 @@ public class Upgrade
         }
     }
 
-    public void LoadUpgradeLevel()
+    public void LoadTotalUpgradeLevel()
     {
-        currentLevel = SaveManager.LoadUpgradeLevel(upgradeType);
+        totalUpgradeLevel = SaveManager.LoadTotalUpgradeLevel(upgradeType);
     }
 
     public float DivideLoop(int _totalIterations, int _currentIteration, float _currentValue)

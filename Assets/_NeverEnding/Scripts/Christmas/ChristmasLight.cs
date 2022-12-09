@@ -14,8 +14,15 @@ public class ChristmasLight : MonoBehaviour
             return leaf.isDone;
         }
     }
+    private void Start()
+    {
+        SetActive(false);
+    }
     public void SetActive(bool _isActive)
     {
-
+        isActive = _isActive;
+        isDone = _isActive;
+        GetComponent<MeshRenderer>().enabled= _isActive;
+        transform.GetChild(0).GetComponent<MeshRenderer>().enabled= _isActive;
     }
 }

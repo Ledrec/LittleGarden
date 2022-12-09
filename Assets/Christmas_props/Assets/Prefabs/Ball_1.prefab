@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3366656}
   - component: {fileID: 2339400}
   - component: {fileID: 2493322566078949434}
+  - component: {fileID: 4311004296121062276}
   m_Layer: 0
   m_Name: Ball_1
   m_TagString: Untagged
@@ -97,3 +98,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereColor: 0
+--- !u!114 &4311004296121062276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7704c0fb5ed660542b740ef1e8bb87e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leaf: {fileID: 0}
+  isActive: 0
+  isDone: 0

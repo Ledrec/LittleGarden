@@ -15,9 +15,10 @@ public class UpgradeButton : MonoBehaviour
     public Button button;
     public Animator anmtr;
     public TextMeshProUGUI txtCost;
+    public TextMeshProUGUI txtUpgradeName;
     public Image background;
-    public Sprite sprMaxLevel;
-    public Sprite sprNotMaxLevel;
+    public Sprite normalSprite;
+    public Sprite christmasSprite;
     public CanvasGroup buttonGroup;
 
     public void SetState(float _cost, bool _canAfford, bool _canUpgrade, bool _maxLevel)
@@ -31,7 +32,7 @@ public class UpgradeButton : MonoBehaviour
     {
         if (maxLevel)
         {
-            background.sprite = sprMaxLevel;
+            //background.sprite = sprMaxLevel;
             txtCost.text = "MAX";
             buttonGroup.alpha = 1f;
             buttonGroup.interactable = false;
@@ -40,7 +41,7 @@ public class UpgradeButton : MonoBehaviour
         }
         else if(canAfford && canUpgrade)
         {
-            background.sprite = sprNotMaxLevel;
+            //background.sprite = sprNotMaxLevel;
             txtCost.text = "<sprite index=0>" + _cost.ToString();
             buttonGroup.alpha = 1f;
             buttonGroup.interactable = true;
@@ -48,9 +49,8 @@ public class UpgradeButton : MonoBehaviour
         }
         else
         {
-            background.sprite = sprNotMaxLevel;
+            //background.sprite = sprNotMaxLevel;
             txtCost.text = "<sprite index=0>" + _cost.ToString();
-            //txtCost.text = "<sprite index=0>" + _cost.ToCompactString();
             buttonGroup.alpha = 0.5f;
             buttonGroup.interactable = false;
             button.interactable = false;

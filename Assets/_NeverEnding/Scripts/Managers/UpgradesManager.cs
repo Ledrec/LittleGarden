@@ -27,6 +27,15 @@ public class UpgradesManager : MonoBehaviour
             {
                 if(CanBuy(_type))
                 {
+                    if(upgrades[i].upgradeType == UpgradeType.AddBranch)  //  Vas a comprar tu primer ramita
+                    {
+                        if(SaveManager.LoadOnlyTutorial() == 1)  //  Compras tu primera ramita
+                        {
+                            SaveManager.ChangeOnlyTutorial(2);
+                            UIManager.instance.CloseSecondTutorial();
+                        }
+                    }
+
                     UIManager.instance.normalCurrencyCounter.ChangeCurrency(-Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].totalUpgradeLevel, 0, upgrades[i].basePrice)));
                     upgrades[i].CurrentLevel++;
                     upgrades[i].totalUpgradeLevel++;

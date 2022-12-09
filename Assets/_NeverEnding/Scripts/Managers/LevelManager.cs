@@ -20,8 +20,9 @@ public class LevelManager : MonoBehaviour
     public AnimationCurve curveAnimation;
     public System.Numerics.BigInteger changeTreePrice;
 
-  
-    private void Update()
+   
+
+ private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
@@ -37,7 +38,7 @@ public class LevelManager : MonoBehaviour
     {
         GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
         activeTree = go.GetComponent<Tree>();
-        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadSoldTrees()));
+        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel()));
         UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
         UIManager.instance.gameplayWindow.SetChristmasButtons(activeTree.isChristmasPine);
         ChangeScenario();
@@ -45,10 +46,14 @@ public class LevelManager : MonoBehaviour
 
     public void SellTree()
     {
-        SaveManager.SaveSoldTrees(SaveManager.LoadSoldTrees()+1);
+        if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
+        {
+            SaveManager.ChangeOnlyTutorial(3);
+            UIManager.instance.CloseThirdTutorial();
+        }
+
         StartCoroutine(SellTreeAnimation());
     }
-
   
     public void ChangeScenario()
     {
@@ -70,7 +75,6 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(.2f);
         UIManager.instance.fadeWindow.Hide();
         StartCoroutine(MoveParticles());
-
     }
 
     IEnumerator MoveParticles()

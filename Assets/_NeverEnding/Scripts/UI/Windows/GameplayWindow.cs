@@ -34,14 +34,25 @@ public class GameplayWindow : Window
     }
     public void AutoToggleSellButton()
     {
-        if (GameManager.instance.levelManager.activeTree != null)
+        if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
         {
-            sellButton.gameObject.SetActive(GameManager.instance.levelManager.activeTree.mainBranch.GetGrowthPercent() >= GameManager.instance.levelManager.activeTree.percentToSell);
+            if(GameManager.instance.appearButtonTutorial)
+            {
+                sellButton.gameObject.SetActive(true);
+            }
         }
         else
         {
-            sellButton.gameObject.SetActive(false);
+            if (GameManager.instance.levelManager.activeTree != null)
+            {
+                sellButton.gameObject.SetActive(GameManager.instance.levelManager.activeTree.mainBranch.GetGrowthPercent() >= GameManager.instance.levelManager.activeTree.percentToSell);
+            }
+            else
+            {
+                sellButton.gameObject.SetActive(false);
+            }
         }
+        
     }
     public void SetUpUpgradeButtonsState()
     {

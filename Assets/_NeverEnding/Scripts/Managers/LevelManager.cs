@@ -20,27 +20,7 @@ public class LevelManager : MonoBehaviour
     public AnimationCurve curveAnimation;
     public System.Numerics.BigInteger changeTreePrice;
 
-    private void Awake()
-    {
-    }
-
-    public void InstantiateTree(int _id)
-    {
-        GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
-        activeTree = go.GetComponent<Tree>();
-        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel()));
-        UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
-        UIManager.instance.gameplayWindow.SetChristmasButtons(activeTree.isChristmasPine);
-        ChangeScenario();
-    }
-
-    public void SellTree()
-    {
-
-        StartCoroutine(SellTreeAnimation());
-
-    }
-
+  
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -53,6 +33,23 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void InstantiateTree(int _id)
+    {
+        GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
+        activeTree = go.GetComponent<Tree>();
+        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadSoldTrees()));
+        UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
+        UIManager.instance.gameplayWindow.SetChristmasButtons(activeTree.isChristmasPine);
+        ChangeScenario();
+    }
+
+    public void SellTree()
+    {
+        SaveManager.SaveSoldTrees(SaveManager.LoadSoldTrees()+1);
+        StartCoroutine(SellTreeAnimation());
+    }
+
+  
     public void ChangeScenario()
     {
         Shader.SetGlobalFloat("ShadowIntensity", SaveManager.LoadCurrentLevel() == 1 ? .33f: .8f);
@@ -127,8 +124,17 @@ public class LevelManager : MonoBehaviour
     void ChangeLevel()
     {
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(-changeTreePrice);
+        ResetUpgrades();
         SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
         SellTree();
+    }
+
+    public void ResetUpgrades()
+    {
+        for(int i=0; i<activeTree.upgradesManager.upgrades.Count; i++)
+        {
+            SaveManager.SaveTotalUpgradeLevel(activeTree.upgradesManager.upgrades[i].upgradeType, 0);
+        }
     }
 
     private void OnValidate()

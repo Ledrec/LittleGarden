@@ -47,28 +47,28 @@ public class GameplayWindow : Window
     {
         Upgrade temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddBranch);
         GetUpgradeButton(UpgradeType.AddBranch)?.SetState(
-           Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+           Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
            GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddBranch),
            GameManager.instance.levelManager.activeTree.upgradesManager.CanAddBranch(),
            temp.CurrentLevel >= temp.maxLevel);
 
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddLeaf);
         GetUpgradeButton(UpgradeType.AddLeaf)?.SetState(
-          Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+          Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
           GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddLeaf),
           GameManager.instance.levelManager.activeTree.upgradesManager.CanAddLeaf(),
           temp.CurrentLevel >= temp.maxLevel);
 
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.IncreaseSpeed);
         GetUpgradeButton(UpgradeType.IncreaseSpeed)?.SetState(
-         Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+         Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.IncreaseSpeed),
          true,
          temp.CurrentLevel >= temp.maxLevel);
 
         temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddFruit);
         GetUpgradeButton(UpgradeType.AddFruit)?.SetState(
-         Mathf.RoundToInt(temp.MultiplyLoop(temp.CurrentLevel, 0, temp.basePrice)),
+         Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanBuy(UpgradeType.AddFruit),
          GameManager.instance.levelManager.activeTree.upgradesManager.CanAddFruit(),
          temp.CurrentLevel >= temp.maxLevel);

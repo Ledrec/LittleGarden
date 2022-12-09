@@ -9713,6 +9713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgrades:
   - upgradeType: 0
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 2
     scaleDivider: 0.9
@@ -9734,10 +9735,11 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - upgradeType: 1
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 5
     scaleDivider: 6
-    scaleMultiplier: 1.2
+    scaleMultiplier: 1.1
     maxLevel: 54
     levelUpEvent:
       m_PersistentCalls:
@@ -9755,6 +9757,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - upgradeType: 3
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 5
     scaleDivider: 1.5
@@ -9776,6 +9779,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - upgradeType: 2
+    totalUpgradeLevel: 0
     currentLevel: 0
     basePrice: 5
     scaleDivider: 1.5
@@ -21689,12 +21693,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
+      propertyPath: baseSellPrice
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: percentToIdle
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: baseIdleProfit
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: timeToIdleReward
@@ -22554,7 +22562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: profitMessageOffset.z
-      value: -3.5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: lights.Array.data[100]

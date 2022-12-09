@@ -179,7 +179,7 @@ public class Branch : MonoBehaviour
     void IdleReward()
     {
         
-        UIManager.instance.normalCurrencyCounter.ChangeCurrency(baseIdleProfit+leafIdleProfitBonus);
+        UIManager.instance.normalCurrencyCounter.ChangeCurrency((System.Numerics.BigInteger)(baseIdleProfit * GetGrowthPercent()));
         IncomeMessages.AddMessage(transform.position + profitMessageOffset, (System.Numerics.BigInteger)(baseIdleProfit * GetGrowthPercent()));
     }
 

@@ -141,9 +141,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void OnValidate()
     {
         Shader.SetGlobalFloat("ShadowIntensity", shadowTest);
 
-    //}
+    }
+#endif
 }

@@ -126,8 +126,8 @@ Material:
     - _hasLine: 0
     m_Colors:
     - _BaseColor: {r: 0.50980395, g: 0.2392157, b: 0.10980393, a: 1}
-    - _Color: {r: 0.5, g: 0.28171417, b: 0.15801886, a: 1}
-    - _ColorGradient: {r: 0.3773585, g: 0.13964331, b: 0.008899963, a: 0}
+    - _Color: {r: 0.5471698, g: 0.30713776, b: 0.3163698, a: 1}
+    - _ColorGradient: {r: 0.20754719, g: 0.0029369832, b: 0.008653848, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GradientVector: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

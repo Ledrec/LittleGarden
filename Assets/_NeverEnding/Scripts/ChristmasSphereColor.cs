@@ -16,6 +16,8 @@ public class ChristmasSphereColor : MonoBehaviour
         rend.GetPropertyBlock(mpb);
         mpb.SetFloat("_hue", sphereColor);
         rend.SetPropertyBlock(mpb);
+        GetComponent<Animator>().Play("ANM_IdleSphere", 0, Random.Range(0.0f, 1.0f));
+
     }
 #if UNITY_EDITOR
 

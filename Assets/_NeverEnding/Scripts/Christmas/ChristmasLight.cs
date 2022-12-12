@@ -27,9 +27,9 @@ public class ChristmasLight : MonoBehaviour
         transform.GetChild(0).GetComponent<MeshRenderer>().enabled= _isActive;
         MaterialPropertyBlock mpb = new MaterialPropertyBlock();
         GetComponent<Renderer>().GetPropertyBlock(mpb);
-        //mpb.SetColor("_ColorGradient", transform.GetChild(0).GetComponent<ChristmasLightColor>().sphereColor.ToHSV());
+        ColorHSV hsvColor = transform.GetChild(0).GetComponent<ChristmasLightColor>().sphereColor.ToHSV();
+        hsvColor.s *= .3f;
+        mpb.SetColor("_ColorGradient", hsvColor.ToRGB());
         GetComponent<Renderer>().SetPropertyBlock(mpb);
-
-
     }
 }

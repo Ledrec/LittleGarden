@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     {
         //SaveManager.SaveCurrentLevel(1);
         instance = this;
+        PlayerPrefs.SetString("LeafInvestment", "0");
+        PlayerPrefs.SetString("BranchInvestment", "0");
+        PlayerPrefs.SetString("FruitInvestment", "0");
     }
 
     private void Start()

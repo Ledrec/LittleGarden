@@ -23023,6 +23023,10 @@ PrefabInstance:
       value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
+      propertyPath: scaleSetUpLimits.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 575779134892717431, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: fruits.Array.data[0]
       value: 
       objectReference: {fileID: 0}

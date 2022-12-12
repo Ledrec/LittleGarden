@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5178995, g: 0.87977475, b: 0.99616915, a: 1}
+  m_IndirectSpecularColor: {r: 0.5177845, g: 0.87747896, b: 0.9949054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1687,6 +1687,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.74731445
       objectReference: {fileID: 0}
+    - target: {fileID: 752477650317683625, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 921238790879702896, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1721,11 +1725,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1272198202646569770, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 1837818887596379104, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -352.5
+    - target: {fileID: 1334625455891193002, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1938527149578561610, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1733,7 +1737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108510280776261938, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2427998652317580828, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_IsActive
@@ -1746,6 +1750,10 @@ PrefabInstance:
     - target: {fileID: 3084187259084143037, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3198438733244539559, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 69.79999
       objectReference: {fileID: 0}
     - target: {fileID: 3219445494259627156, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_text

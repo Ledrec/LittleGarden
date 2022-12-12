@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.M))
         {
-            UIManager.instance.normalCurrencyCounter.ChangeCurrency(new System.Numerics.BigInteger(10000), 0);
+            UIManager.instance.normalCurrencyCounter.ChangeCurrency(new System.Numerics.BigInteger(1000000), 0);
         }
     }
 
@@ -57,7 +57,7 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeScenario()
     {
-        Shader.SetGlobalFloat("ShadowIntensity", /*SaveManager.LoadCurrentLevel() == 1 ? .33f:*/ .8f);
+        Shader.SetGlobalFloat("ShadowIntensity", 0.8f);
         RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];

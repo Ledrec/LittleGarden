@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        SaveManager.SaveCurrentLevel(0);
+        SaveManager.SaveCurrentLevel(1);
         instance = this;
     }
 

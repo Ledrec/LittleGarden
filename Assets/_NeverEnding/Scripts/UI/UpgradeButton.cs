@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Numerics;
 
 public class UpgradeButton : MonoBehaviour
 {
@@ -21,14 +22,14 @@ public class UpgradeButton : MonoBehaviour
     public Sprite christmasSprite;
     public CanvasGroup buttonGroup;
 
-    public void SetState(float _cost, bool _canAfford, bool _canUpgrade, bool _maxLevel)
+    public void SetState(BigInteger _cost, bool _canAfford, bool _canUpgrade, bool _maxLevel)
     {
         canUpgrade = _canUpgrade;
         canAfford = _canAfford;
         maxLevel = _maxLevel;
         SetState(_cost);
     }
-    public void SetState(float _cost)
+    public void SetState(BigInteger _cost)
     {
         if (maxLevel)
         {
@@ -42,7 +43,7 @@ public class UpgradeButton : MonoBehaviour
         else if(canAfford && canUpgrade)
         {
             //background.sprite = sprNotMaxLevel;
-            txtCost.text = "<sprite index=0>" + _cost.ToString();
+            txtCost.text = "$" + _cost.ToCompactString();
             buttonGroup.alpha = 1f;
             buttonGroup.interactable = true;
             button.interactable = true;
@@ -58,7 +59,7 @@ public class UpgradeButton : MonoBehaviour
         else
         {
             //background.sprite = sprNotMaxLevel;
-            txtCost.text = "<sprite index=0>" + _cost.ToString();
+            txtCost.text = "$" + _cost.ToCompactString();
             buttonGroup.alpha = 0.5f;
             buttonGroup.interactable = false;
             button.interactable = false;

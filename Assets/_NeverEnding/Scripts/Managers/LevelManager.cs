@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     public Color[] treeColor;
     public Transform treeParent;
     public Terrain terrain;
+    public GameObject snowParticle;
     public Tree activeTree;
     public Material leavesBlue;
     public Material leavesOrange;
@@ -62,6 +63,15 @@ public class LevelManager : MonoBehaviour
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
         leavesOrange.color = treeColor[(SaveManager.LoadCurrentLevel() * 2) + 1];
+
+        if(SaveManager.LoadCurrentLevel() == 1)
+        {
+            snowParticle.SetActive(true);
+        }
+        else
+        {
+            snowParticle.SetActive(false);
+        }
     }
 
     IEnumerator SellTreeAnimation()

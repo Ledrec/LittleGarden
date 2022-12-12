@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class UpgradesManager : MonoBehaviour
@@ -37,6 +38,11 @@ public class UpgradesManager : MonoBehaviour
                     }
 
                     UIManager.instance.normalCurrencyCounter.ChangeCurrency(-Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].totalUpgradeLevel, 0, upgrades[i].basePrice)));
+                    if (_type != UpgradeType.IncreaseSpeed)
+                    {
+                        int tmpValue = Mathf.RoundToInt(upgrades[i].MultiplyLoop(upgrades[i].totalUpgradeLevel, 0, upgrades[i].basePrice));
+                        PlayerPrefs.SetString(_type.ToString().Replace("Add", "") + "Investment", (BigInteger.Parse(PlayerPrefs.GetString(_type.ToString().Replace("Add", "") + "Investment")) + tmpValue).ToString());
+                    }
                     upgrades[i].CurrentLevel++;
                     upgrades[i].totalUpgradeLevel++;
                     SaveManager.SaveTotalUpgradeLevel(upgrades[i].upgradeType, upgrades[i].totalUpgradeLevel);

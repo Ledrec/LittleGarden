@@ -36,13 +36,17 @@ public class ChristmasUpgradesManager : UpgradesManager
     {
         if(CanAddLeaf())
         {
+            int leafCount=0;
             for (int i = 0; i < ((ChristmasTree)GameManager.instance.levelManager.activeTree).leaves.Length; i++)
             {
                 if (!((ChristmasTree)GameManager.instance.levelManager.activeTree).leaves[i].isDone && ((ChristmasTree)GameManager.instance.levelManager.activeTree).leaves[i].splineFollower.GetPercent() >= ((ChristmasTree)GameManager.instance.levelManager.activeTree).leaves[i].percentToAppear)
                 {
                     ((ChristmasTree)GameManager.instance.levelManager.activeTree).leaves[i].Grow();
+                    leafCount++;
+                }
+                if(leafCount >= 2)
+                {
                     break;
-
                 }
             }
         }

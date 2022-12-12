@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
     public Animator tapSellScreen;
     [Header("Currency")]
     public CurrencyCounter normalCurrencyCounter;
-    public ParticleMod normalCurrencyParticles;
+    public RewardParticles2D normalCurrencyParticles;
 
     /// <summary>
     /// Initialize values

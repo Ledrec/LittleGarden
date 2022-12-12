@@ -50,7 +50,7 @@ public class Tree : MonoBehaviour
 
         price += (BigInteger)(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
 
-        price *= (BigInteger)(1+(SaveManager.LoadCurrentLevel()*0.1));
+        price *= (BigInteger)(1+(SaveManager.LoadSoldTrees()*0.1));
         return price;
     }
 

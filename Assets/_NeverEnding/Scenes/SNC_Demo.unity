@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5172635, g: 0.87740815, b: 0.9949097, a: 1}
+  m_IndirectSpecularColor: {r: 0.5177845, g: 0.87747896, b: 0.9949054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1710,6 +1710,14 @@ PrefabInstance:
     - target: {fileID: 1126446609760736485, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837818887596379104, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -352.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938527149578561610, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -352.5
       objectReference: {fileID: 0}
     - target: {fileID: 2108510280776261938, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_RootOrder
@@ -4376,6 +4384,11 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 4294967295
   m_AllowAutoConnect: 1
+--- !u!1 &1218057497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8786145112479360740, guid: 8ec32370387af4869b742a84bfd9bf1b, type: 3}
+  m_PrefabInstance: {fileID: 3548400930928756640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1246338049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5170,6 +5183,7 @@ MonoBehaviour:
   - {r: 1, g: 0.4392157, b: 0, a: 1}
   treeParent: {fileID: 171210082}
   terrain: {fileID: 1208975168}
+  snowParticle: {fileID: 1218057497}
   activeTree: {fileID: 0}
   leavesBlue: {fileID: 2100000, guid: e282eb5eebe3de341a086a6867afa417, type: 2}
   leavesOrange: {fileID: 2100000, guid: 4737c1a6c522cf143ab1bc6eca516382, type: 2}

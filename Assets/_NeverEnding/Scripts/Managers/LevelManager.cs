@@ -82,7 +82,8 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         ParticleSystem.Particle[] particles = new ParticleSystem.Particle[moneyPrt.particleCount];
         moneyPrt.GetParticles(particles);
-        Vector3 endPos = Camera.main.ScreenToWorldPoint(UIManager.instance.normalCurrencyCounter.transform.position);
+        Vector3 endPos = /*Camera.main.ScreenToWorldPoint(*/UIManager.instance.normalCurrencyCounter.transform.position;//);
+        Debug.Log(endPos);
         endPos.z = endPosZ;
         float timeForParticleToArrive = .5f;
         float eTime = 0;

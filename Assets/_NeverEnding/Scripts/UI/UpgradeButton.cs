@@ -56,9 +56,17 @@ public class UpgradeButton : MonoBehaviour
                 }
             }
         }
-        else
+        else if(!canUpgrade)
         {
             //background.sprite = sprNotMaxLevel;
+            //txtCost.text = "$" + _cost.ToCompactString();
+            txtCost.text = "MAX";
+            buttonGroup.alpha = 0.5f;
+            buttonGroup.interactable = false;
+            button.interactable = false;
+        }
+        else
+        {
             txtCost.text = "$" + _cost.ToCompactString();
             buttonGroup.alpha = 0.5f;
             buttonGroup.interactable = false;

@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
     public Animator touchScreen;
     public Animator tapBranchScreen;
     public Animator tapSellScreen;
+    public Animator secondHandTutorial;
+    public Animator thirdHandTutorial;
     [Header("Currency")]
     public CurrencyCounter normalCurrencyCounter;
     public RewardParticles2D normalCurrencyParticles;
@@ -33,18 +35,22 @@ public class UIManager : MonoBehaviour
 
     public void CallFirstTutorial()
     {
+        touchScreen.gameObject.SetActive(true);
         touchScreen.SetBool(showAnimation, true);
     }
 
     public void CloseFirstTutorial()
     {
         touchScreen.SetBool(showAnimation, false);
+        touchScreen.gameObject.SetActive(true);
     }
 
     public void CallSecondtTutorial()
     {
         tapBranchScreen.gameObject.SetActive(true);
         tapBranchScreen.SetBool(showAnimation, true);
+        secondHandTutorial.gameObject.SetActive(true);
+        secondHandTutorial.SetBool(showAnimation, true);
     }
 
     public void CloseSecondTutorial()
@@ -55,14 +61,18 @@ public class UIManager : MonoBehaviour
     IEnumerator SecondTutorialTimer()
     {
         tapBranchScreen.SetBool(showAnimation, false);
+        secondHandTutorial.SetBool(showAnimation, false);
         yield return new WaitForSeconds(0.5f);
         tapBranchScreen.gameObject.SetActive(false);
+        secondHandTutorial.gameObject.SetActive(true);
     }
 
     public void CallThirdtTutorial()
     {
         tapSellScreen.gameObject.SetActive(true);
         tapSellScreen.SetBool(showAnimation, true);
+        thirdHandTutorial.gameObject.SetActive(true);
+        thirdHandTutorial.SetBool(showAnimation, true);
     }
 
     public void CloseThirdTutorial()
@@ -73,7 +83,9 @@ public class UIManager : MonoBehaviour
     IEnumerator ThirdTutorialTimer()
     {
         tapSellScreen.SetBool(showAnimation, false);
+        thirdHandTutorial.SetBool(showAnimation, false);
         yield return new WaitForSeconds(0.5f);
         tapSellScreen.gameObject.SetActive(false);
+        thirdHandTutorial.gameObject.SetActive(false);
     }
 }

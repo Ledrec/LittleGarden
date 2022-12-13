@@ -1706,6 +1706,7 @@ MonoBehaviour:
   - {fileID: 5400131343461866038}
   christmasUpgradeButtons: []
   sellButton: {fileID: 3241330419746446605}
+  btnNextLevel: {fileID: 381442059367585980}
   txtNextLevelPrice: {fileID: 7045155979607485216}
 --- !u!95 &4218483347094778823
 Animator:

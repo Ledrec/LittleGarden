@@ -52,6 +52,7 @@ public class LevelManager : MonoBehaviour
             SaveManager.ChangeOnlyTutorial(3);
             UIManager.instance.CloseThirdTutorial();
         }
+        SaveManager.SaveSoldTrees(SaveManager.LoadSoldTrees() + 1);
 
         StartCoroutine(SellTreeAnimation());
     }
@@ -143,6 +144,8 @@ public class LevelManager : MonoBehaviour
         ResetUpgrades();
         SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
         SellTree();
+        SaveManager.SaveSoldTrees(0);
+
     }
 
     public void ResetUpgrades()

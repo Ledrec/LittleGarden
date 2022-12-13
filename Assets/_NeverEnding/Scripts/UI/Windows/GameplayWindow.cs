@@ -9,6 +9,7 @@ public class GameplayWindow : Window
     public UpgradeButton[] upgradeButtons;
     public UpgradeButton[] christmasUpgradeButtons;
     public SellButton sellButton;
+    public GameObject btnNextLevel;
     public TextMeshProUGUI txtNextLevelPrice;
     private void Start()
     {
@@ -19,6 +20,7 @@ public class GameplayWindow : Window
     {
         SetUpUpgradeButtonsState();
         AutoToggleSellButton();
+        AutoToggleNextLevelButton();
     }
 
     public void SetUpgradeButtonData()
@@ -53,6 +55,10 @@ public class GameplayWindow : Window
             }
         }
         
+    }
+    public void AutoToggleNextLevelButton()
+    {
+            btnNextLevel.SetActive(SaveManager.LoadSoldTrees()>=5);
     }
     public void SetUpUpgradeButtonsState()
     {

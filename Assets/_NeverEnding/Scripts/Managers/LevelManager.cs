@@ -122,6 +122,11 @@ public class LevelManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(activeTree.GetSellPrice());
+        PlayerPrefs.SetString("LeafInvestment", "0");
+        PlayerPrefs.SetString("BranchInvestment", "0");
+        PlayerPrefs.SetString("FruitInvestment", "0");
+        //activeTree.upgradesManager.UpgdradeLevelReset();
+        //ResetUpgrades();
     }
 
     public Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Vector3 angles)

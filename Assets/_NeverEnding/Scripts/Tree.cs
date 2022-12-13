@@ -46,14 +46,15 @@ public class Tree : MonoBehaviour
 
     public virtual BigInteger GetSellPrice()
     {
-        BigInteger price = (BigInteger)(mainBranch.baseSellPrice*mainBranch.GetGrowthPercent());
-        Debug.Log(PlayerPrefs.GetString("LeafInvestment"));
-        Debug.Log(PlayerPrefs.GetString("BranchInvestment"));
-        Debug.Log(PlayerPrefs.GetString("FruitInvestment"));
-
-        price += (BigInteger.Parse(PlayerPrefs.GetString("LeafInvestment")) + BigInteger.Parse(PlayerPrefs.GetString("BranchInvestment") + BigInteger.Parse(PlayerPrefs.GetString("FruitInvestment")))) * 11 / 10; //(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
-        
-        //price *= (BigInteger)(1+(SaveManager.LoadCurrentLevel()*0.1));
+        Debug.Log(mainBranch.GetGrowthPercent());
+        BigInteger price = (BigInteger)(mainBranch.baseSellPrice * mainBranch.GetGrowthPercent());
+        Debug.Log("priceB4: " + price);
+        BigInteger leafInvestment = BigInteger.Parse(PlayerPrefs.GetString("LeafInvestment"));
+        BigInteger branchInvestment = BigInteger.Parse(PlayerPrefs.GetString("BranchInvestment"));
+        BigInteger fruitInvestment = BigInteger.Parse(PlayerPrefs.GetString("FruitInvestment"));
+        Debug.Log("priceAfter: " + (leafInvestment + branchInvestment + fruitInvestment));
+        price += (leafInvestment + branchInvestment + fruitInvestment) * 11 / 10; //(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
+        Debug.Log(price);
         return price;
     }
 

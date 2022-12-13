@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChristmasSphere : MonoBehaviour
 {
+    readonly int enterAnimation = Animator.StringToHash("Enter");
+
     public Leaf leaf;
     public bool isActive;
     public bool isDone;
@@ -26,6 +28,6 @@ public class ChristmasSphere : MonoBehaviour
         isActive = _isActive;
         isDone = _isActive;
         GetComponent<MeshRenderer>().enabled = _isActive;
-
+        GetComponent<Animator>().SetBool(enterAnimation, _isActive);
     }
 }

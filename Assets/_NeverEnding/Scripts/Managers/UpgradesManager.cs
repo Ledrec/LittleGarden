@@ -52,6 +52,14 @@ public class UpgradesManager : MonoBehaviour
         }
     }
 
+    public void UpgdradeLevelReset()
+    {
+        for (int i = 0; i < upgrades.Count; i++)
+        {
+            upgrades[i].totalUpgradeLevel = 0;
+        }
+    }
+
     public Upgrade GetUpgradeType(UpgradeType _type)
     {
         for (int i = 0; i < upgrades.Count; i++)

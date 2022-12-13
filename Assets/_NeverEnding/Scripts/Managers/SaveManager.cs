@@ -185,4 +185,23 @@ public class SaveManager
         return PlayerPrefs.GetFloat("PlayerExperience");
     }
     #endregion
+
+    #region Investments
+    public static void ResetInvestments()
+    {
+        PlayerPrefs.SetString("LeafInvestment", "0");
+        PlayerPrefs.SetString("BranchInvestment", "0");
+        PlayerPrefs.SetString("FruitInvestment", "0");
+    }
+
+    public static void SaveInvestment(string type, BigInteger value)
+    {
+        PlayerPrefs.SetString(type + "Investment", value.ToString());
+    }
+
+    public static BigInteger GetInvestmentValue(string type)
+    {
+        return BigInteger.Parse(PlayerPrefs.GetString(type + "Investment"));
+    }
+    #endregion
 }

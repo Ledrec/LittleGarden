@@ -52,7 +52,7 @@ public class LevelManager : MonoBehaviour
             SaveManager.ChangeOnlyTutorial(3);
             UIManager.instance.CloseThirdTutorial();
         }
-
+        SaveManager.SaveSoldTrees(SaveManager.LoadSoldTrees() + 1);
         StartCoroutine(SellTreeAnimation());
     }
 
@@ -63,7 +63,6 @@ public class LevelManager : MonoBehaviour
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
         leavesOrange.color = treeColor[(SaveManager.LoadCurrentLevel() * 2) + 1];
-
         if(SaveManager.LoadCurrentLevel() == 1)
         {
             snowParticle.SetActive(true);
@@ -78,9 +77,12 @@ public class LevelManager : MonoBehaviour
     {
         UIManager.instance.fadeWindow.Show();
         yield return new WaitUntil(() => UIManager.instance.fadeWindow.anmtrWindow.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1);
+        UIManager.instance.normalCurrencyCounter.ChangeCurrency(activeTree.GetSellPrice());
+        int growSpeed = activeTree.upgradesManager.GetUpgradeType(UpgradeType.IncreaseSpeed).CurrentLevel;
         Destroy(activeTree.gameObject);
         activeTree = null;
         InstantiateTree((int)Mathf.Repeat(SaveManager.LoadCurrentLevel(),trees.Length));
+        activeTree.upgradesManager.GetUpgradeType(UpgradeType.IncreaseSpeed).CurrentLevel = growSpeed;
         moneyPrt.Emit(numberParticles);
         yield return new WaitForSeconds(.2f);
         UIManager.instance.fadeWindow.Hide();
@@ -93,7 +95,6 @@ public class LevelManager : MonoBehaviour
         ParticleSystem.Particle[] particles = new ParticleSystem.Particle[moneyPrt.particleCount];
         moneyPrt.GetParticles(particles);
         Vector3 endPos = moneyPrt.transform.InverseTransformVector( UIManager.instance.normalCurrencyCounter.transform.position);
-        Debug.Log(endPos);
         endPos.z = endPosZ;
         endPos.y *= 0.2f;
         float timeForParticleToArrive = .5f;
@@ -120,10 +121,7 @@ public class LevelManager : MonoBehaviour
             }
             yield return new WaitForEndOfFrame();
         }
-        UIManager.instance.normalCurrencyCounter.ChangeCurrency(activeTree.GetSellPrice());
-        PlayerPrefs.SetString("LeafInvestment", "0");
-        PlayerPrefs.SetString("BranchInvestment", "0");
-        PlayerPrefs.SetString("FruitInvestment", "0");
+        SaveManager.ResetInvestments();
         //activeTree.upgradesManager.UpgdradeLevelReset();
         //ResetUpgrades();
     }

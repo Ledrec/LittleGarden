@@ -46,15 +46,11 @@ public class Tree : MonoBehaviour
 
     public virtual BigInteger GetSellPrice()
     {
-        Debug.Log(mainBranch.GetGrowthPercent());
-        BigInteger price = (BigInteger)(mainBranch.baseSellPrice * mainBranch.GetGrowthPercent());
-        Debug.Log("priceB4: " + price);
-        BigInteger leafInvestment = BigInteger.Parse(PlayerPrefs.GetString("LeafInvestment"));
-        BigInteger branchInvestment = BigInteger.Parse(PlayerPrefs.GetString("BranchInvestment"));
-        BigInteger fruitInvestment = BigInteger.Parse(PlayerPrefs.GetString("FruitInvestment"));
-        Debug.Log("priceAfter: " + (leafInvestment + branchInvestment + fruitInvestment));
-        price += (leafInvestment + branchInvestment + fruitInvestment) * 11 / 10; //(GetNumberOfBranches()* mainBranch.GetGrowthPercent()+ GetNumberOfLeaves()*mainBranch.GetGrowthPercent());
-        Debug.Log(price);
+        BigInteger price = (BigInteger)(mainBranch.baseSellPrice * SaveManager.LoadSoldTrees()  * mainBranch.GetGrowthPercent());
+        BigInteger leafInvestment = SaveManager.GetInvestmentValue("Leaf");
+        BigInteger branchInvestment = SaveManager.GetInvestmentValue("Branch");
+        BigInteger fruitInvestment = SaveManager.GetInvestmentValue("Fruit");
+        price += (leafInvestment + branchInvestment + fruitInvestment) * 15 / 10;
         return price;
     }
 

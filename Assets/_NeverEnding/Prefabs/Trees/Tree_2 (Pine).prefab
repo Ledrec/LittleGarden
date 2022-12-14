@@ -10641,7 +10641,7 @@ MonoBehaviour:
     currentLevel: 0
     basePrice: 2
     scaleDivider: 0.9
-    scaleMultiplier: 1.05
+    scaleMultiplier: 1.0025
     maxLevel: 61
     levelUpEvent:
       m_PersistentCalls:
@@ -10663,7 +10663,7 @@ MonoBehaviour:
     currentLevel: 0
     basePrice: 5
     scaleDivider: 6
-    scaleMultiplier: 1.1
+    scaleMultiplier: 1.025
     maxLevel: 27
     levelUpEvent:
       m_PersistentCalls:
@@ -30584,21 +30584,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 123660, guid: 2987fcbd509dada48afcefd5e46a8b6d, type: 3}
   m_PrefabInstance: {fileID: 7758056700606120926}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3664788273338256306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7758056700606046418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7704c0fb5ed660542b740ef1e8bb87e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leaf: {fileID: 7688180215400226868}
-  isActive: 0
-  isDone: 0
 --- !u!95 &5915781974238228844
 Animator:
   serializedVersion: 4
@@ -30619,6 +30604,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3664788273338256306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7758056700606046418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7704c0fb5ed660542b740ef1e8bb87e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leaf: {fileID: 7688180215400226868}
+  isActive: 0
+  isDone: 0
 --- !u!1001 &8334222481751756624
 PrefabInstance:
   m_ObjectHideFlags: 0

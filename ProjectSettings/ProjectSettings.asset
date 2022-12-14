@@ -802,6 +802,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    Android: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
     Standalone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
     iPhone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
   additionalCompilerArguments: {}

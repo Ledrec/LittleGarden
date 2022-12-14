@@ -10474,7 +10474,7 @@ MonoBehaviour:
   allSubBranches: []
   upgradesManager: {fileID: 7559730279894713776}
   canGrowFruit: 0
-  percentToSell: 0
+  percentToSell: 0.5
   isChristmasPine: 1
   editorGrow: 0
   leaves:

@@ -2,16 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PoolType
-{
-    SFX,
-    CombatClips,
-    UiClips
-}
 
 public class Pool : MonoBehaviour
 {
-    public PoolType poolType;
     [Header("Instantiate on Start")]
     public bool willInstantiate;
     public int startingPool;

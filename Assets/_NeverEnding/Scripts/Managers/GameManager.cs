@@ -68,7 +68,8 @@ public class GameManager : MonoBehaviour
     {
         targetMovement += tapSpeedIncrease;
         targetMovement = Mathf.Clamp(targetMovement, tapSpeedLimits.x, tapSpeedLimits.y);
-
+        GameObject go =UIManager.instance.gameplayWindow.tapFeedbackPool.GetPooledObject();
+        go.transform.position = _finger.GetWorldPosition(0.5f);
         if (SaveManager.LoadOnlyTutorial() == 1)  //  Viste el banner del tutorial
         {
             UIManager.instance.CloseFirstTutorial();

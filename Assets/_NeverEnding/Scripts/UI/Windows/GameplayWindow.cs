@@ -11,6 +11,7 @@ public class GameplayWindow : Window
     public SellButton sellButton;
     public GameObject btnNextLevel;
     public TextMeshProUGUI txtNextLevelPrice;
+    public Pool tapFeedbackPool;
     private void Start()
     {
         SetUpUpgradeButtonsState();

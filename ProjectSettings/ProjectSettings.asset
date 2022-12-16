@@ -12,17 +12,17 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: NeverEnding Games
-  productName: Little Garden ASMR
+  companyName: Neverending Games
+  productName: My Little Garden
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 0
+  m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -39,7 +39,9 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -155,9 +157,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.NeverEndingGames.LittleGardenASMR
     Standalone: com.DefaultCompany.Plants
-    iPhone: com.NeverEnding-Games.Little-Garden-AMSR
+    iPhone: com.DefaultCompany.Plants
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -247,7 +248,7 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 3
+  AndroidTargetArchitectures: 1
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -275,13 +276,85 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 4e2e37209eca643bda1553473fd53fca, type: 3}
+      m_Icon: {fileID: 2800000, guid: c690c3ec748f84248b391157962ab248, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
+    - m_Textures:
+      - {fileID: 2800000, guid: 6e485fc56b561d94fbe4ec6f91816e31, type: 3}
+      m_Width: 192
+      m_Height: 192
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: c690c3ec748f84248b391157962ab248, type: 3}
+      m_Width: 144
+      m_Height: 144
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 24f2c34a79c61c4409cff4ea9e579705, type: 3}
+      m_Width: 96
+      m_Height: 96
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: e996afe455eb6ae4496ddc1e9da8ef31, type: 3}
+      m_Width: 72
+      m_Height: 72
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 3b6f01e05e209164da1b79d4c704a76c, type: 3}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 427ba6c36215fea408a153ef8bb10f31, type: 3}
+      m_Width: 36
+      m_Height: 36
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 6e485fc56b561d94fbe4ec6f91816e31, type: 3}
+      m_Width: 192
+      m_Height: 192
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: c690c3ec748f84248b391157962ab248, type: 3}
+      m_Width: 144
+      m_Height: 144
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 24f2c34a79c61c4409cff4ea9e579705, type: 3}
+      m_Width: 96
+      m_Height: 96
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: e996afe455eb6ae4496ddc1e9da8ef31, type: 3}
+      m_Width: 72
+      m_Height: 72
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 3b6f01e05e209164da1b79d4c704a76c, type: 3}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 427ba6c36215fea408a153ef8bb10f31, type: 3}
+      m_Width: 36
+      m_Height: 36
+      m_Kind: 0
+      m_SubKind: 
     - m_Textures: []
       m_Width: 432
       m_Height: 432
@@ -312,178 +385,118 @@ PlayerSettings:
       m_Height: 81
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
-      m_Width: 192
-      m_Height: 192
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 144
-      m_Height: 144
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 96
-      m_Height: 96
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 72
-      m_Height: 72
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 48
-      m_Height: 48
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 36
-      m_Height: 36
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 192
-      m_Height: 192
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 144
-      m_Height: 144
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 96
-      m_Height: 96
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 72
-      m_Height: 72
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 48
-      m_Height: 48
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 36
-      m_Height: 36
-      m_Kind: 0
-      m_SubKind: 
   - m_BuildTarget: iPhone
     m_Icons:
     - m_Textures:
-      - {fileID: 2800000, guid: 4b83b35279d484670b4ec733a82a1f81, type: 3}
+      - {fileID: 2800000, guid: 4a2988752247ef042a55354ac54d4c23, type: 3}
       m_Width: 180
       m_Height: 180
       m_Kind: 0
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 7abbb22c0fa5f4d01b065d7f349efd5b, type: 3}
+      - {fileID: 2800000, guid: 8f7285c7f04202641a0e817bfa7aaedb, type: 3}
       m_Width: 120
       m_Height: 120
       m_Kind: 0
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 0294dc79a82474184babaa436a3e7678, type: 3}
+      - {fileID: 2800000, guid: ec7752760bbee8d48a3185277f67c04d, type: 3}
       m_Width: 167
       m_Height: 167
       m_Kind: 0
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 6bc5cb9d959604c15af1277e0dc97bcf, type: 3}
+      - {fileID: 2800000, guid: 711d8fcf363d48248b07f6b15a3495d4, type: 3}
       m_Width: 152
       m_Height: 152
       m_Kind: 0
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: d825e18e1e1a44ff89520755cba3f8d6, type: 3}
+      - {fileID: 2800000, guid: 30e668ed3c3400f4f87bb2caacd17083, type: 3}
       m_Width: 76
       m_Height: 76
       m_Kind: 0
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 7abbb22c0fa5f4d01b065d7f349efd5b, type: 3}
+      - {fileID: 2800000, guid: 8f7285c7f04202641a0e817bfa7aaedb, type: 3}
       m_Width: 120
       m_Height: 120
       m_Kind: 3
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: eb3b01026ca6643ddbebc51bf62d7d50, type: 3}
+      - {fileID: 2800000, guid: 0c51433bd83e7544585108b5bd4357fe, type: 3}
       m_Width: 80
       m_Height: 80
       m_Kind: 3
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: eb3b01026ca6643ddbebc51bf62d7d50, type: 3}
+      - {fileID: 2800000, guid: 0c51433bd83e7544585108b5bd4357fe, type: 3}
       m_Width: 80
       m_Height: 80
       m_Kind: 3
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: c0bb36fd92f784f749f29cf9840d8ec6, type: 3}
+      - {fileID: 2800000, guid: aaf07786f88f08a4aafb90015f68fd9d, type: 3}
       m_Width: 40
       m_Height: 40
       m_Kind: 3
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: e564a6d68e4a64a3cb51923875640cf9, type: 3}
+      - {fileID: 2800000, guid: 3a12dab4b8898b84d8219f75e9e104e5, type: 3}
       m_Width: 87
       m_Height: 87
       m_Kind: 1
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 6257dceb3de4144ac9f14bb9e34fbeb0, type: 3}
+      - {fileID: 2800000, guid: 26ff5b8e8d83de64ebb1f3ade1085cb6, type: 3}
       m_Width: 58
       m_Height: 58
       m_Kind: 1
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 97c346340669d449b9a1223043edceec, type: 3}
+      - {fileID: 2800000, guid: 5e60fcf582757bd4c98af5033c394ad7, type: 3}
       m_Width: 29
       m_Height: 29
       m_Kind: 1
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 6257dceb3de4144ac9f14bb9e34fbeb0, type: 3}
+      - {fileID: 2800000, guid: 26ff5b8e8d83de64ebb1f3ade1085cb6, type: 3}
       m_Width: 58
       m_Height: 58
       m_Kind: 1
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 97c346340669d449b9a1223043edceec, type: 3}
+      - {fileID: 2800000, guid: 5e60fcf582757bd4c98af5033c394ad7, type: 3}
       m_Width: 29
       m_Height: 29
       m_Kind: 1
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: d7b73ec334e264bd9b63570240457bf6, type: 3}
+      - {fileID: 2800000, guid: 8a4b6c214e4dc2d4cbb64d609ab5caac, type: 3}
       m_Width: 60
       m_Height: 60
       m_Kind: 2
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: c0bb36fd92f784f749f29cf9840d8ec6, type: 3}
+      - {fileID: 2800000, guid: aaf07786f88f08a4aafb90015f68fd9d, type: 3}
       m_Width: 40
       m_Height: 40
       m_Kind: 2
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: c0bb36fd92f784f749f29cf9840d8ec6, type: 3}
+      - {fileID: 2800000, guid: aaf07786f88f08a4aafb90015f68fd9d, type: 3}
       m_Width: 40
       m_Height: 40
       m_Kind: 2
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 2f6926522a62d418eafbd916e7e524ff, type: 3}
+      - {fileID: 2800000, guid: f5f9baf67efbe1948b77384954f5e768, type: 3}
       m_Width: 20
       m_Height: 20
       m_Kind: 2
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 4e2e37209eca643bda1553473fd53fca, type: 3}
+      - {fileID: 2800000, guid: f8bf41a146dc4f944a65b0f11a6a641d, type: 3}
       m_Width: 1024
       m_Height: 1024
       m_Kind: 4
@@ -809,9 +822,9 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: c2bab247fa3a0384eabf4f1e6d77f64d, type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 16
   webGLExceptionSupport: 1
@@ -829,13 +842,12 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR;TTP_PRIVACY_SETTINGS;TTP_REWARDED_INTERSTITIALS;TTP_REWARDED_ADS;TTP_POPUPMGR;TTP_PROMOTION;TTP_GAMEPROGRESSION;TTP_CRASHTOOL;TTP_APPSFLYER;TTP_RATEUS;TTP_BANNERS;TTP_INTERSTITIALS;TTP_OPENADS;TTP_ANALYTICS
+    Android: 
     Standalone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
-    iPhone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR;TTP_PRIVACY_SETTINGS;TTP_REWARDED_INTERSTITIALS;TTP_REWARDED_ADS;TTP_POPUPMGR;TTP_PROMOTION;TTP_GAMEPROGRESSION;TTP_CRASHTOOL;TTP_APPSFLYER;TTP_RATEUS;TTP_BANNERS;TTP_INTERSTITIALS;TTP_OPENADS;TTP_ANALYTICS
+    iPhone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend:
-    Android: 1
+  scriptingBackend: {}
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}

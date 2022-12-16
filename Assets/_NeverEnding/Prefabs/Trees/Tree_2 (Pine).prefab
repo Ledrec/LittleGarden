@@ -26171,6 +26171,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
+      propertyPath: buildOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
+      propertyPath: buildOnEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178596232991940301, guid: f14e1efb6f988774bb05e7b60efb02f9, type: 3}
       propertyPath: _clipToSample.size
       value: 0
       objectReference: {fileID: 0}

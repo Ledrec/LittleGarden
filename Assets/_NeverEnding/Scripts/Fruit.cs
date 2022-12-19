@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum fruitType { apple, orange, peach };
+public enum fruitType { apple, orange, peach, jewel};
 
 public class Fruit : MonoBehaviour
 {
@@ -23,6 +23,7 @@ public class Fruit : MonoBehaviour
     public GameObject appleObject;
     public GameObject orangeObject;
     public GameObject peachObject;
+    public GameObject jewelObject;
 
     private void OnEnable()
     {

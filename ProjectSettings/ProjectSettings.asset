@@ -157,7 +157,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.NeverEndingGames.LittleGardenAMSR
     Standalone: com.DefaultCompany.Plants
-    iPhone: com.DefaultCompany.Plants
+    iPhone: com.NeverEnding-Games.Little-Garden-AMSR
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -244,22 +244,22 @@ PlayerSettings:
   useCustomLauncherManifest: 0
   useCustomMainGradleTemplate: 0
   useCustomLauncherGradleManifest: 0
-  useCustomBaseGradleTemplate: 0
+  useCustomBaseGradleTemplate: 1
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 3
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: '{inproject}: LG.keystore'
+  AndroidKeyaliasName: neverending
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -841,12 +841,13 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
+    Android: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR;TTP_PRIVACY_SETTINGS;TTP_REWARDED_INTERSTITIALS;TTP_REWARDED_ADS;TTP_POPUPMGR;TTP_PROMOTION;TTP_GAMEPROGRESSION;TTP_CRASHTOOL;TTP_APPSFLYER;TTP_RATEUS;TTP_BANNERS;TTP_INTERSTITIALS;TTP_OPENADS;TTP_ANALYTICS
     Standalone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
-    iPhone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR
+    iPhone: DREAMTECK_SPLINES;AMPLIFY_SHADER_EDITOR;TTP_PRIVACY_SETTINGS;TTP_REWARDED_INTERSTITIALS;TTP_REWARDED_ADS;TTP_POPUPMGR;TTP_PROMOTION;TTP_GAMEPROGRESSION;TTP_CRASHTOOL;TTP_APPSFLYER;TTP_RATEUS;TTP_BANNERS;TTP_INTERSTITIALS;TTP_OPENADS;TTP_ANALYTICS
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}

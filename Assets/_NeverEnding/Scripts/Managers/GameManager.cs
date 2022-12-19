@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Lean.Touch;
+using Tabtale.TTPlugins;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
+        TTPCore.Setup();
+
         //SaveManager.SaveCurrentLevel(1);
         instance = this;
         if (!PlayerPrefs.HasKey("LeafInvestment"))

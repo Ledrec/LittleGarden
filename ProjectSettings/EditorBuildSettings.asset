@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_NeverEnding/Scenes/SNC_Demo.unity
+    guid: ec28a93808fdaa84d987ccd0c6c0990b
   m_configObjects: {}

@@ -107,6 +107,9 @@ public class Fruit : MonoBehaviour
             case fruitType.peach:
                 peachObject.SetActive(true);
                 break;
+            case fruitType.jewel:
+                jewelObject.SetActive(true);
+                break;
         }
     }
 

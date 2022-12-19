@@ -117,7 +117,7 @@ public class UpgradesManager : MonoBehaviour
     {
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
         {
-            if(GameManager.instance.levelManager.activeTree.allBranches[i].GetGrowthPercent()>=1)
+            if(GameManager.instance.levelManager.activeTree.allBranches[i].isDone)
             {
                 for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].fruits.Count; j++)
                 {
@@ -171,13 +171,16 @@ public class UpgradesManager : MonoBehaviour
         bool done = false;
         for (int i = 0; i < GameManager.instance.levelManager.activeTree.allBranches.Length; i++)
         {
-            for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].fruits.Count; j++)
+            if (GameManager.instance.levelManager.activeTree.allBranches[i].isDone)
             {
-                if (!GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].canGrow&& !GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].isDone)
+                for (int j = 0; j < GameManager.instance.levelManager.activeTree.allBranches[i].fruits.Count; j++)
                 {
-                    GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].canGrow=true;
-                    done = true;
-                    break;
+                    if (!GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].canGrow && !GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].isDone)
+                    {
+                        GameManager.instance.levelManager.activeTree.allBranches[i].fruits[j].canGrow = true;
+                        done = true;
+                        break;
+                    }
                 }
             }
             if (done)

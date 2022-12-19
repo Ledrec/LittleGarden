@@ -8,6 +8,9 @@ public class Leaf : MonoBehaviour
     [Header("Components")]
     public Animator anmtr;
     public SplineFollower splineFollower;
+    [Header("Types")]
+    public LeafType leafType;
+    public GameObject[] leafTypes;
     [Header("Growth")]
     public bool isDone;
     public float percentToAppear;
@@ -29,7 +32,7 @@ public class Leaf : MonoBehaviour
 
     private void Start()
     {
-        SetLeafStage(0);
+        SetUpLeaf();
     }
 
 
@@ -39,6 +42,21 @@ public class Leaf : MonoBehaviour
         SetLeafStage(1);
     }
 
+    public void SetUpLeaf()
+    {
+        for(int i=0; i<leafTypes.Length;i++)
+        {
+            if(i == (int)leafType)
+            {
+                leafTypes[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                leafTypes[i].gameObject.SetActive(false);
+            }
+        }
+        SetLeafStage(0);
+    }
 
     #region Automated Growth
     void AutomateGrow()
@@ -87,4 +105,10 @@ public class Leaf : MonoBehaviour
         }
     }
     #endregion
+}
+public enum LeafType
+{
+    Normal,
+    Pine,
+    Bill
 }

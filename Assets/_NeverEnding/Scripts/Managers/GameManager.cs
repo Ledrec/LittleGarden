@@ -22,10 +22,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-
-        TTPCore.Setup();
-
-        //SaveManager.SaveCurrentLevel(1);
+        //SaveManager.SaveCurrentLevel(4);
         instance = this;
         if (!PlayerPrefs.HasKey("LeafInvestment"))
         {

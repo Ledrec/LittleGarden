@@ -1732,7 +1732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1924843921819505037, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 183.19995
+      value: 183.2002
       objectReference: {fileID: 0}
     - target: {fileID: 1938527149578561610, guid: a37b6c28fdc994b48a0005fa30a2c3ba, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4354,7 +4354,7 @@ Terrain:
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   m_BakeLightProbesForTrees: 0
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -5147,9 +5147,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ac47f498555694763aedacb2bc47b95a, type: 2}
   - {fileID: 2100000, guid: 7283ec21157ee4d6c97c23a898d03ba9, type: 2}
   - {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
+  - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   skyboxMaterial:
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: 7e1667e44c58c4d1c83e13df9fb657a0, type: 2}
+  - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   treeColor:
@@ -5161,6 +5163,8 @@ MonoBehaviour:
   - {r: 0.72156864, g: 0.7176471, b: 0, a: 1}
   - {r: 1, g: 0.53333336, b: 0, a: 1}
   - {r: 1, g: 0.4392157, b: 0, a: 1}
+  - {r: 1, g: 0.5102247, b: 0, a: 1}
+  - {r: 1, g: 0.5696164, b: 0, a: 1}
   treeParent: {fileID: 171210082}
   terrain: {fileID: 1208975168}
   snowParticle: {fileID: 1218057497}
@@ -6012,6 +6016,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4948303356021124632, guid: 6219f518d7334d84e959c0950759ece7, type: 3}
   m_PrefabInstance: {fileID: 1871978078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1900565066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4691575997469015427, guid: 309a6007406ddf146ae19c55f8985ced, type: 3}
+  m_PrefabInstance: {fileID: 4691575997584374769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1908759910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6277,6 +6286,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4691575997469015426, guid: 309a6007406ddf146ae19c55f8985ced, type: 3}
   m_PrefabInstance: {fileID: 4691575997584374769}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2032158325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900565066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27877d30a583743fc803790eabe43b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2088743407
 GameObject:
   m_ObjectHideFlags: 0

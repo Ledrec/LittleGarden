@@ -59,6 +59,7 @@ public class LevelManager : MonoBehaviour
     public void ChangeScenario()
     {
         Shader.SetGlobalFloat("ShadowIntensity", 0.8f);
+        Shader.SetGlobalColor("shadowColor", SaveManager.LoadCurrentLevel() != 4 ? Color.black : new Color(.4f, 0, 1));
         RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
         terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
         leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];

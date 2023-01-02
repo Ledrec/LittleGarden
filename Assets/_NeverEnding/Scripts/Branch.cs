@@ -178,7 +178,7 @@ public class Branch : MonoBehaviour
     }
     void IdleReward()
     {
-        System.Numerics.BigInteger idleProfit = GetGrowthPercent() <= .1 ? 1 :  (System.Numerics.BigInteger)(GetGrowthPercent() * (10 * (SaveManager.LoadSoldTrees() + 1)));
+        System.Numerics.BigInteger idleProfit = GetGrowthPercent() <= .1 ? 1 :  (System.Numerics.BigInteger)(GetGrowthPercent() * (100 * Mathf.Pow(10, SaveManager.LoadCurrentLevel())  /* (SaveManager.LoadSoldTrees() + 1)*/));
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(idleProfit);
         IncomeMessages.AddMessage(transform.position + profitMessageOffset, idleProfit);
     }

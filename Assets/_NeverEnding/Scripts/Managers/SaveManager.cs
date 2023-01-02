@@ -128,6 +128,7 @@ public class SaveManager
     {
         PlayerPrefs.SetInt("CurrentLevel", _level);
     }
+
     public static int LoadCurrentLevel()
     {
         if(!PlayerPrefs.HasKey("CurrentLevel"))
@@ -136,6 +137,7 @@ public class SaveManager
         }
         return PlayerPrefs.GetInt("CurrentLevel");
     }
+
     public static void SaveSoldTrees(int _total)
     {
         PlayerPrefs.SetInt("SoldTrees", _total);

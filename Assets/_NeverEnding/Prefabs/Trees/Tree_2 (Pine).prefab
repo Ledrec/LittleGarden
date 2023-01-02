@@ -10707,7 +10707,7 @@ MonoBehaviour:
     currentLevel: 0
     basePrice: 5
     scaleDivider: 1.5
-    scaleMultiplier: 1.5
+    scaleMultiplier: 1.1
     maxLevel: 28
     levelUpEvent:
       m_PersistentCalls:

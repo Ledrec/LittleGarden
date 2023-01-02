@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2812792468784809883, guid: 3a09cb1b39eb28f42ae2f57b1f673b78, type: 3}
+      propertyPath: upgrades.Array.data[3].scaleMultiplier
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2820122577904466055, guid: 3a09cb1b39eb28f42ae2f57b1f673b78, type: 3}
       propertyPath: m_Mesh
       value: 

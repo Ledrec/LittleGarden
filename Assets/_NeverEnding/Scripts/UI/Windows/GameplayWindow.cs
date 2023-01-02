@@ -63,6 +63,10 @@ public class GameplayWindow : Window
     }
     public void SetUpUpgradeButtonsState()
     {
+        Debug.Log(GameManager.instance);
+        Debug.Log(GameManager.instance.levelManager);
+        Debug.Log(GameManager.instance.levelManager.activeTree);
+        Debug.Log(GameManager.instance.levelManager.activeTree.upgradesManager);
         Upgrade temp = GameManager.instance.levelManager.activeTree.upgradesManager.GetUpgradeType(UpgradeType.AddBranch);
         GetUpgradeButton(UpgradeType.AddBranch)?.SetState(
            Mathf.RoundToInt(temp.MultiplyLoop(temp.totalUpgradeLevel, 0, temp.basePrice)),

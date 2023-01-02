@@ -39,7 +39,7 @@ public class LevelManager : MonoBehaviour
     {
         GameObject go = Instantiate(trees[_id], Vector3.zero, Quaternion.identity, treeParent);
         activeTree = go.GetComponent<Tree>();
-        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel()));
+        changeTreePrice = (System.Numerics.BigInteger)(100000*Mathf.Pow(10,SaveManager.LoadCurrentLevel())/2.0f);
         UIManager.instance.gameplayWindow.txtNextLevelPrice.text = "$" + GameManager.instance.levelManager.changeTreePrice.ToCompactString();
         UIManager.instance.gameplayWindow.SetChristmasButtons(activeTree.isChristmasPine);
         ChangeScenario();
@@ -134,7 +134,7 @@ public class LevelManager : MonoBehaviour
 
     public void GoToNextLevel()
     {
-        if(SaveManager.LoadCurrency(Currency.Regular)>=changeTreePrice)
+        if(SaveManager.LoadCurrency(Currency.Regular)>= changeTreePrice)
         {
             UIManager.instance.fadeWindow.midAction = () => ChangeLevel();
             UIManager.instance.fadeWindow.Show();
@@ -144,6 +144,7 @@ public class LevelManager : MonoBehaviour
     void ChangeLevel()
     {
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(-changeTreePrice);
+        SaveManager.SaveSoldTrees(0);
         ResetUpgrades();
         SaveManager.SaveCurrentLevel(SaveManager.LoadCurrentLevel() + 1);
         SellTree();

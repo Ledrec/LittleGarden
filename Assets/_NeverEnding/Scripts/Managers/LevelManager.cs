@@ -17,6 +17,8 @@ public class LevelManager : MonoBehaviour
     public int numberParticles;
     public float endPosZ;
     public float shadowTest;
+    [SerializeField]private Level[] _levels;
+    [SerializeField]private TreeTypesController _treeTypeController;
 
     public AnimationCurve curveAnimation;
     public System.Numerics.BigInteger changeTreePrice;
@@ -59,12 +61,13 @@ public class LevelManager : MonoBehaviour
     public void ChangeScenario()
     {
         Shader.SetGlobalFloat("ShadowIntensity", 0.8f);
-        Shader.SetGlobalColor("shadowColor", SaveManager.LoadCurrentLevel() != 4 ? Color.black : new Color(.4f, 0, 1));
-        RenderSettings.skybox = skyboxMaterial[SaveManager.LoadCurrentLevel()];
-        terrain.materialTemplate = terrainsMaterial[SaveManager.LoadCurrentLevel()];
-        leavesBlue.color = treeColor[SaveManager.LoadCurrentLevel() * 2];
-        leavesOrange.color = treeColor[(SaveManager.LoadCurrentLevel() * 2) + 1];
-        if(SaveManager.LoadCurrentLevel() == 1)
+        int level = SaveManager.LoadCurrentLevel();
+        Shader.SetGlobalColor("shadowColor", level != 4 ? Color.black : new Color(.4f, 0, 1));
+        RenderSettings.skybox = skyboxMaterial[level];
+        terrain.materialTemplate = terrainsMaterial[level];
+        leavesBlue.color = treeColor[level * 2];
+        leavesOrange.color = treeColor[(level * 2) + 1];
+        if (level == 1)
         {
             snowParticle.SetActive(true);
         }
@@ -72,6 +75,7 @@ public class LevelManager : MonoBehaviour
         {
             snowParticle.SetActive(false);
         }
+        if (_treeTypeController != null) { _treeTypeController.ActivateTreeType(_levels[level].TreeType); }
     }
 
     IEnumerator SellTreeAnimation()
@@ -168,3 +172,11 @@ public class LevelManager : MonoBehaviour
     }
 #endif
 }
+
+[System.Serializable]
+public class Level
+{
+    [field:SerializeField]public TreeType TreeType { get; private set; }
+}
+
+public enum TreeType { Normal, Japanese, Sakura, Length }

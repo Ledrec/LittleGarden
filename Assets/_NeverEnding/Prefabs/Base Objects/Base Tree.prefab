@@ -82,7 +82,7 @@ MonoBehaviour:
   mainSubBranches: []
   allBranches: []
   allSubBranches: []
-  upgradesManager: {fileID: 0}
+  upgradesManager: {fileID: 7640030251683880892}
   canGrowFruit: 0
   percentToSell: 0.5
   isChristmasPine: 0

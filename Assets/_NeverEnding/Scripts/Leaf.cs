@@ -110,5 +110,6 @@ public enum LeafType
 {
     Normal,
     Pine,
-    Bill
+    Bill,
+    Bonsai
 }

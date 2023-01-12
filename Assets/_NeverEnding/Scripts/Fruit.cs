@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum fruitType { apple, orange, peach, jewel};
+public enum fruitType { apple, orange, peach, jewel, flower};
 
 public class Fruit : MonoBehaviour
 {
@@ -29,8 +29,16 @@ public class Fruit : MonoBehaviour
     {
         //flower.transform.localEulerAngles = new Vector3(0, 0, Random.Range(0.0f, 360.0f));
         //flower.transform.LookAt(Camera.main.transform, Vector3.up);
-        StartCoroutine(WaitForFlowerDeath());
-        ChooseFruit();
+        if (typeFruit != fruitType.flower)
+        {
+            StartCoroutine(WaitForFlowerDeath());
+            ChooseFruit();
+        }
+        else
+        {
+            StartCoroutine(GrowFlower());
+
+        }
     }
 
 
@@ -41,7 +49,11 @@ public class Fruit : MonoBehaviour
             Grow();
         }
     }
-
+    IEnumerator GrowFlower()
+    {
+        yield return new WaitUntil(() => canGrow);
+        flower.enabled = true;
+    }
     IEnumerator WaitForFlowerDeath()
     {
         yield return new WaitUntil(() => canGrow);

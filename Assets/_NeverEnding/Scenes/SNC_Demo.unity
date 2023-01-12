@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.51720065, g: 0.8774337, b: 0.99499434, a: 1}
+  m_IndirectSpecularColor: {r: 0.5178995, g: 0.87977475, b: 0.99616915, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10548,6 +10548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trees:
+  - {fileID: 8710322036501169358, guid: b0130dfdfc9025548bad93c968cb6e87, type: 3}
   - {fileID: 8259001397738526955, guid: 3a09cb1b39eb28f42ae2f57b1f673b78, type: 3}
   - {fileID: 5769778687277122684, guid: 346b2157d6262e0408ae771c8e3cd579, type: 3}
   - {fileID: 4355865545486976246, guid: 1f4cf5b564ff4314ba4a2e8a37efe12c, type: 3}
@@ -10559,9 +10560,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7283ec21157ee4d6c97c23a898d03ba9, type: 2}
   - {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
   - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
+  - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   skyboxMaterial:
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: 7e1667e44c58c4d1c83e13df9fb657a0, type: 2}
+  - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}

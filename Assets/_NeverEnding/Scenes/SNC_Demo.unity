@@ -10548,12 +10548,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trees:
-  - {fileID: 8710322036501169358, guid: b0130dfdfc9025548bad93c968cb6e87, type: 3}
+  - {fileID: 8710322036501169358, guid: 9af968cd7710c5e4f890f0c4c8a369c8, type: 3}
   - {fileID: 8259001397738526955, guid: 3a09cb1b39eb28f42ae2f57b1f673b78, type: 3}
   - {fileID: 5769778687277122684, guid: 346b2157d6262e0408ae771c8e3cd579, type: 3}
   - {fileID: 4355865545486976246, guid: 1f4cf5b564ff4314ba4a2e8a37efe12c, type: 3}
   - {fileID: 6546616621345122032, guid: ee699cb8e804bb141af889a084df6168, type: 3}
   - {fileID: 3420258462613261347, guid: f232ff46254db4e15bf75c57569f1ff9, type: 3}
+  - {fileID: 8710322036501169358, guid: b0130dfdfc9025548bad93c968cb6e87, type: 3}
   terrainsMaterial:
   - {fileID: 2100000, guid: db9ee0bdee3c7488a873409b0e4d7635, type: 2}
   - {fileID: 2100000, guid: ac47f498555694763aedacb2bc47b95a, type: 2}
@@ -10561,9 +10562,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
   - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
+  - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   skyboxMaterial:
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: 7e1667e44c58c4d1c83e13df9fb657a0, type: 2}
+  - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}
   - {fileID: 2100000, guid: e1f809f9000434f4d976f132684abbea, type: 2}

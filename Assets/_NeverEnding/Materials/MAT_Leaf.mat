@@ -103,7 +103,7 @@ Material:
     - _LineMinOld: -0.021
     - _MaxOld: -580
     - _Metallic: 0
-    - _MinOld: -290.4
+    - _MinOld: 1078.9
     - _OcclusionStrength: 1
     - _Offset: 1
     - _Parallax: 0.005

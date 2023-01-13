@@ -23,6 +23,17 @@ public class BranchEditor : Editor
         {
             RemoveNodesAsPoints(); 
         }
+        if(GUILayout.Button("FindLeafPositions"))
+        {
+            FindLeafPositions();
+        }
+
+    }
+
+    public void FindLeafPositions()
+    {
+        Branch reference = (Branch)target;
+        reference.FindLeafPositions();
     }
 
     public void SetUpBranchNodes()

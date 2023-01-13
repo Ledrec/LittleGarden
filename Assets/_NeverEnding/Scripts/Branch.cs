@@ -24,14 +24,14 @@ public class Branch : MonoBehaviour
 
     public float CurrentMovement
     {
-        get 
-        { 
-            return currentMovement; 
+        get
+        {
+            return currentMovement;
         }
-        set 
-        { 
-            currentMovement = value; 
-            for(int i=0; i<followingNodes.Count; i++)
+        set
+        {
+            currentMovement = value;
+            for (int i = 0; i < followingNodes.Count; i++)
             {
                 followingNodes[i].followSpeed = currentMovement;
             }
@@ -72,15 +72,15 @@ public class Branch : MonoBehaviour
 
     public double GetGrowthPercent()
     {
-        if(followingNodes.Count > 0)
+        if (followingNodes.Count > 0)
         {
-            if(!isSubBranch)
+            if (!isSubBranch)
             {
                 //Debug.Log("Valor: " + followingNodes[0].GetPercent());
 
-                if(SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
+                if (SaveManager.LoadOnlyTutorial() == 2)  //  Vendes tu primer arbol
                 {
-                    if(followingNodes[0].GetPercent() >= 0.15f)
+                    if (followingNodes[0].GetPercent() >= 0.15f)
                     {
                         GameManager.instance.appearButtonTutorial = true;
                         UIManager.instance.CallThirdtTutorial();
@@ -160,10 +160,10 @@ public class Branch : MonoBehaviour
         rendererComputer.gameObject.SetActive(_active);
     }
 
-    
+
     void IdleProfit()
     {
-        if(!isSubBranch)
+        if (!isSubBranch)
         {
             if (GetGrowthPercent() >= percentToIdle)
             {
@@ -178,7 +178,7 @@ public class Branch : MonoBehaviour
     }
     void IdleReward()
     {
-        System.Numerics.BigInteger idleProfit = GetGrowthPercent() <= .1 ? 1 :  (System.Numerics.BigInteger)(GetGrowthPercent() * (100 * Mathf.Pow(10, SaveManager.LoadCurrentLevel())  /* (SaveManager.LoadSoldTrees() + 1)*/));
+        System.Numerics.BigInteger idleProfit = GetGrowthPercent() <= .1 ? 1 : (System.Numerics.BigInteger)(GetGrowthPercent() * (100 * Mathf.Pow(10, SaveManager.LoadCurrentLevel())  /* (SaveManager.LoadSoldTrees() + 1)*/));
         UIManager.instance.normalCurrencyCounter.ChangeCurrency(idleProfit);
         IncomeMessages.AddMessage(transform.position + profitMessageOffset, idleProfit);
     }
@@ -186,9 +186,9 @@ public class Branch : MonoBehaviour
     public int GetActiveLeaves()
     {
         int temp = 0;
-        for(int i=0; i<leaves.Count; i++)
+        for (int i = 0; i < leaves.Count; i++)
         {
-            if(leaves[i].isDone)
+            if (leaves[i].isDone)
             {
                 temp++;
             }
@@ -196,4 +196,35 @@ public class Branch : MonoBehaviour
         return temp;
     }
 
+    public void FindLeafPositions()
+    {
+        if (subBranches.Count == 0) return;
+        for(int i = 0; i< leaves.Count; i++)
+        {
+            Debug.Log(i);
+            float previousDist = 99999;
+            float percentToAppear = 0;
+            for(double j = 0; j < 1; j += .02 )
+            {
+                Debug.Log("j: " + j);
+                
+                float currDist = Vector3.Distance(pathComputer.EvaluatePosition(j), leaves[i].transform.position);
+                Debug.Log("currDist: " + currDist);
+                Debug.Log("currLeafpos:" + leaves[i].transform.position);
+                Debug.Log("currPos: " + pathComputer.EvaluatePosition(j));
+                if(currDist < previousDist)
+                {
+                    previousDist = currDist;
+                    percentToAppear = (float)j;
+                }
+            }
+            percentToAppear = Mathf.Clamp(percentToAppear += .01f, 0, 0.99f);
+            leaves[i].percentToAppear = percentToAppear;
+        }
+
+        for(int i = 0; i < subBranches.Count; i++)
+        {
+            subBranches[i].FindLeafPositions();
+        }
+    }
 }

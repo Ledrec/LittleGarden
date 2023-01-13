@@ -260,9 +260,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -273,9 +281,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -584,9 +600,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -948,6 +972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1007,6 +1035,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -1139,6 +1171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!1001 &204785879
@@ -1148,9 +1188,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -2330,6 +2378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -2384,6 +2436,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2481,6 +2537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2535,6 +2595,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3187,9 +3251,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -3200,9 +3272,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -3630,6 +3710,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!1001 &412886372
@@ -3698,6 +3786,14 @@ PrefabInstance:
     - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
       propertyPath: m_Name
       value: SakuraTree_B Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
@@ -3922,9 +4018,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -4340,9 +4444,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -4702,6 +4814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -4756,6 +4872,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5142,9 +5262,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -5404,6 +5532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -5458,6 +5590,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5776,9 +5912,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -6340,9 +6484,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -6763,6 +6915,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!4 &821047023 stripped
@@ -6777,9 +6937,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -7598,9 +7766,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -7667,6 +7843,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -7727,6 +7907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_A Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
 --- !u!1001 &1037690697
@@ -7736,6 +7920,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -7795,6 +7983,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -7936,6 +8128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -7992,6 +8188,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
 --- !u!1001 &1077430410
@@ -8001,9 +8201,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -8205,9 +8413,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -8503,6 +8719,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!4 &1133651241 stripped
@@ -8739,6 +8963,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -8798,6 +9026,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -8968,9 +9200,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -8986,6 +9226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -9045,6 +9289,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -9277,9 +9525,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -9346,6 +9602,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Size
+      value: 21.64337
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9406,6 +9670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_A Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
 --- !u!1001 &1283877440
@@ -9415,6 +9683,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -9474,6 +9746,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -9943,9 +10219,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -10548,19 +10832,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trees:
-  - {fileID: 8710322036501169358, guid: b0130dfdfc9025548bad93c968cb6e87, type: 3}
   - {fileID: 8710322036501169358, guid: 9af968cd7710c5e4f890f0c4c8a369c8, type: 3}
   - {fileID: 8259001397738526955, guid: 3a09cb1b39eb28f42ae2f57b1f673b78, type: 3}
   - {fileID: 5769778687277122684, guid: 346b2157d6262e0408ae771c8e3cd579, type: 3}
   - {fileID: 4355865545486976246, guid: 1f4cf5b564ff4314ba4a2e8a37efe12c, type: 3}
   - {fileID: 6546616621345122032, guid: ee699cb8e804bb141af889a084df6168, type: 3}
   - {fileID: 3420258462613261347, guid: f232ff46254db4e15bf75c57569f1ff9, type: 3}
+  - {fileID: 8710322036501169358, guid: b0130dfdfc9025548bad93c968cb6e87, type: 3}
   terrainsMaterial:
+  - {fileID: 2100000, guid: db9ee0bdee3c7488a873409b0e4d7635, type: 2}
   - {fileID: 2100000, guid: db9ee0bdee3c7488a873409b0e4d7635, type: 2}
   - {fileID: 2100000, guid: ac47f498555694763aedacb2bc47b95a, type: 2}
   - {fileID: 2100000, guid: 7283ec21157ee4d6c97c23a898d03ba9, type: 2}
   - {fileID: 2100000, guid: a2374007efe2144798fbde10ae184b19, type: 2}
-  - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   - {fileID: 2100000, guid: e84888931d65a49dd9781a137b27a79d, type: 2}
   skyboxMaterial:
@@ -10593,7 +10877,7 @@ MonoBehaviour:
   endPosZ: 2
   shadowTest: 0.8
   _levels:
-  - <TreeType>k__BackingField: 0
+  - <TreeType>k__BackingField: 2
   - <TreeType>k__BackingField: 0
   - <TreeType>k__BackingField: 0
   - <TreeType>k__BackingField: 0
@@ -10860,6 +11144,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!1001 &1506271878
@@ -10869,9 +11161,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -10938,9 +11238,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 5269360734241370834, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_Name
       value: SakuraTree_F Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157037900507057604, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818777176824800129, guid: 99d29630b8cb3ac418a42a38f9f78c38, type: 3}
       propertyPath: m_RootOrder
@@ -11012,6 +11320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -11071,6 +11383,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -11480,6 +11796,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!1001 &1637184312
@@ -11489,9 +11813,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -11913,9 +12245,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -12296,9 +12636,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -12449,9 +12797,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 191973891947310681, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_FadeMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_Name
       value: SakuraTree_D Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950269513228819870, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6915998221610998465, guid: 6ed7e78d77c724d41a0051811277ba11, type: 3}
       propertyPath: m_RootOrder
@@ -12579,9 +12939,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1160317485917303401, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
       propertyPath: m_Name
       value: SakuraTree_E Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669878377209985809, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948ab0c86c7e7dc4d90ec6c25ddc9d60, type: 3}
@@ -12805,6 +13173,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!1 &1828492686
@@ -12862,6 +13238,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 331621350}
     m_Modifications:
+    - target: {fileID: 4641268652169552389, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4683383253588110277, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -12921,6 +13301,10 @@ PrefabInstance:
     - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
       propertyPath: m_Name
       value: SakuraTree_A Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064056981035125225, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2911af55a3053d439e45f6f3bb26412, type: 3}
@@ -13083,6 +13467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13137,6 +13525,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13366,6 +13758,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3482913764450883525, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633483696578023916, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e138b3d8f2037314a8fa0fb2cdd37fc4, type: 3}
 --- !u!1001 &1990028435
@@ -13378,6 +13778,10 @@ PrefabInstance:
     - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_Name
       value: SakuraTree_C Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
@@ -13433,6 +13837,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13809,6 +14217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -13863,6 +14275,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14220,6 +14636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SakuraTree_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2711025594967103002, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -14274,6 +14694,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715792327459834378, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482308389860667336, guid: 342a81c7d877f4248a935ed9e014b201, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

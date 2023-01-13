@@ -378,7 +378,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 0.3
+    - _Cutoff: 0.497
     - _WindQuality: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -420,7 +420,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cull: 0
-    - _Cutoff: 0.35
+    - _Cutoff: 0.318
     - _WindQuality: 4
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

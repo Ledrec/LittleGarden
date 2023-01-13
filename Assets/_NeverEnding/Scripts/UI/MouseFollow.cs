@@ -8,7 +8,6 @@ public class MouseFollow : MonoBehaviour
 
     Vector3 pos;
     Animator anim;
-    public float speed;
 
     void Start()
     {
@@ -18,8 +17,9 @@ public class MouseFollow : MonoBehaviour
     void Update()
     {
         pos = Input.mousePosition;
-        pos.z = speed;
+        pos.z = 3;
         transform.position = Camera.main.ScreenToWorldPoint(pos);
+
 
         if(Input.GetMouseButtonDown(0))
         {
